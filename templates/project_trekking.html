@@ -1,0 +1,454 @@
+{% extends "base.html" %}
+
+{% block title %}
+Trekking Management System | CodeHype
+{% endblock %}
+
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="page-hero project-detail-hero">
+
+    <div class="container">
+
+        <div class="hero-label">
+            PROJECT • TREKKING MANAGEMENT
+        </div>
+
+        <h1>
+            Trekking<br>
+            Management System
+        </h1>
+
+        <p>
+            A Flask-based management platform designed to
+            organize trekking operations, users and
+            staff workflows through a centralized system.
+        </p>
+
+        <div class="project-detail-actions">
+
+            <a
+                href="{{ url_for('projects') }}"
+                class="text-link"
+            >
+                ← Back to Projects
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <div class="col-lg-7">
+
+                <div class="hero-label">
+                    OVERVIEW
+                </div>
+
+                <h2>
+                    A management system
+                    built for trekking operations.
+                </h2>
+
+                <p>
+                    The Trekking Management System is a web
+                    application built with Python and Flask
+                    to manage trekking-related operations
+                    through a centralized platform.
+                </p>
+
+                <p>
+                    The system includes user registration,
+                    authentication and staff workflows,
+                    with administrative approval built into
+                    the registration process.
+                </p>
+
+                <p>
+                    The project was built as a practical
+                    full-stack application while exploring
+                    Flask, databases, authentication and
+                    real-world application workflows.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="project-info-card">
+
+                    <div class="project-info-item">
+
+                        <span>Type</span>
+
+                        <strong>
+                            Web Application
+                        </strong>
+
+                    </div>
+
+
+                    <div class="project-info-item">
+
+                        <span>Backend</span>
+
+                        <strong>
+                            Python • Flask
+                        </strong>
+
+                    </div>
+
+
+                    <div class="project-info-item">
+
+                        <span>Frontend</span>
+
+                        <strong>
+                            HTML • CSS • Bootstrap
+                        </strong>
+
+                    </div>
+
+
+                    <div class="project-info-item">
+
+                        <span>Email</span>
+
+                        <strong>
+                            Flask-Mail
+                        </strong>
+
+                    </div>
+
+
+                    <div class="project-info-item">
+
+                        <span>Status</span>
+
+                        <strong class="project-status-detail">
+                            <span class="status-dot"></span>
+                            Built
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SYSTEM AREAS -->
+
+<section class="skills-section">
+
+    <div class="container">
+
+        <div class="hero-label">
+            SYSTEM AREAS
+        </div>
+
+        <h2>
+            What the system handles.
+        </h2>
+
+
+        <div class="row g-4 mt-3">
+
+
+            <!-- REGISTRATION -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-person-plus"></i>
+
+                    <h3>
+                        User Registration
+                    </h3>
+
+                    <p>
+                        Users can register through a dedicated
+                        registration workflow and create their
+                        account in the system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- AUTHENTICATION -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-shield-lock"></i>
+
+                    <h3>
+                        Authentication
+                    </h3>
+
+                    <p>
+                        Registered users can access the system
+                        through the authentication and login flow.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADMIN APPROVAL -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-person-check"></i>
+
+                    <h3>
+                        Admin Approval
+                    </h3>
+
+                    <p>
+                        Staff access includes an administrative
+                        approval workflow before staff accounts
+                        can access the system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-envelope-check"></i>
+
+                    <h3>
+                        Welcome Email
+                    </h3>
+
+                    <p>
+                        Registration is connected to an email
+                        workflow that sends a welcome message
+                        after account creation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- USER MANAGEMENT -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-people"></i>
+
+                    <h3>
+                        User Management
+                    </h3>
+
+                    <p>
+                        User information is stored and managed
+                        through the application's database.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- TREKKING OPERATIONS -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-signpost-split"></i>
+
+                    <h3>
+                        Trekking Operations
+                    </h3>
+
+                    <p>
+                        The platform provides a centralized
+                        system for managing trekking-related
+                        operations and workflows.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REGISTRATION WORKFLOW -->
+
+<section class="labs-preview">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5 py-5">
+
+            <div class="col-lg-7">
+
+                <div class="hero-label">
+                    REGISTRATION WORKFLOW
+                </div>
+
+                <h2>
+                    Registration connected
+                    to the system workflow.
+                </h2>
+
+                <p>
+                    A new user registers through the application,
+                    after which the account is created and the
+                    registration flow provides confirmation.
+                </p>
+
+                <p>
+                    The system also integrates email delivery
+                    so that a welcome email can be sent to the
+                    newly registered user.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="code-window">
+
+                    <div class="dots">
+                        ● ● ●
+                    </div>
+
+<pre><code>Registration
+      ↓
+Create User
+      ↓
+Registration Success
+      ↓
+Welcome Email
+      ↓
+Login
+
+Staff
+      ↓
+Admin Approval
+      ↓
+Staff Access</code></pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TECHNOLOGY -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="hero-label">
+            TECHNOLOGY STACK
+        </div>
+
+        <h2>
+            Built with.
+        </h2>
+
+
+        <div class="tech-stack project-detail-stack">
+
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>Flask-Mail</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATUS -->
+
+<section class="home-cta">
+
+    <div class="container text-center">
+
+        <div class="hero-label">
+            PROJECT STATUS
+        </div>
+
+        <h2>
+            Built and developed.
+        </h2>
+
+        <p>
+            The Trekking Management System is a completed
+            project built while developing practical
+            experience with Flask, databases, authentication
+            and application workflows.
+        </p>
+
+        <a
+            href="{{ url_for('projects') }}"
+            class="text-link"
+        >
+            ← Back to all projects
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

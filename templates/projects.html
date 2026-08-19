@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block title %}
+Projects | CodeHype
+{% endblock %}
+
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <div class="hero-label">
+            WHAT I'VE BUILT
+        </div>
+
+        <h1>
+            Projects
+        </h1>
+
+        <p>
+            Software projects, applications and experiments
+            built while learning and exploring technology.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="projects-section">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <!-- HOSPITAL MANAGEMENT SYSTEM -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-tag">
+                            FLASK
+                        </span>
+
+                        <i class="bi bi-hospital"></i>
+
+                    </div>
+
+
+                    <h2>
+                        Hospital Management System
+                    </h2>
+
+
+                    <p>
+                        A web-based hospital management system
+                        designed to manage patients, doctors,
+                        appointments and hospital workflows.
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Database</span>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <span class="project-status">
+                            <span class="status-dot"></span>
+                            IN DEVELOPMENT
+                        </span>
+
+
+                        <a
+                            href="{{ url_for('hospital_management_system') }}"
+                            class="text-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TREKKING MANAGEMENT SYSTEM -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-tag">
+                            FLASK
+                        </span>
+
+                        <i class="bi bi-signpost-split"></i>
+
+                    </div>
+
+
+                    <h2>
+                        Trekking Management System
+                    </h2>
+
+
+                    <p>
+                        A management application for organizing
+                        trekking operations, participants,
+                        schedules and related workflows.
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Database</span>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <span class="project-status">
+                            <span class="status-dot"></span>
+                            IN DEVELOPMENT
+                        </span>
+
+
+                        <a
+                            href="{{ url_for('trekking_management_system') }}"
+                            class="text-link"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

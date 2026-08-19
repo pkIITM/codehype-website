@@ -1,0 +1,433 @@
+{% extends "base.html" %}
+
+{% block title %}
+Hospital Management System | CodeHype
+{% endblock %}
+
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="page-hero project-detail-hero">
+
+    <div class="container">
+
+        <div class="hero-label">
+            PROJECT • HOSPITAL MANAGEMENT
+        </div>
+
+        <h1>
+            Hospital<br>
+            Management System
+        </h1>
+
+        <p>
+            A web-based hospital management platform
+            designed to bring patients, doctors and
+            hospital workflows together in one system.
+        </p>
+
+        <div class="project-detail-actions">
+
+            <a
+                href="{{ url_for('projects') }}"
+                class="text-link"
+            >
+                ← Back to Projects
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <div class="col-lg-7">
+
+                <div class="hero-label">
+                    OVERVIEW
+                </div>
+
+                <h2>
+                    A hospital system
+                    built around real workflows.
+                </h2>
+
+                <p>
+                    The Hospital Management System is a web
+                    application I'm building to manage different
+                    aspects of hospital operations through a
+                    centralized platform.
+                </p>
+
+                <p>
+                    The project focuses on creating a practical
+                    system where patients, doctors and hospital
+                    staff can interact with the parts of the
+                    system relevant to them.
+                </p>
+
+                <p>
+                    The goal is to build something closer to a
+                    real-world application rather than a simple
+                    demonstration project.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="project-info-card">
+
+                    <div class="project-info-item">
+
+                        <span>Type</span>
+
+                        <strong>
+                            Web Application
+                        </strong>
+
+                    </div>
+
+
+                    <div class="project-info-item">
+
+                        <span>Backend</span>
+
+                        <strong>
+                            Python • Flask
+                        </strong>
+
+                    </div>
+
+
+                    <div class="project-info-item">
+
+                        <span>Frontend</span>
+
+                        <strong>
+                            HTML • CSS • Bootstrap
+                        </strong>
+
+                    </div>
+
+
+                    <div class="project-info-item">
+
+                        <span>Status</span>
+
+                        <strong class="project-status-detail">
+                            <span class="status-dot"></span>
+                            In Development
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="skills-section">
+
+    <div class="container">
+
+        <div class="hero-label">
+            SYSTEM AREAS
+        </div>
+
+        <h2>
+            What the system covers.
+        </h2>
+
+
+        <div class="row g-4 mt-3">
+
+
+            <!-- PATIENTS -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-person-heart"></i>
+
+                    <h3>
+                        Patient Management
+                    </h3>
+
+                    <p>
+                        Patient accounts and information
+                        are managed through the system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOCTORS -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-person-badge"></i>
+
+                    <h3>
+                        Doctor Management
+                    </h3>
+
+                    <p>
+                        A dedicated system for managing
+                        doctors and their associated information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPOINTMENTS -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-calendar2-check"></i>
+
+                    <h3>
+                        Appointments
+                    </h3>
+
+                    <p>
+                        Hospital appointments and related
+                        workflows are handled through the platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- AUTHENTICATION -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-shield-lock"></i>
+
+                    <h3>
+                        Authentication
+                    </h3>
+
+                    <p>
+                        Patients can use their mobile number
+                        or email to access their account.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATABASE -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-database"></i>
+
+                    <h3>
+                        Database
+                    </h3>
+
+                    <p>
+                        Structured data storage for the
+                        different parts of the hospital system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- WORKFLOWS -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card project-feature-card">
+
+                    <i class="bi bi-diagram-3"></i>
+
+                    <h3>
+                        Hospital Workflows
+                    </h3>
+
+                    <p>
+                        Designed to connect different hospital
+                        operations within one platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PATIENT AUTHENTICATION -->
+
+<section class="labs-preview">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5 py-5">
+
+            <div class="col-lg-7">
+
+                <div class="hero-label">
+                    PATIENT ACCESS
+                </div>
+
+                <h2>
+                    Flexible patient login.
+                </h2>
+
+                <p>
+                    Patients can log into the system using
+                    either their mobile number or email address.
+                </p>
+
+                <p>
+                    The mobile number acts as a unique account
+                    identifier and remains fixed after registration.
+                    Email can remain optional for patients who
+                    don't have an email address.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="code-window">
+
+                    <div class="dots">
+                        ● ● ●
+                    </div>
+
+<pre><code>Patient Account
+
+Mobile Number
+        ↓
+Unique Login Identifier
+
+Email
+        ↓
+Optional
+
+Patient
+        ↓
+Hospital System</code></pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TECHNOLOGY -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="hero-label">
+            TECHNOLOGY STACK
+        </div>
+
+        <h2>
+            Built with.
+        </h2>
+
+
+        <div class="tech-stack project-detail-stack">
+
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATUS -->
+
+<section class="home-cta">
+
+    <div class="container text-center">
+
+        <div class="hero-label">
+            PROJECT STATUS
+        </div>
+
+        <h2>
+            Still building.
+        </h2>
+
+        <p>
+            The Hospital Management System is currently
+            under active development. More features and
+            improvements will be added as the project evolves.
+        </p>
+
+        <a
+            href="{{ url_for('projects') }}"
+            class="text-link"
+        >
+            ← Back to all projects
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

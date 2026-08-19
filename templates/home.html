@@ -1,0 +1,462 @@
+{% extends "base.html" %}
+
+{% block title %}
+Priyanshu Kumar | CodeHype
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- ================================
+     HERO
+================================ -->
+
+<section class="home-hero">
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-8">
+
+                <div class="hero-label">
+                    TECH CREATOR • DEVELOPER • IIT MADRAS
+                </div>
+
+
+                <h1>
+                    I build,
+                    <span>explore</span>
+                    and share technology.
+                </h1>
+
+
+                <p class="hero-description">
+                    I'm Priyanshu Kumar, a tech YouTuber and student
+                    at IIT Madras. I create technology content and
+                    explore Python, Data Science, Machine Learning,
+                    AI and software development.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="{{ url_for('codehype') }}"
+                        class="btn btn-primary btn-lg"
+                    >
+                        <i class="bi bi-youtube me-2"></i>
+                        CodeHype
+                    </a>
+
+
+                    <a
+                        href="{{ url_for('labs') }}"
+                        class="btn btn-outline-light btn-lg"
+                    >
+                        <i class="bi bi-code-slash me-2"></i>
+                        CodeHype Labs
+                    </a>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+
+                        <strong>1.3K+</strong>
+
+                        <span>
+                            YouTube subscribers
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>2.4K+</strong>
+
+                        <span>
+                            LinkedIn followers
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>IIT Madras</strong>
+
+                        <span>
+                            Student
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     INTRO
+================================ -->
+
+<section class="home-intro">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <div class="col-lg-5">
+
+                <div class="hero-label">
+                    WHAT I DO
+                </div>
+
+                <h2>
+                    Technology is
+                    <span>my playground.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <p>
+                    Through CodeHype, I create technology content
+                    focused on smartphones, gadgets, software and
+                    the latest developments in the tech world.
+                </p>
+
+
+                <p>
+                    Through CodeHype Labs, I want to make technology
+                    easier to understand by teaching programming,
+                    web development, databases, Python, Data Science,
+                    Machine Learning and AI.
+                </p>
+
+
+                <p>
+                    This website is where everything comes together.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     CHANNELS
+================================ -->
+
+<section class="channels-section">
+
+    <div class="container">
+
+        <div class="hero-label">
+            MY CHANNELS
+        </div>
+
+        <h2>
+            Two sides of CodeHype.
+        </h2>
+
+
+        <div class="row g-4 mt-3">
+
+
+            <!-- CODEHYPE -->
+
+            <div class="col-lg-6">
+
+                <div class="channel-card">
+
+                    <div class="channel-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+
+
+                    <div class="hero-label">
+                        TECH CONTENT
+                    </div>
+
+
+                    <h3>
+                        CodeHype
+                    </h3>
+
+
+                    <p>
+                        Technology reviews, smartphones, gadgets,
+                        launches and everything happening in the
+                        world of consumer technology.
+                    </p>
+
+
+                    <a
+                        href="{{ url_for('codehype') }}"
+                        class="text-link"
+                    >
+                        Explore CodeHype →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CODEHYPE LABS -->
+
+            <div class="col-lg-6">
+
+                <div class="channel-card">
+
+                    <div class="channel-icon">
+                        <i class="bi bi-code-square"></i>
+                    </div>
+
+
+                    <div class="hero-label">
+                        TECHNOLOGY EDUCATION
+                    </div>
+
+
+                    <h3>
+                        CodeHype Labs
+                    </h3>
+
+
+                    <p>
+                        Practical tutorials covering Python,
+                        Flask, HTML, CSS, SQL, DBMS, Data Science,
+                        Machine Learning and AI.
+                    </p>
+
+
+                    <a
+                        href="{{ url_for('labs') }}"
+                        class="text-link"
+                    >
+                        Explore CodeHype Labs →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     AREAS OF INTEREST
+================================ -->
+
+<section class="skills-section">
+
+    <div class="container">
+
+        <div class="hero-label">
+            AREAS I'M EXPLORING
+        </div>
+
+
+        <h2>
+            What I'm into.
+        </h2>
+
+
+        <div class="row g-4 mt-3">
+
+
+            <!-- PYTHON -->
+
+            <div class="col-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-filetype-py"></i>
+
+                    <h3>
+                        Python
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DATA SCIENCE -->
+
+            <div class="col-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-bar-chart"></i>
+
+                    <h3>
+                        Data Science
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MACHINE LEARNING -->
+
+            <div class="col-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-cpu"></i>
+
+                    <h3>
+                        Machine Learning
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AI -->
+
+            <div class="col-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-robot"></i>
+
+                    <h3>
+                        AI
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     CONNECT
+================================ -->
+
+<section class="home-cta">
+
+    <div class="container text-center">
+
+        <div class="hero-label">
+            LET'S CONNECT
+        </div>
+
+
+        <h2>
+            Follow the journey.
+        </h2>
+
+
+        <p>
+            Follow me on YouTube and LinkedIn,
+            or get in touch by email.
+        </p>
+
+
+        <div class="mt-4">
+
+
+            <!-- YOUTUBE -->
+
+            <a
+                href="https://www.youtube.com/@CodeHype-Priyanshu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-lg me-2"
+            >
+                <i class="bi bi-youtube me-2"></i>
+                YouTube
+            </a>
+
+
+
+            <!-- LINKEDIN -->
+
+            <a
+                href="https://www.linkedin.com/in/pk24india"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-light btn-lg"
+            >
+                <i class="bi bi-linkedin me-2"></i>
+                LinkedIn
+            </a>
+
+        </div>
+
+
+        <!-- EMAILS -->
+
+        <div class="contact-emails mt-4">
+
+            <a
+                href="mailto:contact@codehype.co.in"
+            >
+                <i class="bi bi-envelope me-2"></i>
+                contact@codehype.co.in
+            </a>
+
+
+            <span class="mx-2">
+                •
+            </span>
+
+
+            <a
+                href="mailto:priyanshu@codehype.co.in"
+            >
+                <i class="bi bi-envelope me-2"></i>
+                priyanshu@codehype.co.in
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}
