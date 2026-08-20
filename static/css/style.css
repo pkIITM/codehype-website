@@ -206,29 +206,38 @@ h5 {
    ABOUT PROFILE IMAGE
 ========================================================= */
 
-.about-profile-image {
+.about-profile-wrapper {
     width: 230px;
     height: 230px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-profile-image {
+    width: 210px;
+    height: 210px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid var(--border);
 }
-
 
 /* =========================================================
    ABOUT PROFILE IMAGE — MOBILE
 ========================================================= */
 
 @media (max-width: 576px) {
-
-    .about-profile-image {
+    .about-profile-wrapper {
         width: 190px;
         height: 190px;
     }
 
+    .about-profile-image {
+        width: 174px;
+        height: 174px;
+    }
 }
 /* =========================================================
    HOME HERO
