@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,url_for,Response
 import os
 
 from extensions import db
@@ -75,6 +75,33 @@ def hospital_management_system():
 def trekking_management_system():
     return render_template("project_trekking.html")
 
+@app.route("/sitemap.xml")
+def sitemap():
+
+    pages = [
+        url_for("home", _external=True),
+        url_for("about", _external=True),
+        url_for("codehype", _external=True),
+        url_for("labs", _external=True),
+        url_for("projects", _external=True)
+    ]
+
+    sitemap_xml = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+"""
+
+    for page in pages:
+        sitemap_xml += f"""    <url>
+        <loc>{page}</loc>
+    </url>
+"""
+
+    sitemap_xml += """</urlset>"""
+
+    return Response(
+        sitemap_xml,
+        mimetype="application/xml"
+    )
 
 if __name__ == "__main__":
 
