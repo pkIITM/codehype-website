@@ -1,4 +1,70 @@
 {% extends "base.html" %}
+{% block extra_head %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "ProfilePage",
+      "@id": "https://codehype.co.in/about#profilepage",
+
+      "url": "https://codehype.co.in/about",
+
+      "name": "About Priyanshu Kumar | CodeHype",
+
+      "description": "Learn about Priyanshu Kumar, technology creator, developer and IIT Madras student behind CodeHype.",
+
+      "mainEntity": {
+        "@id": "https://codehype.co.in/about#priyanshu-kumar"
+      }
+    },
+
+
+    {
+      "@type": "Person",
+      "@id": "https://codehype.co.in/about#priyanshu-kumar",
+
+      "name": "Priyanshu Kumar",
+
+      "url": "https://codehype.co.in/about",
+
+      "image": "https://codehype.co.in/static/images/priyanshu.jpg",
+
+      "description": "Priyanshu Kumar is a technology creator, developer and IIT Madras student behind CodeHype.",
+
+      "jobTitle": "Technology Creator",
+
+      "email": "mailto:contact@codehype.co.in",
+
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology Madras",
+        "alternateName": "IIT Madras"
+      },
+
+      "worksFor": {
+        "@type": "Organization",
+        "@id": "https://codehype.co.in/#codehype",
+        "name": "CodeHype",
+        "url": "https://codehype.co.in/"
+      },
+
+      "sameAs": [
+        "https://www.youtube.com/@CodeHype-Priyanshu",
+        "https://ig.codehype.co.in/",
+        "https://fb.codehype.co.in/",
+        "https://www.linkedin.com/in/pk24india",
+        "https://x.com/pk24iitm"
+      ]
+    }
+
+  ]
+}
+</script>
+
+{% endblock %}
 
 {% block title %}
 About Priyanshu Kumar | CodeHype

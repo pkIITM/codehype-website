@@ -1,4 +1,89 @@
 {% extends "base.html" %}
+{% block extra_head %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Person",
+      "@id": "https://codehype.co.in/#priyanshu-kumar",
+
+      "name": "Priyanshu Kumar",
+
+      "url": "https://codehype.co.in/about",
+
+      "image": "https://codehype.co.in/static/images/priyanshu.jpg",
+
+      "description": "Priyanshu Kumar is a technology creator, developer and IIT Madras student behind CodeHype.",
+
+      "jobTitle": "Technology Creator",
+
+      "email": "mailto:contact@codehype.co.in",
+
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology Madras",
+        "alternateName": "IIT Madras"
+      },
+
+      "worksFor": {
+        "@id": "https://codehype.co.in/#codehype"
+      },
+
+      "sameAs": [
+        "https://www.youtube.com/@CodeHype-Priyanshu",
+        "https://ig.codehype.co.in/",
+        "https://fb.codehype.co.in/",
+        "https://www.linkedin.com/in/pk24india",
+        "https://x.com/pk24iitm"
+      ]
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://codehype.co.in/#codehype",
+
+      "name": "CodeHype",
+
+      "url": "https://codehype.co.in/",
+
+      "description": "CodeHype is a technology platform created by Priyanshu Kumar, covering technology, smartphones, gadgets, programming, artificial intelligence and data science.",
+
+      "founder": {
+        "@id": "https://codehype.co.in/#priyanshu-kumar"
+      },
+
+      "email": "mailto:contact@codehype.co.in",
+
+      "sameAs": [
+        "https://www.youtube.com/@CodeHype-Priyanshu",
+        "https://ig.codehype.co.in/",
+        "https://fb.codehype.co.in/",
+        "https://www.linkedin.com/in/pk24india",
+        "https://x.com/pk24iitm"
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://codehype.co.in/#website",
+
+      "name": "CodeHype",
+
+      "url": "https://codehype.co.in/",
+
+      "publisher": {
+        "@id": "https://codehype.co.in/#codehype"
+      }
+    }
+
+  ]
+}
+</script>
+
+{% endblock %}
 
 {% block title %}
 Priyanshu Kumar | CodeHype
