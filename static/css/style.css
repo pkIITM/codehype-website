@@ -202,7 +202,34 @@ h5 {
     text-transform: uppercase;
 }
 
+/* =========================================================
+   ABOUT PROFILE IMAGE
+========================================================= */
 
+.about-profile-image {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   ABOUT PROFILE IMAGE — MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .about-profile-image {
+        width: 190px;
+        height: 190px;
+    }
+
+}
 /* =========================================================
    HOME HERO
 ========================================================= */
