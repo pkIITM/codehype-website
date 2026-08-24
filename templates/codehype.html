@@ -1,16 +1,255 @@
 {% extends "base.html" %}
 
+
 {% block title %}
-CodeHype Tech | Tech YouTube Channel
+CodeHype Tech | Tech Reviews, Unboxings & Technology
 {% endblock %}
+
+
+{% block extra_head %}
+
+<!-- =========================================================
+     SEO
+========================================================= -->
+
+<link
+    rel="canonical"
+    href="https://codehype.co.in/codehype"
+>
+
+
+<meta
+    name="description"
+    content="CodeHype Tech is the technology YouTube channel by Priyanshu Kumar, featuring honest long-term tech reviews, unboxings, comparisons, smartphones, laptops, tablets, iPad, MacBook, iPhone and gadgets."
+>
+
+
+<meta
+    name="keywords"
+    content="CodeHype Tech, CodeHype, Priyanshu Kumar, tech reviews, technology reviews, smartphone reviews, iPhone reviews, iPad reviews, MacBook reviews, laptop reviews, gadget reviews, tech YouTube India, unboxing"
+>
+
+
+<meta
+    name="author"
+    content="Priyanshu Kumar"
+>
+
+
+<meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+>
+
+
+<!-- =========================================================
+     OPEN GRAPH
+========================================================= -->
+
+<meta
+    property="og:type"
+    content="website"
+>
+
+
+<meta
+    property="og:title"
+    content="CodeHype Tech | Tech Reviews, Unboxings & Technology"
+>
+
+
+<meta
+    property="og:description"
+    content="Honest long-term tech reviews, unboxings, comparisons and real-world technology experiences by Priyanshu Kumar."
+>
+
+
+<meta
+    property="og:url"
+    content="https://codehype.co.in/codehype"
+>
+
+
+<meta
+    property="og:site_name"
+    content="CodeHype Tech"
+>
+
+
+<meta
+    property="og:image"
+    content="https://codehype.co.in/static/images/codehype-logo.png"
+>
+
+
+<meta
+    property="og:image:alt"
+    content="CodeHype Tech"
+>
+
+
+<!-- =========================================================
+     TWITTER / X
+========================================================= -->
+
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
+
+
+<meta
+    name="twitter:title"
+    content="CodeHype Tech | Tech Reviews, Unboxings & Technology"
+>
+
+
+<meta
+    name="twitter:description"
+    content="Honest long-term tech reviews, unboxings and comparisons by Priyanshu Kumar."
+>
+
+
+<meta
+    name="twitter:image"
+    content="https://codehype.co.in/static/images/codehype-logo.png"
+>
+
+
+<!-- =========================================================
+     STRUCTURED DATA
+========================================================= -->
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+
+    "@graph": [
+
+        {
+            "@type": "Organization",
+
+            "@id": "https://codehype.co.in/#codehype-tech",
+
+            "name": "CodeHype Tech",
+
+            "alternateName": "CodeHype",
+
+            "url": "https://codehype.co.in/",
+
+            "description": "CodeHype Tech is a technology platform and YouTube channel created by Priyanshu Kumar, focused on honest tech reviews, long-term experiences, unboxings, comparisons and practical technology content.",
+
+            "founder": {
+                "@id": "https://codehype.co.in/#priyanshu-kumar"
+            },
+
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://codehype.co.in/static/images/codehype-logo.png"
+            },
+
+            "sameAs": [
+                "https://www.youtube.com/@CodeHypeTech",
+                "https://ig.codehype.co.in/",
+                "https://fb.codehype.co.in/",
+                "https://www.linkedin.com/in/pk24india",
+                "https://x.com/pk24iitm"
+            ]
+        },
+
+
+        {
+            "@type": "Person",
+
+            "@id": "https://codehype.co.in/#priyanshu-kumar",
+
+            "name": "Priyanshu Kumar",
+
+            "url": "https://codehype.co.in/about",
+
+            "image": "https://codehype.co.in/static/images/priyanshu.jpg",
+
+            "jobTitle": "Tech Creator",
+
+            "description": "Priyanshu Kumar is a tech creator and Data Science & Applications student at IIT Madras, and the creator behind CodeHype Tech.",
+
+            "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "Indian Institute of Technology Madras",
+                "alternateName": "IIT Madras"
+            },
+
+            "worksFor": {
+                "@id": "https://codehype.co.in/#codehype-tech"
+            },
+
+            "email": "mailto:contact@codehype.co.in",
+
+            "sameAs": [
+                "https://www.youtube.com/@CodeHypeTech",
+                "https://ig.codehype.co.in/",
+                "https://fb.codehype.co.in/",
+                "https://www.linkedin.com/in/pk24india",
+                "https://x.com/pk24iitm"
+            ]
+        },
+
+
+        {
+            "@type": "WebSite",
+
+            "@id": "https://codehype.co.in/#website",
+
+            "name": "CodeHype Tech",
+
+            "url": "https://codehype.co.in/",
+
+            "description": "CodeHype Tech — honest technology reviews, unboxings and practical technology insights by Priyanshu Kumar.",
+
+            "publisher": {
+                "@id": "https://codehype.co.in/#codehype-tech"
+            },
+
+            "inLanguage": "en-IN"
+        },
+
+
+        {
+            "@type": "WebPage",
+
+            "@id": "https://codehype.co.in/codehype#webpage",
+
+            "url": "https://codehype.co.in/codehype",
+
+            "name": "CodeHype Tech | Tech Reviews, Unboxings & Technology",
+
+            "description": "The official CodeHype Tech technology channel by Priyanshu Kumar.",
+
+            "isPartOf": {
+                "@id": "https://codehype.co.in/#website"
+            },
+
+            "about": {
+                "@id": "https://codehype.co.in/#codehype-tech"
+            },
+
+            "inLanguage": "en-IN"
+        }
+
+    ]
+}
+</script>
+
+{% endblock %}
+
 
 
 {% block content %}
 
 
-<!-- ================================
+<!-- =========================================================
      HERO
-================================ -->
+========================================================= -->
 
 <section class="page-hero">
 
@@ -20,14 +259,25 @@ CodeHype Tech | Tech YouTube Channel
             MY MAIN TECH CHANNEL
         </div>
 
+
         <h1>
             CodeHype Tech
         </h1>
 
+
         <p>
-            Technology reviews, smartphones, gadgets,
-            comparisons and everything happening in tech.
+            Honest tech reviews, long-term experiences,
+            unboxings, comparisons and everything happening
+            in the world of technology.
         </p>
+
+
+        <p>
+            <strong>
+                Formerly known as CodeHype.
+            </strong>
+        </p>
+
 
         <div class="mt-4">
 
@@ -49,9 +299,9 @@ CodeHype Tech | Tech YouTube Channel
 
 
 
-<!-- ================================
+<!-- =========================================================
      CHANNEL INTRO
-================================ -->
+========================================================= -->
 
 <section class="about-section">
 
@@ -59,37 +309,59 @@ CodeHype Tech | Tech YouTube Channel
 
         <div class="row align-items-center g-5">
 
+
+            <!-- INTRO -->
+
             <div class="col-lg-7">
 
                 <div class="hero-label">
                     CODEHYPE TECH
                 </div>
 
+
                 <h2>
-                    Technology, explained
-                    through real-world content.
+                    Technology,
+                    explained through
+                    real-world experience.
                 </h2>
 
-                <p>
-                    CodeHype Tech is my main technology YouTube channel,
-                    where I create videos around smartphones,
-                    gadgets, technology products and the latest
-                    developments in the tech world.
-                </p>
 
                 <p>
-                    I focus on making technology easier to understand
-                    through reviews, comparisons, hands-on experiences
-                    and practical information.
+                    <strong>CodeHype Tech</strong> is my main
+                    technology YouTube channel, where I share my
+                    experiences with the technology I personally
+                    use and explore.
                 </p>
 
+
                 <p>
-                    From new smartphone launches to everyday
-                    technology products, the goal is to help viewers
-                    understand what is actually worth their attention.
+                    I'm <strong>Priyanshu Kumar</strong>, a tech creator
+                    and Data Science &amp; Applications student at
+                    <strong>IIT Madras</strong>.
+                </p>
+
+
+                <p>
+                    I create
+                    <strong>
+                        honest, long-term reviews, unboxings,
+                        comparisons and practical technology content
+                    </strong>
+                    across smartphones, laptops, tablets, iPad,
+                    MacBook, iPhone, gadgets and accessories.
+                </p>
+
+
+                <p>
+                    The goal is simple:
+                    <strong>
+                        help you understand what is actually worth
+                        your money and attention.
+                    </strong>
                 </p>
 
             </div>
+
 
 
             <!-- CHANNEL CARD -->
@@ -102,18 +374,22 @@ CodeHype Tech | Tech YouTube Channel
                         <i class="bi bi-youtube"></i>
                     </div>
 
+
                     <div class="hero-label">
                         YOUTUBE CHANNEL
                     </div>
+
 
                     <h3>
                         CodeHype Tech
                     </h3>
 
+
                     <p>
-                        Tech reviews, smartphones,
-                        gadgets and more.
+                        Tech reviews, unboxings,
+                        comparisons and more.
                     </p>
+
 
                     <div class="channel-stat">
 
@@ -126,6 +402,7 @@ CodeHype Tech | Tech YouTube Channel
                         </span>
 
                     </div>
+
 
                     <a
                         href="https://www.youtube.com/@CodeHypeTech"
@@ -149,9 +426,9 @@ CodeHype Tech | Tech YouTube Channel
 
 
 
-<!-- ================================
+<!-- =========================================================
      CONTENT AREAS
-================================ -->
+========================================================= -->
 
 <section class="skills-section">
 
@@ -160,6 +437,7 @@ CodeHype Tech | Tech YouTube Channel
         <div class="hero-label">
             WHAT I COVER
         </div>
+
 
         <h2>
             Tech content on CodeHype Tech
@@ -182,13 +460,37 @@ CodeHype Tech | Tech YouTube Channel
                     </h3>
 
                     <p>
-                        Reviews, comparisons,
-                        cameras, performance and features.
+                        Reviews, cameras, performance,
+                        software, features and long-term usage.
                     </p>
 
                 </div>
 
             </div>
+
+
+
+            <!-- LAPTOPS & TABLETS -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-laptop"></i>
+
+                    <h3>
+                        Laptops &amp; Tablets
+                    </h3>
+
+                    <p>
+                        Laptops, iPad, MacBook, tablets,
+                        performance and everyday experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
 
 
             <!-- GADGETS -->
@@ -204,8 +506,8 @@ CodeHype Tech | Tech YouTube Channel
                     </h3>
 
                     <p>
-                        Technology products,
-                        accessories and useful gadgets.
+                        Accessories, headphones, cameras,
+                        smart devices and useful technology.
                     </p>
 
                 </div>
@@ -213,29 +515,8 @@ CodeHype Tech | Tech YouTube Channel
             </div>
 
 
-            <!-- REVIEWS -->
 
-            <div class="col-md-6 col-lg-3">
-
-                <div class="skill-card">
-
-                    <i class="bi bi-stars"></i>
-
-                    <h3>
-                        Tech Reviews
-                    </h3>
-
-                    <p>
-                        Hands-on experiences,
-                        opinions and practical reviews.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- COMPARISONS -->
+            <!-- REVIEWS & COMPARISONS -->
 
             <div class="col-md-6 col-lg-3">
 
@@ -244,12 +525,12 @@ CodeHype Tech | Tech YouTube Channel
                     <i class="bi bi-arrow-left-right"></i>
 
                     <h3>
-                        Comparisons
+                        Reviews &amp; Comparisons
                     </h3>
 
                     <p>
-                        Helping viewers decide between
-                        different technology products.
+                        Honest opinions and practical comparisons
+                        to help you choose the right product.
                     </p>
 
                 </div>
@@ -264,9 +545,9 @@ CodeHype Tech | Tech YouTube Channel
 
 
 
-<!-- ================================
-     CHANNEL STATS
-================================ -->
+<!-- =========================================================
+     REVIEW PHILOSOPHY
+========================================================= -->
 
 <section class="home-intro">
 
@@ -274,30 +555,62 @@ CodeHype Tech | Tech YouTube Channel
 
         <div class="row align-items-center g-5">
 
+
             <div class="col-lg-6">
 
                 <div class="hero-label">
-                    THE CODEHYPE  TECH JOURNEY
+                    MY APPROACH
                 </div>
 
+
                 <h2>
-                    Building a community
-                    around technology.
+                    More than
+                    just specifications.
                 </h2>
 
+
                 <p>
-                    CodeHype Tech is built around my interest in
-                    technology and my journey as a creator.
-                    I share the products I use, the technology
-                    I explore and the things I learn along the way.
+                    A specification sheet can tell you what a product
+                    has. Real-world experience tells you what it is
+                    actually like to use.
+                </p>
+
+
+                <p>
+                    That's why I focus on long-term usage,
+                    practical testing, cameras, battery life,
+                    performance, software, usability and the things
+                    that matter after the excitement of unboxing
+                    wears off.
+                </p>
+
+
+                <p>
+                    My reviews are based on my own experience with
+                    the products I personally use.
                 </p>
 
             </div>
 
 
+
             <div class="col-lg-6">
 
                 <div class="about-card">
+
+
+                    <div class="about-item">
+
+                        <span>
+                            Channel
+                        </span>
+
+                        <strong>
+                            CodeHype Tech
+                        </strong>
+
+                    </div>
+
 
                     <div class="about-item">
 
@@ -306,32 +619,7 @@ CodeHype Tech | Tech YouTube Channel
                         </span>
 
                         <strong>
-                            1.1K+ Subscribers
-                        </strong>
-                    </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Content
-                        </span>
-
-                        <strong>
-                            Tech Reviews
-                        </strong>
-
-                    </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Focus
-                        </span>
-
-                        <strong>
-                            Smartphones • Gadgets
+                            @CodeHypeTech
                         </strong>
 
                     </div>
@@ -349,6 +637,45 @@ CodeHype Tech | Tech YouTube Channel
 
                     </div>
 
+
+                    <div class="about-item">
+
+                        <span>
+                            Content
+                        </span>
+
+                        <strong>
+                            Tech Reviews &amp; Unboxings
+                        </strong>
+
+                    </div>
+
+
+                    <div class="about-item">
+
+                        <span>
+                            Focus
+                        </span>
+
+                        <strong>
+                            Real-world Technology
+                        </strong>
+
+                    </div>
+
+
+                    <div class="about-item">
+
+                        <span>
+                            Formerly
+                        </span>
+
+                        <strong>
+                            CodeHype
+                        </strong>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -361,27 +688,162 @@ CodeHype Tech | Tech YouTube Channel
 
 
 
-<!-- ================================
-     CODEHYPE LABS CTA
-================================ -->
+<!-- =========================================================
+     CHANNEL JOURNEY
+========================================================= -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-7">
+
+                <div class="hero-label">
+                    THE CODEHYPE TECH JOURNEY
+                </div>
+
+
+                <h2>
+                    Building a community
+                    around technology.
+                </h2>
+
+
+                <p>
+                    CodeHype Tech is built around my interest in
+                    technology and my journey as a creator.
+                </p>
+
+
+                <p>
+                    From smartphones and gadgets to laptops,
+                    tablets and the wider technology ecosystem,
+                    I share the products I use, the technology
+                    I explore and the things I learn along the way.
+                </p>
+
+
+                <p>
+                    As the channel grows, my focus remains the same:
+                    creating useful, honest and experience-driven
+                    technology content.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="channel-card">
+
+                    <div class="channel-icon">
+                        <i class="bi bi-person-video3"></i>
+                    </div>
+
+
+                    <div class="hero-label">
+                        CREATOR
+                    </div>
+
+
+                    <h3>
+                        Priyanshu Kumar
+                    </h3>
+
+
+                    <p>
+                        Tech creator and Data Science &amp;
+                        Applications student at IIT Madras.
+                    </p>
+
+
+                    <a
+                        href="{{ url_for('about') }}"
+                        class="btn btn-outline-light w-100 mt-3"
+                    >
+                        About Priyanshu
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     COLLABORATION
+========================================================= -->
+
+<section class="home-cta">
+
+    <div class="container text-center">
+
+        <div class="hero-label">
+            BRANDS &amp; COLLABORATIONS
+        </div>
+
+
+        <h2>
+            Want to work together?
+        </h2>
+
+
+        <p>
+            For product reviews, technology collaborations,
+            campaigns and business enquiries, get in touch.
+        </p>
+
+
+        <a
+            href="mailto:contact@codehype.co.in"
+            class="btn btn-primary btn-lg mt-3"
+        >
+            <i class="bi bi-envelope me-2"></i>
+            contact@codehype.co.in
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CODEHYPE TECH LABS CTA
+========================================================= -->
 
 <section class="labs-preview">
 
     <div class="container text-center py-5">
 
         <div class="hero-label">
-            THE OTHER SIDE OF CODEHYPE TECH
+            THE OTHER SIDE OF CODEHYPE
         </div>
+
 
         <h2>
             Want to learn technology?
         </h2>
 
-        <p class="text-secondary mx-auto" style="max-width: 650px;">
-            CodeHype Tech Labs is where I teach programming,
-            web development, Python, databases,
+
+        <p
+            class="text-secondary mx-auto"
+            style="max-width: 650px;"
+        >
+            CodeHype Tech Labs is where I explore and teach
+            programming, web development, Python, databases,
             AI and Data Science.
         </p>
+
 
         <a
             href="{{ url_for('labs') }}"

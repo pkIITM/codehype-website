@@ -1,135 +1,109 @@
 {% extends "base.html" %}
+
+
 {% block extra_head %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-
-    {
-      "@type": "ProfilePage",
-      "@id": "https://codehype.co.in/about#profilepage",
-
-      "url": "https://codehype.co.in/about",
-
-      "name": "About Priyanshu Kumar | Code Hype Tech",
-
-      "description": "Learn about Priyanshu Kumar, technology creator, developer and IIT Madras student behind Code Hype Tech.",
-
-      "mainEntity": {
-        "@id": "https://codehype.co.in/about#priyanshu-kumar"
-      }
-    },
-
-
-    {
-      "@type": "Person",
-      "@id": "https://codehype.co.in/about#priyanshu-kumar",
-
-      "name": "Priyanshu Kumar",
-
-      "url": "https://codehype.co.in/about",
-
-      "image": "https://codehype.co.in/static/images/priyanshu.jpg",
-
-      "description": "Priyanshu Kumar is a technology creator, developer and IIT Madras student behind Code Hype Tech.",
-
-      "jobTitle": "Technology Creator",
-
-      "email": "mailto:contact@codehype.co.in",
-
-      "affiliation": {
-        "@type": "CollegeOrUniversity",
-        "name": "Indian Institute of Technology Madras",
-        "alternateName": "IIT Madras"
-      },
-
-      "worksFor": {
-        "@type": "Organization",
-        "@id": "https://codehype.co.in/#codehype"
-      },
-
-      "sameAs": [
-        "https://www.youtube.com/@CodeHypeTech",
-        "https://ig.codehype.co.in/",
-        "https://fb.codehype.co.in/",
-        "https://www.linkedin.com/in/pk24india",
-        "https://x.com/pk24iitm"
-      ]
-    }
-
-  ]
-}
-</script>
-
-{% endblock %}
-
-{% block title %}
-About Priyanshu Kumar | Code Hype Tech
-{% endblock %}
-
-
-{% block content %}
 
 <!-- =========================================================
      SEO / SOCIAL METADATA
 ========================================================= -->
 
-<link rel="canonical" href="https://codehype.co.in/about">
+<link
+    rel="canonical"
+    href="https://codehype.co.in/about"
+>
+
 
 <meta
     name="description"
-    content="Learn about Priyanshu Kumar, IIT Madras student, technology creator, developer and the creator behind Code Hype Tech. Explore his work in technology, programming, AI, data science and consumer technology."
+    content="Learn about Priyanshu Kumar, tech creator and Data Science & Applications student at IIT Madras, and the creator behind CodeHype Tech."
 >
+
 
 <meta
     name="keywords"
-    content="Priyanshu Kumar, Priyanshu Kumar IIT Madras, Priyanshu Kumar IITM, Code Hype Tech, CodeHype Tech, CodeHype Priyanshu, technology creator, tech creator India, Python, Flask, AI, Machine Learning, Data Science"
+    content="Priyanshu Kumar, CodeHype Tech, CodeHype, tech creator India, IIT Madras, technology creator, tech reviews, iPhone reviews, iPad reviews, MacBook reviews, smartphone reviews, gadgets, Python, Data Science, Machine Learning, AI"
 >
 
-<meta property="og:type" content="profile">
+
+<meta
+    name="author"
+    content="Priyanshu Kumar"
+>
+
+
+<meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+>
+
+
+<!-- =========================================================
+     OPEN GRAPH
+========================================================= -->
+
+<meta
+    property="og:type"
+    content="profile"
+>
+
 
 <meta
     property="og:title"
-    content="Priyanshu Kumar | Creator of Code Hype Tech"
+    content="About Priyanshu Kumar | CodeHype Tech"
 >
+
 
 <meta
     property="og:description"
-    content="Priyanshu Kumar is a technology creator, developer and IIT Madras student behind Code Hype Tech."
+    content="Priyanshu Kumar is a tech creator and Data Science & Applications student at IIT Madras, and the creator behind CodeHype Tech."
 >
+
 
 <meta
     property="og:url"
     content="https://codehype.co.in/about"
 >
 
+
+<meta
+    property="og:site_name"
+    content="CodeHype Tech"
+>
+
+
 <meta
     property="og:image"
     content="https://codehype.co.in/static/images/priyanshu.jpg"
 >
 
+
 <meta
     property="og:image:alt"
-    content="Priyanshu Kumar - Creator of Code Hype Tech"
+    content="Priyanshu Kumar - Creator of CodeHype Tech"
 >
+
+
+<!-- =========================================================
+     TWITTER / X
+========================================================= -->
 
 <meta
-    property="og:site_name"
-    content="Code Hype Tech"
+    name="twitter:card"
+    content="summary_large_image"
 >
 
-<meta name="twitter:card" content="summary_large_image">
 
 <meta
     name="twitter:title"
-    content="Priyanshu Kumar | Code Hype Tech"
+    content="About Priyanshu Kumar | CodeHype Tech"
 >
+
 
 <meta
     name="twitter:description"
-    content="Technology creator, developer and IIT Madras student behind Code Hype Tech."
+    content="Tech creator and Data Science & Applications student at IIT Madras behind CodeHype Tech."
 >
+
 
 <meta
     name="twitter:image"
@@ -139,132 +113,152 @@ About Priyanshu Kumar | Code Hype Tech
 
 <!-- =========================================================
      STRUCTURED DATA
-     PERSON + CODE HYPE TECH ORGANIZATION
 ========================================================= -->
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+    "@context": "https://schema.org",
 
-    {
-      "@type": "Person",
-      "@id": "https://codehype.co.in/about#priyanshu-kumar",
+    "@graph": [
 
-      "name": "Priyanshu Kumar",
+        {
+            "@type": "ProfilePage",
 
-      "url": "https://codehype.co.in/about",
+            "@id": "https://codehype.co.in/about#profilepage",
 
-      "image": "https://codehype.co.in/static/images/priyanshu.jpg",
+            "url": "https://codehype.co.in/about",
 
-      "description": "Priyanshu Kumar is a technology creator, developer and IIT Madras student behind Code Hype Tech.",
+            "name": "About Priyanshu Kumar | CodeHype Tech",
 
-      "jobTitle": [
-        "Technology Creator",
-        "Developer"
-      ],
+            "description": "About Priyanshu Kumar, tech creator and Data Science & Applications student at IIT Madras, creator of CodeHype Tech.",
 
-      "email": "mailto:contact@codehype.co.in",
+            "isPartOf": {
+                "@id": "https://codehype.co.in/#website"
+            },
 
-      "worksFor": {
-        "@id": "https://codehype.co.in/#codehype"
-      },
-
-      "affiliation": {
-        "@type": "CollegeOrUniversity",
-        "name": "Indian Institute of Technology Madras",
-        "alternateName": "IIT Madras"
-      },
-
-      "sameAs": [
-        "https://www.youtube.com/@CodeHypeTech",
-        "https://ig.codehype.co.in/",
-        "https://fb.codehype.co.in/",
-        "https://www.linkedin.com/in/pk24india",
-        "https://x.com/pk24iitm"
-      ]
-    },
+            "mainEntity": {
+                "@id": "https://codehype.co.in/about#priyanshu-kumar"
+            }
+        },
 
 
-    {
-      "@type": "Organization",
-      "@id": "https://codehype.co.in/#codehype",
+        {
+            "@type": "Person",
 
-      "name": "Code Hype Tech",
+            "@id": "https://codehype.co.in/about#priyanshu-kumar",
 
-      "url": "https://codehype.co.in/",
+            "name": "Priyanshu Kumar",
 
-      "description": "Code Hype Tech is a technology-focused platform created by Priyanshu Kumar covering smartphones, gadgets, programming, artificial intelligence, data science and consumer technology.",
+            "url": "https://codehype.co.in/about",
 
-      "founder": {
-        "@id": "https://codehype.co.in/about#priyanshu-kumar"
-      },
+            "image": "https://codehype.co.in/static/images/priyanshu.jpg",
 
-      "email": "mailto:contact@codehype.co.in",
+            "description": "Priyanshu Kumar is a tech creator and Data Science & Applications student at IIT Madras. He is the creator of CodeHype Tech.",
 
-      "sameAs": [
-        "https://www.youtube.com/@CodeHypeTech",
-        "https://ig.codehype.co.in/",
-        "https://fb.codehype.co.in/",
-        "https://www.linkedin.com/in/pk24india",
-        "https://x.com/pk24iitm"
-      ]
-    },
+            "jobTitle": [
+                "Tech Creator",
+                "Data Science Student"
+            ],
 
+            "email": "mailto:contact@codehype.co.in",
 
-    {
-      "@type": "WebPage",
-      "@id": "https://codehype.co.in/about#webpage",
+            "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "Indian Institute of Technology Madras",
+                "alternateName": "IIT Madras"
+            },
 
-      "url": "https://codehype.co.in/about",
+            "worksFor": {
+                "@id": "https://codehype.co.in/#codehype-tech"
+            },
 
-      "name": "About Priyanshu Kumar | Code Hype Tech",
-
-      "description": "About Priyanshu Kumar, the creator behind Code Hype Tech.",
-
-      "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://codehype.co.in/#website"
-      },
-
-      "about": {
-        "@id": "https://codehype.co.in/about#priyanshu-kumar"
-      },
-
-      "mainEntity": {
-        "@id": "https://codehype.co.in/about#priyanshu-kumar"
-      }
-    },
+            "sameAs": [
+                "https://www.youtube.com/@CodeHypeTech",
+                "https://ig.codehype.co.in/",
+                "https://fb.codehype.co.in/",
+                "https://www.linkedin.com/in/pk24india",
+                "https://x.com/pk24iitm"
+            ]
+        },
 
 
-    {
-      "@type": "WebSite",
-      "@id": "https://codehype.co.in/#website",
+        {
+            "@type": "Organization",
 
-      "url": "https://codehype.co.in/",
+            "@id": "https://codehype.co.in/#codehype-tech",
 
-      "name": "Code Hype Tech",
+            "name": "CodeHype Tech",
 
-      "description": "Technology platform created by Priyanshu Kumar.",
+            "alternateName": "CodeHype",
 
-      "publisher": {
-        "@id": "https://codehype.co.in/#codehype"
-      }
-    }
+            "url": "https://codehype.co.in/",
 
-  ]
+            "description": "CodeHype Tech is a technology platform created by Priyanshu Kumar, focused on honest tech reviews, unboxings, smartphones, laptops, tablets, gadgets and practical technology insights.",
+
+            "founder": {
+                "@id": "https://codehype.co.in/about#priyanshu-kumar"
+            },
+
+            "email": "mailto:contact@codehype.co.in",
+
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://codehype.co.in/static/images/codehype-logo.png"
+            },
+
+            "sameAs": [
+                "https://www.youtube.com/@CodeHypeTech",
+                "https://ig.codehype.co.in/",
+                "https://fb.codehype.co.in/",
+                "https://www.linkedin.com/in/pk24india",
+                "https://x.com/pk24iitm"
+            ]
+        },
+
+
+        {
+            "@type": "WebSite",
+
+            "@id": "https://codehype.co.in/#website",
+
+            "url": "https://codehype.co.in/",
+
+            "name": "CodeHype Tech",
+
+            "description": "CodeHype Tech — honest technology reviews, unboxings and practical technology insights by Priyanshu Kumar.",
+
+            "publisher": {
+                "@id": "https://codehype.co.in/#codehype-tech"
+            },
+
+            "inLanguage": "en-IN"
+        }
+
+    ]
 }
 </script>
 
-<!-- ================================
+{% endblock %}
+
+
+{% block title %}
+About Priyanshu Kumar | CodeHype Tech
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- =========================================================
      ABOUT HERO
-================================ -->
+========================================================= -->
 
 <section class="page-hero">
 
     <div class="container">
 
         <div class="row align-items-center g-5">
+
 
             <!-- TEXT -->
 
@@ -274,19 +268,30 @@ About Priyanshu Kumar | Code Hype Tech
                     ABOUT ME
                 </div>
 
+
                 <h1>
                     Priyanshu Kumar
                 </h1>
+
 
                 <h2>
                     Building, learning<br>
                     and sharing technology.
                 </h2>
 
+
                 <p>
-                    I'm Priyanshu Kumar, a technology creator,
-                    developer and IIT Madras student behind
+                    I'm <strong>Priyanshu Kumar</strong>, a
+                    <strong>tech creator</strong> and
+                    <strong>Data Science &amp; Applications student
+                    at IIT Madras</strong>, and the creator behind
                     <strong>CodeHype Tech</strong>.
+                </p>
+
+
+                <p>
+                    <strong>CodeHype Tech, formerly known as
+                    CodeHype.</strong>
                 </p>
 
             </div>
@@ -312,9 +317,10 @@ About Priyanshu Kumar | Code Hype Tech
 </section>
 
 
-<!-- ================================
+
+<!-- =========================================================
      ABOUT
-================================ -->
+========================================================= -->
 
 <section class="about-section">
 
@@ -322,44 +328,59 @@ About Priyanshu Kumar | Code Hype Tech
 
         <div class="row g-5">
 
+
+            <!-- MAIN CONTENT -->
+
             <div class="col-lg-7">
 
                 <h2>
                     A little about me
                 </h2>
 
+
                 <p>
-                    I'm <strong>Priyanshu Kumar</strong>, a technology
-                    creator, developer and IIT Madras student with a
-                    passion for technology, programming and
-                    artificial intelligence.
+                    I'm <strong>Priyanshu Kumar</strong>, a tech creator
+                    and Data Science &amp; Applications student at
+                    <strong>IIT Madras</strong>.
                 </p>
+
 
                 <p>
                     Through <strong>CodeHype Tech</strong>, I create
                     technology-focused content covering smartphones,
-                    gadgets, technology reviews and the latest
-                    developments in consumer technology.
+                    iPhones, iPads, MacBooks, laptops, tablets, gadgets,
+                    accessories and other consumer technology.
                 </p>
 
-                <p>
-                    I'm also building <strong>CodeHype Tech Labs</strong>
-                    as a space for programming and development
-                    tutorials covering Python, Flask, HTML, CSS,
-                    SQL, DBMS, Data Science, Machine Learning and
-                    Artificial Intelligence.
-                </p>
 
                 <p>
-                    My interests include
-                    <strong>Python, Flask, Web Development,
-                    Data Science, Machine Learning and
-                    Artificial Intelligence.</strong>
+                    My content focuses on
+                    <strong>honest, long-term reviews, unboxings,
+                    comparisons and real-world experiences</strong>
+                    with the technology I personally use.
+                </p>
+
+
+                <p>
+                    My goal is simple:
+                    <strong>
+                        help people make better technology decisions
+                        through practical and honest information.
+                    </strong>
+                </p>
+
+
+                <p>
+                    I'm also interested in
+                    <strong>Python, Web Development, Data Science,
+                    Machine Learning and Artificial Intelligence</strong>,
+                    and I explore these areas through my learning and
+                    development work.
                 </p>
 
 
                 <!-- =================================================
-                     OFFICIAL ONLINE PROFILES
+                     OFFICIAL PROFILES
                 ================================================== -->
 
                 <div class="about-contact mt-4">
@@ -371,23 +392,15 @@ About Priyanshu Kumar | Code Hype Tech
                     <br>
 
 
-                    <!-- EMAIL -->
+                    <!-- BUSINESS EMAIL -->
 
                     <a
                         href="mailto:contact@codehype.co.in"
                         class="about-email d-block"
-                        aria-label="Email Priyanshu Kumar"
+                        aria-label="Contact CodeHype Tech"
                     >
                         <i class="bi bi-envelope me-2"></i>
                         contact@codehype.co.in
-                    </a>
-                    <a
-                        href="mailto:contact@codehype.co.in"
-                        class="about-email d-block"
-                        aria-label="Email Priyanshu Kumar"
-                    >
-                        <i class="bi bi-envelope me-2"></i>
-                        priyanshu@codehype.co.in
                     </a>
 
 
@@ -398,10 +411,10 @@ About Priyanshu Kumar | Code Hype Tech
                         target="_blank"
                         rel="me noopener noreferrer"
                         class="about-email d-block"
-                        aria-label="Priyanshu Kumar on YouTube"
+                        aria-label="CodeHype Tech on YouTube"
                     >
                         <i class="bi bi-youtube me-2"></i>
-                        YouTube CodeHype Tech — @CodeHypeTech
+                        YouTube — CodeHype Tech
                     </a>
 
 
@@ -426,7 +439,7 @@ About Priyanshu Kumar | Code Hype Tech
                         target="_blank"
                         rel="me noopener noreferrer"
                         class="about-email d-block"
-                        aria-label="CodeHype on Facebook"
+                        aria-label="CodeHype Tech on Facebook"
                     >
                         <i class="bi bi-facebook me-2"></i>
                         Facebook — fb.codehype.co.in
@@ -443,11 +456,11 @@ About Priyanshu Kumar | Code Hype Tech
                         aria-label="Priyanshu Kumar on LinkedIn"
                     >
                         <i class="bi bi-linkedin me-2"></i>
-                        LinkedIn — www.linkedin.com/in/pk24india
+                        LinkedIn — Priyanshu Kumar
                     </a>
 
 
-                    <!-- X / TWITTER -->
+                    <!-- X -->
 
                     <a
                         href="https://x.com/pk24iitm"
@@ -465,13 +478,14 @@ About Priyanshu Kumar | Code Hype Tech
             </div>
 
 
-            <!-- ================================
+            <!-- =================================================
                  QUICK INFO CARD
-            ================================= -->
+            ================================================= -->
 
             <div class="col-lg-5">
 
                 <div class="about-card">
+
 
                     <div class="about-item">
 
@@ -502,26 +516,51 @@ About Priyanshu Kumar | Code Hype Tech
                     <div class="about-item">
 
                         <span>
-                            YouTube 
+                            Role
                         </span>
 
                         <strong>
-                            @CodeHypeTech
+                            Tech Creator
                         </strong>
-                        <strong>(1K+ Subscribers)</strong>
+
                     </div>
 
 
                     <div class="about-item">
 
                         <span>
-                            LinkedIn
+                            YouTube
                         </span>
 
                         <strong>
-                            pk24india
+                            @CodeHypeTech
                         </strong>
-                        <strong>(2.1K+ Followers)</strong>
+
+                    </div>
+
+
+                    <div class="about-item">
+
+                        <span>
+                            Brand
+                        </span>
+
+                        <strong>
+                            CodeHype Tech
+                        </strong>
+
+                    </div>
+
+
+                    <div class="about-item">
+
+                        <span>
+                            Formerly
+                        </span>
+
+                        <strong>
+                            CodeHype
+                        </strong>
 
                     </div>
 
@@ -533,20 +572,7 @@ About Priyanshu Kumar | Code Hype Tech
                         </span>
 
                         <strong>
-                            Python • AI • ML • Data Science • Web Development
-                        </strong>
-
-                    </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Creator
-                        </span>
-
-                        <strong>
-                            CodeHype Tech
+                            Tech Reviews • AI • Data Science • Web Development
                         </strong>
 
                     </div>
@@ -562,9 +588,10 @@ About Priyanshu Kumar | Code Hype Tech
 </section>
 
 
-<!-- ================================
+
+<!-- =========================================================
      AREAS OF INTEREST
-================================ -->
+========================================================= -->
 
 <section class="skills-section">
 
@@ -574,6 +601,7 @@ About Priyanshu Kumar | Code Hype Tech
             AREAS I EXPLORE
         </div>
 
+
         <h2>
             Technology I'm interested in
         </h2>
@@ -582,21 +610,21 @@ About Priyanshu Kumar | Code Hype Tech
         <div class="row g-4 mt-3">
 
 
-            <!-- PYTHON -->
+            <!-- TECH REVIEWS -->
 
             <div class="col-md-4">
 
                 <div class="skill-card">
 
-                    <i class="bi bi-filetype-py"></i>
+                    <i class="bi bi-phone"></i>
 
                     <h3>
-                        Python
+                        Tech Reviews
                     </h3>
 
                     <p>
-                        Programming, automation,
-                        APIs and application development.
+                        Smartphones, iPhones, iPads, MacBooks,
+                        laptops, tablets, gadgets and accessories.
                     </p>
 
                 </div>
@@ -604,21 +632,21 @@ About Priyanshu Kumar | Code Hype Tech
             </div>
 
 
-            <!-- WEB DEVELOPMENT -->
+            <!-- DATA SCIENCE -->
 
             <div class="col-md-4">
 
                 <div class="skill-card">
 
-                    <i class="bi bi-globe2"></i>
+                    <i class="bi bi-bar-chart"></i>
 
                     <h3>
-                        Web Development
+                        Data Science
                     </h3>
 
                     <p>
-                        HTML, CSS, Bootstrap,
-                        Flask and web applications.
+                        Data analysis, Python, machine learning
+                        and practical data-driven projects.
                     </p>
 
                 </div>
@@ -626,7 +654,7 @@ About Priyanshu Kumar | Code Hype Tech
             </div>
 
 
-            <!-- AI & ML -->
+            <!-- AI & WEB -->
 
             <div class="col-md-4">
 
@@ -635,12 +663,12 @@ About Priyanshu Kumar | Code Hype Tech
                     <i class="bi bi-robot"></i>
 
                     <h3>
-                        AI & ML
+                        AI &amp; Development
                     </h3>
 
                     <p>
-                        Machine learning,
-                        artificial intelligence and data.
+                        Artificial intelligence, web development,
+                        Flask, APIs and software projects.
                     </p>
 
                 </div>
@@ -648,6 +676,44 @@ About Priyanshu Kumar | Code Hype Tech
             </div>
 
         </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     COLLABORATION
+========================================================= -->
+
+<section class="home-cta">
+
+    <div class="container text-center">
+
+        <div class="hero-label">
+            FOR BRANDS &amp; COLLABORATIONS
+        </div>
+
+
+        <h2>
+            Let's work together.
+        </h2>
+
+
+        <p>
+            Interested in product reviews, technology collaborations,
+            campaigns or other business opportunities?
+        </p>
+
+
+        <a
+            href="mailto:contact@codehype.co.in"
+            class="btn btn-primary btn-lg mt-3"
+        >
+            <i class="bi bi-envelope me-2"></i>
+            contact@codehype.co.in
+        </a>
 
     </div>
 
