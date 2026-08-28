@@ -118,55 +118,65 @@ CodeHype Tech | Priyanshu Kumar
 
     <div class="container">
 
-        <div class="row align-items-center min-vh-100">
+        <div class="row align-items-center min-vh-100 py-5">
 
-            <div class="col-lg-8">
+            <div class="col-lg-9">
+
+                <!-- LIVE DEPLOYMENT BADGE -->
+                <div class="hero-badge-wrapper mb-4">
+                    <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="live-pill-badge">
+                        <span class="live-ping-dot"></span>
+                        <span class="badge-text"><strong>LIVE DEPLOYMENT:</strong> CareFlow HMS is now live at <u>hms.codehypetech.in</u></span>
+                        <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
 
                 <div class="hero-label">
-                    TECH CREATOR • DEVELOPER • IIT MADRAS
+                    TECH CREATOR • FULL-STACK ENGINEER • IIT MADRAS
                 </div>
 
 
-                <h1>
+                <h1 class="hero-title">
                     Welcome to
-                    <span>CodeHype Tech.</span>
+                    <span class="text-gradient">CodeHype Tech.</span>
                 </h1>
 
 
                 <p class="hero-description">
-                    I'm <strong>Priyanshu Kumar</strong>, a tech creator
-                    and Data Science &amp; Applications student at
-                    <strong>IIT Madras</strong>.
-                    I create honest, long-term tech reviews, unboxings
-                    and practical technology content through
-                    <strong>CodeHype Tech</strong>.
+                    I'm <strong>Priyanshu Kumar</strong>, a tech creator, software builder, and Data Science &amp; Applications student at <strong>IIT Madras</strong>. I engineer scalable web platforms, explore consumer tech, and share real-world engineering through <strong>CodeHype Tech</strong> and <strong>CodeHype Tech Labs</strong>.
                 </p>
 
-                <p class="hero-description">
-                    <strong>CodeHype Tech, formerly known as CodeHype.</strong>
-                    I share my real-world experience with smartphones,
-                    laptops, tablets, iPad, MacBook, iPhone and other
-                    technology that I personally use.
+                <p class="hero-description text-muted-sub">
+                    From architecting multi-tenant SaaS platforms like <strong>CareFlow HMS</strong> to in-depth analysis of Apple Silicon, mobile platforms, and distributed systems.
                 </p>
 
 
                 <div class="hero-buttons">
 
                     <a
-                        href="{{ url_for('codehype') }}"
+                        href="https://hms.codehypetech.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="btn btn-primary btn-lg"
                     >
-                        <i class="bi bi-youtube me-2"></i>
-                        CodeHype Tech
+                        <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                        Launch CareFlow HMS
                     </a>
 
-
                     <a
-                        href="{{ url_for('labs') }}"
+                        href="{{ url_for('projects') }}"
                         class="btn btn-outline-light btn-lg"
                     >
-                        <i class="bi bi-code-slash me-2"></i>
-                        CodeHype Tech Labs
+                        <i class="bi bi-grid-fill me-2"></i>
+                        Explore Projects
+                    </a>
+
+                    <a
+                        href="{{ url_for('codehype') }}"
+                        class="btn btn-outline-secondary-dark btn-lg"
+                    >
+                        <i class="bi bi-youtube me-2"></i>
+                        YouTube
                     </a>
 
                 </div>
@@ -176,40 +186,462 @@ CodeHype Tech | Priyanshu Kumar
 
                 <div class="hero-stats">
 
-                    <div class="hero-stat">
-
+                    <div class="hero-stat-card">
                         <strong>1.1K+</strong>
-
-                        <span>
-                            YouTube subscribers
-                        </span>
-
+                        <span>YouTube Subscribers</span>
                     </div>
 
-
-                    <div class="hero-stat">
-
+                    <div class="hero-stat-card">
                         <strong>2.2K+</strong>
-
-                        <span>
-                            LinkedIn followers
-                        </span>
-
+                        <span>LinkedIn Community</span>
                     </div>
 
-
-                    <div class="hero-stat">
-
+                    <div class="hero-stat-card">
                         <strong>IIT Madras</strong>
+                        <span>BS Data Science</span>
+                    </div>
 
-                        <span>
-                            Student
-                        </span>
-
+                    <div class="hero-stat-card">
+                        <strong class="text-emerald">Live SaaS</strong>
+                        <span>CareFlow HMS Platform</span>
                     </div>
 
                 </div>
 
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FEATURED PROJECT SHOWCASE (CAREFLOW HMS TABS)
+========================================================= -->
+
+<section class="featured-project-section" id="featured-careflow">
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+            <div>
+                <div class="badge-tag-featured mb-2">
+                    <span class="badge-pulse"></span> FEATURED FLAGSHIP SAAS
+                </div>
+                <h2 class="section-title">
+                    CareFlow HMS <span class="text-muted-gradient">— Enterprise Healthcare SaaS</span>
+                </h2>
+                <p class="section-subtitle">
+                    A doctor-first, multi-tenant Hospital &amp; Clinic Management SaaS platform engineered with Flask 3, SQLAlchemy ORM, PostgreSQL, Resend REST API, and ZoneInfo IST.
+                </p>
+            </div>
+
+            <div class="mt-3 mt-md-0 d-flex gap-2">
+                <a
+                    href="https://hms.codehypetech.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-emerald"
+                >
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Visit Live App (hms.codehypetech.in)
+                </a>
+                <a
+                    href="{{ url_for('hospital_management_system') }}"
+                    class="btn btn-outline-light"
+                >
+                    Technical Deep-Dive →
+                </a>
+            </div>
+        </div>
+
+        <!-- CAREFLOW SHOWCASE CONTAINER -->
+        <div class="showcase-card">
+
+            <!-- TAB NAV -->
+            <ul class="nav nav-pills showcase-nav mb-4" id="careflowTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tab-overview-btn" data-bs-toggle="pill" data-bs-target="#tab-overview" type="button" role="tab" aria-controls="tab-overview" aria-selected="true">
+                        <i class="bi bi-building me-2"></i>1. Architecture &amp; Multi-Tenant
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab-roles-btn" data-bs-toggle="pill" data-bs-target="#tab-roles" type="button" role="tab" aria-controls="tab-roles" aria-selected="false">
+                        <i class="bi bi-people-fill me-2"></i>2. 4 Role Workspaces
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab-engines-btn" data-bs-toggle="pill" data-bs-target="#tab-engines" type="button" role="tab" aria-controls="tab-engines" aria-selected="false">
+                        <i class="bi bi-cpu-fill me-2"></i>3. 10 Clinical Engines
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab-pricing-btn" data-bs-toggle="pill" data-bs-target="#tab-pricing" type="button" role="tab" aria-controls="tab-pricing" aria-selected="false">
+                        <i class="bi bi-cash-stack me-2"></i>4. Plans &amp; Testing (63 Tests)
+                    </button>
+                </li>
+            </ul>
+
+            <!-- TAB CONTENTS -->
+            <div class="tab-content" id="careflowTabsContent">
+
+                <!-- TAB 1: ARCHITECTURE & MULTI-TENANT -->
+                <div class="tab-pane fade show active" id="tab-overview" role="tabpanel" aria-labelledby="tab-overview-btn">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-7">
+                            <div class="showcase-content">
+                                <span class="badge-pill mb-2">Multi-Tenant Isolation</span>
+                                <h3 class="showcase-title">Doctor-First Isolated Practice Environments</h3>
+                                <p>
+                                    CareFlow HMS delivers an end-to-end digital practice ecosystem for independent healthcare practitioners and clinics. Every doctor receives a dedicated, high-speed public clinic webpage (<code>/dr/doctor-slug</code>) with customized branding, treatment catalogs, and real-time appointment booking.
+                                </p>
+
+                                <div class="row g-3 mt-2">
+                                    <div class="col-sm-6">
+                                        <div class="mini-feature-box">
+                                            <i class="bi bi-shield-check text-cyan"></i>
+                                            <div>
+                                                <strong>Isolated Multi-Tenancy</strong>
+                                                <p>Independent queues, staff rosters, patient EHRs, and letterhead configurations.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mini-feature-box">
+                                            <i class="bi bi-globe2 text-emerald"></i>
+                                            <div>
+                                                <strong>Dedicated Public Microsite</strong>
+                                                <p>Instant <code>/dr/slug</code> portals with booking filters and live seat availability.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mini-feature-box">
+                                            <i class="bi bi-clock-history text-purple"></i>
+                                            <div>
+                                                <strong>ZoneInfo IST Standard</strong>
+                                                <p>Asia/Kolkata timezone standard with naive UTC PostgreSQL storage.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mini-feature-box">
+                                            <i class="bi bi-envelope-check text-amber"></i>
+                                            <div>
+                                                <strong>Resend REST API Transport</strong>
+                                                <p>Non-blocking HTTPS transactional email for receipts, invites, and notifications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="architecture-visual-card">
+                                <div class="visual-header">
+                                    <div class="terminal-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <span class="visual-title">careflow_architecture.diag</span>
+                                </div>
+                                <div class="visual-body">
+<pre class="ascii-art"><code>┌──────────────────────────────────────┐
+│          CareFlow HMS Core           │
+│ (Flask 3 · SQLAlchemy · PostgreSQL)  │
+└──────────────────┬───────────────────┘
+                   │
+  ┌────────────────┼────────────────┐
+  ▼                ▼                ▼
+┌────────────┐  ┌────────────┐  ┌────────────┐
+│ SuperAdmin │  │   Doctor   │  │  Patient   │
+│ Governance │  │ Workspaces │  │  Portals   │
+└────────────┘  └────────────┘  └────────────┘
+  • Vetting       • Rx Writer     • /dr/slug
+  • 10-Dig ID     • Live Queue    • Live Token
+  • Plans         • Staff/Payroll • PDF EHR</code></pre>
+                                </div>
+                                <div class="visual-footer">
+                                    <span class="text-muted fs-xs">Production Host:</span>
+                                    <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="link-cyan fs-xs">https://hms.codehypetech.in ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: ROLE WORKSPACES -->
+                <div class="tab-pane fade" id="tab-roles" role="tabpanel" aria-labelledby="tab-roles-btn">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="role-preview-card">
+                                <div class="role-icon-box role-admin">
+                                    <i class="bi bi-shield-lock-fill"></i>
+                                </div>
+                                <span class="role-badge">Super Administrator</span>
+                                <h4>Platform Super Admin</h4>
+                                <ul class="role-list">
+                                    <li><i class="bi bi-check2"></i> Doctor Medical Council verification pipeline</li>
+                                    <li><i class="bi bi-check2"></i> Subscription duration &amp; validity controls</li>
+                                    <li><i class="bi bi-check2"></i> 10-Digit Recovery ID governance</li>
+                                    <li><i class="bi bi-check2"></i> Granular feature packaging &amp; inquiries</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="role-preview-card">
+                                <div class="role-icon-box role-doctor">
+                                    <i class="bi bi-heart-pulse-fill"></i>
+                                </div>
+                                <span class="role-badge">Doctor Workspace</span>
+                                <h4>Independent Doctor</h4>
+                                <ul class="role-list">
+                                    <li><i class="bi bi-check2"></i> Sequential live queue token controller</li>
+                                    <li><i class="bi bi-check2"></i> Digital Rx writer with smart prefill</li>
+                                    <li><i class="bi bi-check2"></i> Multi-session procedure course tracking</li>
+                                    <li><i class="bi bi-check2"></i> Staff attendance, payroll &amp; 24h clinic chat</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="role-preview-card">
+                                <div class="role-icon-box role-staff">
+                                    <i class="bi bi-person-badge-fill"></i>
+                                </div>
+                                <span class="role-badge">Clinic Staff</span>
+                                <h4>Receptionists &amp; Nurses</h4>
+                                <ul class="role-list">
+                                    <li><i class="bi bi-check2"></i> Role-based login with permission gates</li>
+                                    <li><i class="bi bi-check2"></i> Assisted walk-in patient registration</li>
+                                    <li><i class="bi bi-check2"></i> Patient arrival check-in &amp; vitals capture</li>
+                                    <li><i class="bi bi-check2"></i> Real-time doctor directives &amp; room prep</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="role-preview-card">
+                                <div class="role-icon-box role-patient">
+                                    <i class="bi bi-person-check-fill"></i>
+                                </div>
+                                <span class="role-badge">Public &amp; Patient</span>
+                                <h4>Patient Portal &amp; Site</h4>
+                                <ul class="role-list">
+                                    <li><i class="bi bi-check2"></i> Doctor public webpage (<code>/dr/slug</code>)</li>
+                                    <li><i class="bi bi-check2"></i> Live slot capacity &amp; current-day filters</li>
+                                    <li><i class="bi bi-check2"></i> Real-time queue tracker &amp; wait estimation</li>
+                                    <li><i class="bi bi-check2"></i> Lifelong EHR history &amp; Rx PDF print</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: 10 CLINICAL ENGINES -->
+                <div class="tab-pane fade" id="tab-engines" role="tabpanel" aria-labelledby="tab-engines-btn">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="engine-preview-item">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="engine-num">01</span>
+                                    <h5 class="mb-0 ms-2">Slot Concurrency Row-Lock</h5>
+                                </div>
+                                <p>Prevents overbooking race conditions via <code>booking_day_locks</code> table with <code>SELECT FOR UPDATE</code>.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="engine-preview-item">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="engine-num">02</span>
+                                    <h5 class="mb-0 ms-2">Sequential Live Queue</h5>
+                                </div>
+                                <p>Calculates dynamic token wait: <code>Wait = (Tokens Ahead) × (Avg Slot Duration)</code>.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="engine-preview-item">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="engine-num">03</span>
+                                    <h5 class="mb-0 ms-2">Digital Rx &amp; Letterhead</h5>
+                                </div>
+                                <p>Dosage grid, smart prefill from patient history, cm margin print alignment, and QR token verification.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="engine-preview-item">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="engine-num">04</span>
+                                    <h5 class="mb-0 ms-2">Multi-Session Procedures</h5>
+                                </div>
+                                <p>Session progress logs (e.g. Session 3 of 6), repeat-patient fee waiver calculator (free follow-up within 30 days).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="engine-preview-item">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="engine-num">05</span>
+                                    <h5 class="mb-0 ms-2">Staff Attendance &amp; Payroll</h5>
+                                </div>
+                                <p>Automated salary calculator: Base monthly pay, per-day deductions for leaves/half-days, bonuses, and payment logs.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="engine-preview-item">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="engine-num">06</span>
+                                    <h5 class="mb-0 ms-2">24h Auto-Expiry Chat</h5>
+                                </div>
+                                <p>Direct clinic channel with patient token tagging, urgent directives, role broadcasts, and 24h auto-wipe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- INTERACTIVE LIVE QUEUE & WAIT SIMULATOR -->
+                    <div class="interactive-simulator-container mt-4" id="interactive-queue-simulator">
+                        <div class="sim-header d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="status-dot status-dot-live"></span>
+                                <strong class="text-white">Live Queue &amp; Dynamic Wait Simulator</strong>
+                            </div>
+                            <span class="badge-pill">Interactive Demo</span>
+                        </div>
+                        <div class="sim-body p-3">
+                            <div class="row g-3 text-center">
+                                <div class="col-6 col-sm-3">
+                                    <div class="sim-metric-box">
+                                        <span class="sim-lbl">TOKEN IN CONSULT</span>
+                                        <strong class="sim-val text-cyan" id="sim-current-token">#04</strong>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="sim-metric-box">
+                                        <span class="sim-lbl">PATIENTS AHEAD</span>
+                                        <strong class="sim-val text-amber" id="sim-ahead-count">5</strong>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="sim-metric-box">
+                                        <span class="sim-lbl">ESTIMATED WAIT</span>
+                                        <strong class="sim-val text-emerald" id="sim-est-wait">75 mins</strong>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="sim-metric-box">
+                                        <span class="sim-lbl">TOTAL IN QUEUE</span>
+                                        <strong class="sim-val text-white" id="sim-total-queue">9</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-status-banner mt-3" id="sim-status-msg">
+                                <span class="text-emerald fw-bold">✓ Token #04</span> currently in consultation with Doctor. Dynamic wait calculation: <code>(5 Ahead) × 15m = 75 mins</code>.
+                            </div>
+                            <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                                <button class="btn btn-sm btn-emerald" id="sim-next-btn" type="button">
+                                    <i class="bi bi-person-check-fill me-1"></i> Call Next Patient (Queue Progression)
+                                </button>
+                                <button class="btn btn-sm btn-outline-light" id="sim-add-walkin-btn" type="button">
+                                    <i class="bi bi-person-plus-fill me-1"></i> Register Walk-In (Issue Token)
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary-dark" id="sim-reset-btn" type="button">
+                                    <i class="bi bi-arrow-counterclockwise me-1"></i> Reset Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <a href="{{ url_for('hospital_management_system') }}#engines" class="text-link">
+                            Explore all 10 Functional Engines in detail →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TAB 4: PLANS & TESTING -->
+                <div class="tab-pane fade" id="tab-pricing" role="tabpanel" aria-labelledby="tab-pricing-btn">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="pricing-summary-card">
+                                <span class="badge-pill mb-2">Subscription Architecture</span>
+                                <h4 class="mb-3">Tiered SaaS Feature Packaging</h4>
+                                <div class="plan-mini-row">
+                                    <div>
+                                        <strong>Standard Plan</strong>
+                                        <span class="text-muted d-block fs-xs">Solo Practice Clinic</span>
+                                    </div>
+                                    <div class="plan-mini-price">₹1,199 / mo</div>
+                                </div>
+                                <div class="plan-mini-row active-plan">
+                                    <div>
+                                        <strong>Professional Plan</strong> <span class="badge-gift ms-1">🎁 1 Mo Free</span>
+                                        <span class="text-muted d-block fs-xs">Staff Accounts, Payroll, Pharmacy &amp; Chat</span>
+                                    </div>
+                                    <div class="plan-mini-price">₹1,999 / mo</div>
+                                </div>
+                                <div class="plan-mini-row">
+                                    <div>
+                                        <strong>Enterprise Plan</strong>
+                                        <span class="text-muted d-block fs-xs">WhatsApp Alerts, Razorpay, Custom Exports</span>
+                                    </div>
+                                    <div class="plan-mini-price">₹2,600 / mo</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="testing-terminal-card">
+                                <div class="terminal-header d-flex align-items-center justify-content-between">
+                                    <div class="terminal-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <span class="terminal-title">pytest — PostgreSQL Test Suite</span>
+                                    <button class="btn btn-sm btn-outline-light py-1 px-2 fs-xs" id="btn-run-pytest-sim" type="button">
+                                        <i class="bi bi-play-fill me-1"></i> Run Pytest Suite
+                                    </button>
+                                </div>
+                                <div class="progress" style="height: 3px; background: rgba(255,255,255,0.05); border-radius: 0;">
+                                    <div class="progress-bar bg-info" id="pytest-progress-bar" role="progressbar" style="width: 100%;"></div>
+                                </div>
+                                <div class="terminal-content">
+                                    <pre class="terminal-code mb-0" id="pytest-sim-output"><code><span class="term-prompt">$</span> pytest --verbose
+<span class="term-dim">platform darwin -- Python 3.13.15, pytest-8.4.2</span>
+<span class="term-dim">collected 63 items</span>
+
+tests/test_hms.py .............................................                      <span class="text-cyan">[ 71%]</span>
+tests/test_postgresql_migration.py ...........                                       <span class="text-cyan">[ 88%]</span>
+tests/test_timezone.py .......                                                       <span class="text-cyan">[100%]</span>
+
+<span class="term-green fw-bold">================================== 63 passed in 27.76s ======================================</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SHOWCASE FOOTER BAR -->
+            <div class="showcase-bottom-bar mt-4 pt-4 border-top border-secondary-subtle d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex align-items-center mb-3 mb-md-0">
+                    <span class="tech-chip">Flask 3</span>
+                    <span class="tech-chip">PostgreSQL</span>
+                    <span class="tech-chip">SQLAlchemy</span>
+                    <span class="tech-chip">Resend REST</span>
+                    <span class="tech-chip">Asia/Kolkata IST</span>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="btn btn-emerald btn-sm">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> Visit hms.codehypetech.in
+                    </a>
+                    <a href="{{ url_for('hospital_management_system') }}" class="btn btn-outline-light btn-sm">
+                        Read Deep-Dive Documentation →
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -228,7 +660,7 @@ CodeHype Tech | Priyanshu Kumar
 
     <div class="container">
 
-        <div class="row g-5">
+        <div class="row g-5 align-items-center">
 
             <div class="col-lg-5">
 
@@ -238,8 +670,22 @@ CodeHype Tech | Priyanshu Kumar
 
                 <h2>
                     Technology is
-                    <span>my playground.</span>
+                    <span class="text-gradient">my playground.</span>
                 </h2>
+
+                <div class="mt-4">
+                    <div class="d-flex align-items-center gap-3">
+                        <img
+                            src="{{ url_for('static', filename='images/priyanshu.jpg') }}"
+                            alt="Priyanshu Kumar"
+                            class="author-avatar-sm"
+                        >
+                        <div>
+                            <h5 class="mb-0 text-white">Priyanshu Kumar</h5>
+                            <span class="text-muted fs-sm">IIT Madras &bull; Creator of CodeHype Tech</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -247,32 +693,24 @@ CodeHype Tech | Priyanshu Kumar
             <div class="col-lg-7">
 
                 <p>
-                    Through <strong>CodeHype Tech</strong>, I create
-                    technology content focused on smartphones, gadgets,
-                    laptops, tablets, software and the latest developments
-                    in the tech world.
+                    Through <strong>CodeHype Tech</strong>, I create technology content focused on smartphones, gadgets, laptops, tablets, software, and real-world consumer hardware evaluation.
                 </p>
 
 
                 <p>
-                    I focus on honest, long-term reviews and real-world
-                    experiences rather than simply covering specifications.
-                    My goal is to help people make better technology
-                    buying decisions.
+                    I focus on honest, long-term reviews and practical experiences rather than simply covering specification sheets. My goal is to help tech enthusiasts and everyday consumers make better, well-informed buying decisions.
                 </p>
 
 
                 <p>
-                    Through <strong>CodeHype Tech Labs</strong>, I want to
-                    make technology easier to understand by teaching
-                    programming, web development, databases, Python,
-                    Data Science, Machine Learning and AI.
+                    Through <strong>CodeHype Tech Labs</strong> and engineering projects, I design and build production-grade web applications, exploring Python, Flask, relational databases, distributed systems, and modern AI/ML workflows.
                 </p>
 
-
-                <p>
-                    This website is where everything comes together.
-                </p>
+                <div class="mt-4">
+                    <a href="{{ url_for('about') }}" class="text-link">
+                        Read more about my background and journey →
+                    </a>
+                </div>
 
             </div>
 
@@ -293,7 +731,7 @@ CodeHype Tech | Priyanshu Kumar
     <div class="container">
 
         <div class="hero-label">
-            MY CHANNELS
+            MY CHANNELS &amp; PLATFORMS
         </div>
 
         <h2>
@@ -316,7 +754,7 @@ CodeHype Tech | Priyanshu Kumar
 
 
                     <div class="hero-label">
-                        TECH CONTENT
+                        TECH REVIEWS &amp; INSIGHTS
                     </div>
 
 
@@ -326,10 +764,7 @@ CodeHype Tech | Priyanshu Kumar
 
 
                     <p>
-                        Honest technology reviews, long-term experiences,
-                        smartphones, laptops, tablets, gadgets, launches
-                        and everything happening in the world of consumer
-                        technology.
+                        Honest technology reviews, long-term experiences, smartphones, laptops, tablets, gadgets, launches and everything happening in the world of consumer technology.
                     </p>
 
 
@@ -358,7 +793,7 @@ CodeHype Tech | Priyanshu Kumar
 
 
                     <div class="hero-label">
-                        TECHNOLOGY EDUCATION
+                        TECHNOLOGY EDUCATION &amp; LABS
                     </div>
 
 
@@ -368,9 +803,7 @@ CodeHype Tech | Priyanshu Kumar
 
 
                     <p>
-                        Practical tutorials covering Python,
-                        Flask, HTML, CSS, SQL, DBMS, Data Science,
-                        Machine Learning and AI.
+                        Practical tutorials covering Python, Flask, HTML, CSS, SQL, DBMS, Data Science, Machine Learning, and full-stack software development.
                     </p>
 
 
@@ -402,7 +835,7 @@ CodeHype Tech | Priyanshu Kumar
     <div class="container">
 
         <div class="hero-label">
-            AREAS I'M EXPLORING
+            CORE DOMAINS &amp; ENGINEERING
         </div>
 
 
@@ -414,7 +847,7 @@ CodeHype Tech | Priyanshu Kumar
         <div class="row g-4 mt-3">
 
 
-            <!-- PYTHON -->
+            <!-- PYTHON & BACKEND -->
 
             <div class="col-6 col-lg-3">
 
@@ -423,8 +856,10 @@ CodeHype Tech | Priyanshu Kumar
                     <i class="bi bi-filetype-py"></i>
 
                     <h3>
-                        Python
+                        Python &amp; Flask
                     </h3>
+
+                    <span class="fs-xs text-muted">Backend &amp; Microservices</span>
 
                 </div>
 
@@ -444,6 +879,8 @@ CodeHype Tech | Priyanshu Kumar
                         Data Science
                     </h3>
 
+                    <span class="fs-xs text-muted">IIT Madras Program</span>
+
                 </div>
 
             </div>
@@ -462,13 +899,15 @@ CodeHype Tech | Priyanshu Kumar
                         Machine Learning
                     </h3>
 
+                    <span class="fs-xs text-muted">Predictive Modeling &amp; Stats</span>
+
                 </div>
 
             </div>
 
 
 
-            <!-- AI -->
+            <!-- AI & CLOUD -->
 
             <div class="col-6 col-lg-3">
 
@@ -477,8 +916,10 @@ CodeHype Tech | Priyanshu Kumar
                     <i class="bi bi-robot"></i>
 
                     <h3>
-                        AI
+                        AI &amp; Distributed Systems
                     </h3>
+
+                    <span class="fs-xs text-muted">Modern LLMs &amp; Cloud Apps</span>
 
                 </div>
 
@@ -511,9 +952,7 @@ CodeHype Tech | Priyanshu Kumar
 
 
         <p>
-            Follow me on YouTube and LinkedIn,
-            or get in touch for collaborations and
-            business enquiries.
+            Follow me on YouTube and LinkedIn, or get in touch for collaborations, platform consultations, and business enquiries.
         </p>
 
 
@@ -526,7 +965,7 @@ CodeHype Tech | Priyanshu Kumar
                 href="https://www.youtube.com/@CodeHypeTech"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-primary btn-lg me-2"
+                class="btn btn-primary btn-lg me-2 mb-2"
             >
                 <i class="bi bi-youtube me-2"></i>
                 YouTube
@@ -540,10 +979,23 @@ CodeHype Tech | Priyanshu Kumar
                 href="https://www.linkedin.com/in/pk24india"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-outline-light btn-lg"
+                class="btn btn-outline-light btn-lg me-2 mb-2"
             >
                 <i class="bi bi-linkedin me-2"></i>
                 LinkedIn
+            </a>
+
+
+            <!-- CAREFLOW LIVE -->
+
+            <a
+                href="https://hms.codehypetech.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-emerald btn-lg mb-2"
+            >
+                <i class="bi bi-box-arrow-up-right me-2"></i>
+                CareFlow HMS Live
             </a>
 
         </div>
@@ -557,15 +1009,14 @@ CodeHype Tech | Priyanshu Kumar
                 <strong>
                     For collaborations &amp; brand enquiries:
                     <a
-                href="mailto:contact@codehypetech.in"
-            >
-                <i class="bi bi-envelope me-2"></i>
-                 contact@codehypetech.in
-            </a>
+                        href="mailto:contact@codehypetech.in"
+                        class="ms-1"
+                    >
+                        <i class="bi bi-envelope me-1"></i>
+                        contact@codehypetech.in
+                    </a>
                 </strong>
             </p>
-
-            
 
         </div>
 

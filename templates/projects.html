@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-Projects | CodeHype Tech
+Projects &amp; Production Systems | CodeHype Tech
 {% endblock %}
 
 
@@ -14,17 +14,30 @@ Projects | CodeHype Tech
     <div class="container">
 
         <div class="hero-label">
-            WHAT I'VE BUILT
+            ENGINEERING PORTFOLIO
         </div>
 
-        <h1>
-            Projects
+        <h1 class="page-title">
+            Projects &amp;<br>
+            <span class="text-gradient">Production Platforms.</span>
         </h1>
 
-        <p>
-            Software projects, applications and experiments
-            built while learning and exploring technology.
+        <p class="page-description">
+            Production-grade software systems, full-stack multi-tenant SaaS platforms, and engineering experiments architected and built by Priyanshu Kumar.
         </p>
+
+        <!-- LIVE ALERT BANNER -->
+        <div class="project-banner-alert mt-4">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div class="d-flex align-items-center">
+                    <span class="status-dot me-2"></span>
+                    <span><strong>Featured Deployment:</strong> CareFlow HMS is running in production with live multi-tenant doctor workspaces.</span>
+                </div>
+                <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="btn btn-emerald btn-sm">
+                    Open Live Platform (hms.codehypetech.in) <i class="bi bi-arrow-up-right ms-1"></i>
+                </a>
+            </div>
+        </div>
 
     </div>
 
@@ -40,60 +53,80 @@ Projects | CodeHype Tech
         <div class="row g-4">
 
 
-            <!-- HOSPITAL MANAGEMENT SYSTEM -->
+            <!-- CAREFLOW HMS (FLAGSHIP) -->
 
             <div class="col-lg-6">
 
-                <div class="project-card">
+                <div class="project-card project-card-featured">
 
                     <div class="project-top">
 
-                        <span class="project-tag">
-                            FLASK
-                        </span>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="project-tag tag-flagship">
+                                <i class="bi bi-star-fill text-amber me-1"></i> FLAGSHIP SAAS
+                            </span>
+                            <span class="project-tag tag-tech">
+                                FLASK 3 · POSTGRESQL
+                            </span>
+                        </div>
 
-                        <i class="bi bi-hospital"></i>
+                        <div class="project-icon-badge">
+                            <i class="bi bi-hospital-fill text-cyan"></i>
+                        </div>
 
                     </div>
 
 
                     <h2>
-                        Hospital Management System
+                        CareFlow HMS
                     </h2>
 
 
                     <p>
-                        A web-based hospital management system
-                        designed to manage patients, doctors,
-                        appointments and hospital workflows.
+                        An enterprise-grade, doctor-first Hospital &amp; Clinic Management SaaS platform designed by Code Hype Tech Labs. Built on a secure multi-tenant architecture with isolated doctor workspaces, dynamic slot concurrency row-locking, live sequential queue tracking, digital Rx smart prefill, staff attendance &amp; payroll, and 63 automated integration tests.
                     </p>
 
 
                     <div class="tech-stack">
 
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Database</span>
+                        <span>Flask 3</span>
+                        <span>SQLAlchemy</span>
+                        <span>PostgreSQL</span>
+                        <span>Resend REST API</span>
+                        <span>ZoneInfo IST</span>
+                        <span>Pytest (63 Passed)</span>
+                        <span>Bootstrap 5</span>
 
                     </div>
 
 
                     <div class="project-footer">
 
-                        <span class="project-status">
-                            <span class="status-dot"></span>
-                            IN DEVELOPMENT
-                        </span>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="project-status project-status-live">
+                                <span class="status-dot status-dot-live"></span>
+                                LIVE IN PRODUCTION
+                            </span>
+                        </div>
 
 
-                        <a
-                            href="{{ url_for('hospital_management_system') }}"
-                            class="text-link"
-                        >
-                            View Project →
-                        </a>
+                        <div class="d-flex align-items-center gap-3">
+                            <a
+                                href="https://hms.codehypetech.in"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-link text-emerald"
+                            >
+                                Live App ↗
+                            </a>
+
+                            <a
+                                href="{{ url_for('hospital_management_system') }}"
+                                class="btn btn-sm btn-outline-light"
+                            >
+                                Deep-Dive &amp; Architecture →
+                            </a>
+                        </div>
 
                     </div>
 
@@ -111,11 +144,13 @@ Projects | CodeHype Tech
 
                     <div class="project-top">
 
-                        <span class="project-tag">
-                            FLASK
+                        <span class="project-tag tag-tech">
+                            FLASK · DATABASE
                         </span>
 
-                        <i class="bi bi-signpost-split"></i>
+                        <div class="project-icon-badge">
+                            <i class="bi bi-signpost-split-fill text-muted"></i>
+                        </div>
 
                     </div>
 
@@ -126,9 +161,7 @@ Projects | CodeHype Tech
 
 
                     <p>
-                        A management application for organizing
-                        trekking operations, participants,
-                        schedules and related workflows.
+                        A comprehensive management application designed for organizing trekking operations, participant registrations, itinerary schedules, staff assignments, and logistics workflows through a unified administration panel.
                     </p>
 
 
@@ -136,9 +169,10 @@ Projects | CodeHype Tech
 
                         <span>Python</span>
                         <span>Flask</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Database</span>
+                        <span>SQLite / SQLAlchemy</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Bootstrap</span>
 
                     </div>
 
@@ -147,7 +181,7 @@ Projects | CodeHype Tech
 
                         <span class="project-status">
                             <span class="status-dot"></span>
-                            BUILT 
+                            BUILT &amp; OPERATIONAL
                         </span>
 
 
@@ -165,6 +199,24 @@ Projects | CodeHype Tech
             </div>
 
 
+        </div>
+
+        <!-- LABS BANNER -->
+        <div class="labs-discovery-card mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="badge-pill mb-2">EXPLORE TUTORIALS &amp; LABS</div>
+                    <h3>Want to learn how to build production software?</h3>
+                    <p class="mb-0 text-muted">
+                        Explore CodeHype Tech Labs for practical walkthroughs on Flask, SQL database design, multi-tenant workflows, and Python backend engineering.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <a href="{{ url_for('labs') }}" class="btn btn-primary">
+                        <i class="bi bi-code-slash me-2"></i> Visit CodeHype Tech Labs
+                    </a>
+                </div>
+            </div>
         </div>
 
     </div>

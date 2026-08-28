@@ -68,9 +68,12 @@ def tutorial(slug):
 @app.route("/projects")
 def projects():
     return render_template("projects.html")
+
+@app.route("/projects/careflow-hms")
 @app.route("/projects/hospital-management-system")
 def hospital_management_system():
     return render_template("project_hms.html")
+
 @app.route("/projects/trekking-management-system")
 def trekking_management_system():
     return render_template("project_trekking.html")
@@ -83,7 +86,9 @@ def sitemap():
         url_for("about", _external=True),
         url_for("codehype", _external=True),
         url_for("labs", _external=True),
-        url_for("projects", _external=True)
+        url_for("projects", _external=True),
+        url_for("hospital_management_system", _external=True),
+        url_for("trekking_management_system", _external=True)
     ]
 
     sitemap_xml = """<?xml version="1.0" encoding="UTF-8"?>
