@@ -250,7 +250,7 @@ About Priyanshu Kumar | CodeHype Tech
 
 
 <!-- =========================================================
-     ABOUT HERO
+     ABOUT HERO — AUTHENTIC BIOGRAPHY & PROFILE
 ========================================================= -->
 
 <section class="page-hero">
@@ -259,54 +259,57 @@ About Priyanshu Kumar | CodeHype Tech
 
         <div class="row align-items-center g-5">
 
-
             <!-- TEXT -->
+            <div class="col-lg-7 col-xl-8">
 
-            <div class="col-lg-8">
-
-                <div class="hero-label">
-                    ABOUT ME
+                <div class="hero-badge-wrapper mb-3">
+                    <span class="live-pill-badge">
+                        <span class="live-ping-dot"></span>
+                        IIT Madras · Data Science &amp; Applications
+                    </span>
                 </div>
 
-
-                <h1>
+                <h1 class="page-title mb-2">
                     Priyanshu Kumar
                 </h1>
 
-
-                <h2>
-                    Building, learning<br>
-                    and sharing technology.
-                </h2>
-
-
-                <p>
-                    I'm <strong>Priyanshu Kumar</strong>, a
-                    <strong>tech creator</strong> and
-                    <strong>Data Science &amp; Applications student
-                    at IIT Madras</strong>, and the creator behind
-                    <strong>CodeHype Tech</strong>.
+                <p class="text-gradient fs-3 fw-bold mb-4">
+                    Building software systems, exploring hardware, and sharing honest technology.
                 </p>
 
-
-                <p>
-                    <strong>CodeHype Tech, formerly known as
-                    CodeHype.</strong>
+                <p class="page-description mb-4">
+                    I am a <strong>tech creator</strong> and <strong>Data Science &amp; Applications student at IIT Madras</strong>, and the founder &amp; developer behind <strong>CodeHype Tech</strong> (formerly CodeHype). I create honest tech reviews, smartphone unboxings, and consumer hardware evaluations on YouTube through <strong>CodeHype Tech</strong>, and develop full-stack software systems, algorithms, and practical applications—including the flagship <strong>CareFlow HMS</strong> healthcare platform—through <strong>CodeHype Tech Labs</strong>.
                 </p>
+
+                <div class="d-flex flex-wrap gap-2 pt-2">
+                    <a href="mailto:contact@codehypetech.in" class="btn btn-primary">
+                        <i class="bi bi-envelope-fill me-2"></i> Get in Touch
+                    </a>
+                    <a href="https://www.youtube.com/@CodeHypeTech" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        <i class="bi bi-youtube me-2 text-danger"></i> YouTube Channel ↗
+                    </a>
+                    <a href="{{ url_for('hospital_management_system') }}" class="btn btn-outline-secondary-dark">
+                        <i class="bi bi-cpu me-2 text-cyan"></i> View Flagship SaaS →
+                    </a>
+                </div>
 
             </div>
 
+            <!-- PROFILE PHOTO IN GLOWING FRAME -->
+            <div class="col-lg-5 col-xl-4 text-center">
 
-            <!-- PROFILE PHOTO -->
-
-            <div class="col-lg-4 text-center">
-
-                <img
-                    src="{{ url_for('static', filename='images/priyanshu.jpg') }}"
-                    alt="Priyanshu Kumar - Creator of CodeHype Tech"
-                    class="about-profile-image"
-                    loading="eager"
-                >
+                <div class="about-avatar-container mx-auto">
+                    <div class="avatar-glow-ring"></div>
+                    <img
+                        src="{{ url_for('static', filename='images/priyanshu.jpg') }}"
+                        alt="Priyanshu Kumar - Creator of CodeHype Tech"
+                        class="about-avatar-img"
+                        loading="eager"
+                    >
+                    <div class="avatar-status-tag">
+                        <span class="status-dot status-dot-live"></span> Active Creator &amp; Developer
+                    </div>
+                </div>
 
             </div>
 
@@ -317,268 +320,195 @@ About Priyanshu Kumar | CodeHype Tech
 </section>
 
 
-
 <!-- =========================================================
-     ABOUT
+     BENTO PROFILE & STORY GRID
 ========================================================= -->
 
 <section class="about-section">
 
     <div class="container">
 
-        <div class="row g-5">
+        <div class="section-label">
+            EXECUTIVE PROFILE
+        </div>
 
+        <h2 class="section-heading mb-4">
+            Development &amp; Creator Journey
+        </h2>
 
-            <!-- MAIN CONTENT -->
+        <!-- BENTO GRID -->
+        <div class="row g-4 mb-5">
 
-            <div class="col-lg-7">
-
-                <h2>
-                    A little about me
-                </h2>
-
-
-                <p>
-                    I'm <strong>Priyanshu Kumar</strong>, a tech creator
-                    and Data Science &amp; Applications student at
-                    <strong>IIT Madras</strong>.
-                </p>
-
-
-                <p>
-                    Through <strong>CodeHype Tech</strong>, I create
-                    technology-focused content covering smartphones,
-                    iPhones, iPads, MacBooks, laptops, tablets, gadgets,
-                    accessories and other consumer technology.
-                </p>
-
-
-                <p>
-                    My content focuses on
-                    <strong>honest, long-term reviews, unboxings,
-                    comparisons and real-world experiences</strong>
-                    with the technology I personally use.
-                </p>
-
-
-                <p>
-                    My goal is simple:
-                    <strong>
-                        help people make better technology decisions
-                        through practical and honest information.
-                    </strong>
-                </p>
-
-
-                <p>
-                    I'm also interested in
-                    <strong>Python, Web Development, Data Science,
-                    Machine Learning and Artificial Intelligence</strong>,
-                    and I explore these areas through my learning and
-                    development work.
-                </p>
-
-
-                <!-- =================================================
-                     OFFICIAL PROFILES
-                ================================================== -->
-
-                <div class="about-contact mt-4">
-
-                    <div class="hero-label">
-                        OFFICIAL PROFILES
+            <!-- BENTO 1: IIT MADRAS & ACADEMICS -->
+            <div class="col-lg-6">
+                <div class="bento-card">
+                    <div class="bento-icon-box bg-purple-soft text-purple">
+                        <i class="bi bi-mortarboard-fill"></i>
                     </div>
-
-                    <br>
-
-
-                    <!-- BUSINESS EMAIL -->
-
-                    <a
-                        href="mailto:contact@codehypetech.in"
-                        class="about-email d-block"
-                        aria-label="Contact CodeHype Tech"
-                    >
-                        <i class="bi bi-envelope me-2"></i>
-                        contact@codehypetech.in
-                    </a>
-
-
-                    <!-- YOUTUBE -->
-
-                    <a
-                        href="https://www.youtube.com/@CodeHypeTech"
-                        target="_blank"
-                        rel="me noopener noreferrer"
-                        class="about-email d-block"
-                        aria-label="CodeHype Tech on YouTube"
-                    >
-                        <i class="bi bi-youtube me-2"></i>
-                        YouTube : yt.codehypetech.in
-                    </a>
-
-
-                    <!-- INSTAGRAM -->
-
-                    <a
-                        href="https://ig.codehypetech.in/"
-                        target="_blank"
-                        rel="me noopener noreferrer"
-                        class="about-email d-block"
-                        aria-label="Priyanshu Kumar on Instagram"
-                    >
-                        <i class="bi bi-instagram me-2"></i>
-                        Instagram : ig.codehypetech.in
-                    </a>
-
-
-                    <!-- FACEBOOK -->
-
-                    <a
-                        href="https://fb.codehypetech.in/"
-                        target="_blank"
-                        rel="me noopener noreferrer"
-                        class="about-email d-block"
-                        aria-label="CodeHype Tech on Facebook"
-                    >
-                        <i class="bi bi-facebook me-2"></i>
-                        Facebook : fb.codehypetech.in
-                    </a>
-
-
-                    <!-- LINKEDIN -->
-
-                    <a
-                        href="https://www.linkedin.com/in/pk24india"
-                        target="_blank"
-                        rel="me noopener noreferrer"
-                        class="about-email d-block"
-                        aria-label="Priyanshu Kumar on LinkedIn"
-                    >
-                        <i class="bi bi-linkedin me-2"></i>
-                        LinkedIn : li.codehypetech.in
-                    </a>
-
-
-                    <!-- X -->
-
-                    <a
-                        href="https://x.com/pk24iitm"
-                        target="_blank"
-                        rel="me noopener noreferrer"
-                        class="about-email d-block"
-                        aria-label="Priyanshu Kumar on X"
-                    >
-                        <i class="bi bi-twitter-x me-2"></i>
-                        X : x.codehypetech.in
-                    </a>
-
+                    <span class="bento-tag">Academic Foundation</span>
+                    <h3 class="text-white">IIT Madras Data Science</h3>
+                    <p class="bento-text">
+                        Pursuing the <strong>Data Science &amp; Applications</strong> program at the <strong>Indian Institute of Technology Madras</strong>. Focusing on computational programming, database architecture, machine learning algorithms, and real-world data systems.
+                    </p>
+                    <div class="bento-footer-strip">
+                        <span><i class="bi bi-check-circle text-purple me-1"></i> Data Analytics</span>
+                        <span><i class="bi bi-check-circle text-purple me-1"></i> Algorithms</span>
+                        <span><i class="bi bi-check-circle text-purple me-1"></i> Applied Statistics</span>
+                    </div>
                 </div>
-
             </div>
 
-
-            <!-- =================================================
-                 QUICK INFO CARD
-            ================================================= -->
-
-            <div class="col-lg-5">
-
-                <div class="about-card">
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Name
-                        </span>
-
-                        <strong>
-                            Priyanshu Kumar
-                        </strong>
-
+            <!-- BENTO 2: CODEHYPE TECH & MEDIA -->
+            <div class="col-lg-6">
+                <div class="bento-card">
+                    <div class="bento-icon-box bg-cyan-soft text-cyan">
+                        <i class="bi bi-camera-reels-fill"></i>
                     </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Education
-                        </span>
-
-                        <strong>
-                            IIT Madras
-                        </strong>
-
+                    <span class="bento-tag">Tech Creator Ecosystem</span>
+                    <h3 class="text-white">CodeHype Tech Channel</h3>
+                    <p class="bento-text">
+                        <strong>CodeHype Tech</strong> is my main tech review channel on YouTube. I create honest, long-term tech reviews, smartphone unboxings, Apple Silicon MacBook tests, iPad comparisons, and teardowns to help people make smart buying decisions.
+                    </p>
+                    <div class="bento-footer-strip">
+                        <span><i class="bi bi-youtube text-danger me-1"></i> 1.1K+ Subscribers</span>
+                        <span><i class="bi bi-check-circle text-cyan me-1"></i> Long-Term Reviews</span>
+                        <span><i class="bi bi-check-circle text-cyan me-1"></i> Consumer Advice</span>
                     </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Role
-                        </span>
-
-                        <strong>
-                            Tech Creator
-                        </strong>
-
-                    </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            YouTube
-                        </span>
-
-                        <strong>
-                            @CodeHypeTech
-                        </strong>
-
-                    </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Brand
-                        </span>
-
-                        <strong>
-                            CodeHype Tech
-                        </strong>
-
-                    </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Formerly
-                        </span>
-
-                        <strong>
-                            CodeHype
-                        </strong>
-
-                    </div>
-
-
-                    <div class="about-item">
-
-                        <span>
-                            Focus
-                        </span>
-
-                        <strong>
-                            Tech Reviews • AI • Data Science • Web Development
-                        </strong>
-
-                    </div>
-
                 </div>
+            </div>
 
+            <!-- BENTO 3: CODEHYPE TECH LABS & CAREFLOW HMS -->
+            <div class="col-lg-7">
+                <div class="bento-card bento-card-featured">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="bento-icon-box bg-emerald-soft text-emerald">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <span class="badge-tag-featured"><span class="badge-pulse"></span> LIVE PRODUCTION</span>
+                    </div>
+                    <span class="bento-tag">Software Lab &amp; Production Development</span>
+                    <h3 class="text-white">CodeHype Tech Labs &amp; CareFlow HMS</h3>
+                    <p class="bento-text">
+                        In <strong>CodeHype Tech Labs</strong>, we develop production software systems and practical applications. We architected and deployed <strong>CareFlow HMS</strong> at <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="link-cyan">hms.codehypetech.in</a> — an enterprise healthcare SaaS with Flask 3, PostgreSQL, SQLAlchemy (18 models), 10 clinical engines, automated staff payroll, and 63 verified integration tests.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="btn btn-emerald btn-sm">
+                            <i class="bi bi-box-arrow-up-right me-1"></i> Launch CareFlow HMS
+                        </a>
+                        <a href="{{ url_for('hospital_management_system') }}" class="btn btn-outline-light btn-sm">
+                            Explore Architectural Deep-Dive →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BENTO 4: TECH PHILOSOPHY & OBJECTIVE -->
+            <div class="col-lg-5">
+                <div class="bento-card">
+                    <div class="bento-icon-box bg-amber-soft text-amber">
+                        <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                    <span class="bento-tag">Core Philosophy</span>
+                    <h3 class="text-white">Practical &amp; Honest Technology</h3>
+                    <p class="bento-text">
+                        My mission is to demystify complex software and hardware — helping people choose the right technology tools and showing students how to build production systems from scratch.
+                    </p>
+                    <div class="bento-footer-strip">
+                        <span><i class="bi bi-shield-check text-amber me-1"></i> 100% Unbiased</span>
+                        <span><i class="bi bi-code-square text-amber me-1"></i> Open &amp; Practical</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- OFFICIAL CHANNELS & PROFILES -->
+        <div class="row g-4 pt-4">
+
+            <div class="col-12">
+                <div class="section-label">
+                    CONNECTIVITY &amp; NETWORK
+                </div>
+                <h3 class="text-white mb-4">Official Channels &amp; Profiles</h3>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="https://www.youtube.com/@CodeHypeTech" target="_blank" rel="me noopener noreferrer" class="profile-link-card">
+                    <div class="profile-card-icon text-danger">
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white">YouTube</strong>
+                        <span class="profile-card-desc">@CodeHypeTech · Video Tech Reviews</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto link-arrow"></i>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="https://www.linkedin.com/in/pk24india" target="_blank" rel="me noopener noreferrer" class="profile-link-card">
+                    <div class="profile-card-icon text-cyan">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white">LinkedIn</strong>
+                        <span class="profile-card-desc">Priyanshu Kumar · Professional Network</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto link-arrow"></i>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="https://x.com/pk24iitm" target="_blank" rel="me noopener noreferrer" class="profile-link-card">
+                    <div class="profile-card-icon text-white">
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white">X / Twitter</strong>
+                        <span class="profile-card-desc">@pk24iitm · Thoughts &amp; Tech Updates</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto link-arrow"></i>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="https://ig.codehypetech.in/" target="_blank" rel="me noopener noreferrer" class="profile-link-card">
+                    <div class="profile-card-icon text-purple">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white">Instagram</strong>
+                        <span class="profile-card-desc">@codehypetech · Behind the Scenes</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto link-arrow"></i>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="mailto:contact@codehypetech.in" class="profile-link-card">
+                    <div class="profile-card-icon text-emerald">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white">Email</strong>
+                        <span class="profile-card-desc">contact@codehypetech.in</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto link-arrow"></i>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="https://fb.codehypetech.in/" target="_blank" rel="me noopener noreferrer" class="profile-link-card">
+                    <div class="profile-card-icon text-primary">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div>
+                        <strong class="text-white">Facebook</strong>
+                        <span class="profile-card-desc">CodeHype Tech · Community</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto link-arrow"></i>
+                </a>
             </div>
 
         </div>
@@ -588,91 +518,81 @@ About Priyanshu Kumar | CodeHype Tech
 </section>
 
 
-
 <!-- =========================================================
-     AREAS OF INTEREST
+     AREAS OF EXPERTISE & SKILLS
 ========================================================= -->
 
 <section class="skills-section">
 
     <div class="container">
 
-        <div class="hero-label">
-            AREAS I EXPLORE
+        <div class="section-label">
+            EXPERTISE &amp; CAPABILITIES
         </div>
 
-
-        <h2>
-            Technology I'm interested in
+        <h2 class="section-heading mb-4">
+            Technical Domains &amp; Stack
         </h2>
 
-
-        <div class="row g-4 mt-3">
-
+        <div class="row g-4 mt-1">
 
             <!-- TECH REVIEWS -->
-
-            <div class="col-md-4">
-
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-
-                    <i class="bi bi-phone"></i>
-
-                    <h3>
-                        Tech Reviews
-                    </h3>
-
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <i class="bi bi-phone fs-2 text-cyan mb-0"></i>
+                        <span class="badge-pill">Media</span>
+                    </div>
+                    <h3>Consumer Tech Analysis</h3>
                     <p>
-                        Smartphones, iPhones, iPads, MacBooks,
-                        laptops, tablets, gadgets and accessories.
+                        Smartphones, Apple Silicon (M-series), iPhones, iPads, flagships, creator gear, battery life diagnostics, and long-term durability assessments.
                     </p>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>Apple iOS/macOS</span>
+                        <span>Android</span>
+                        <span>Hardware Benchmarks</span>
+                    </div>
                 </div>
-
             </div>
 
-
-            <!-- DATA SCIENCE -->
-
-            <div class="col-md-4">
-
+            <!-- BACKEND & SAAS -->
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-
-                    <i class="bi bi-bar-chart"></i>
-
-                    <h3>
-                        Data Science
-                    </h3>
-
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <i class="bi bi-server fs-2 text-emerald mb-0"></i>
+                        <span class="badge-pill">Development</span>
+                    </div>
+                    <h3>Full-Stack SaaS Systems</h3>
                     <p>
-                        Data analysis, Python, machine learning
-                        and practical data-driven projects.
+                        Architecting multi-tenant web applications, relational database schemas, concurrency locking, REST APIs, and automated role workflows.
                     </p>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>Python</span>
+                        <span>Flask 3</span>
+                        <span>PostgreSQL</span>
+                        <span>SQLAlchemy</span>
+                    </div>
                 </div>
-
             </div>
 
-
-            <!-- AI & WEB -->
-
-            <div class="col-md-4">
-
+            <!-- DATA SCIENCE & AI -->
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-
-                    <i class="bi bi-robot"></i>
-
-                    <h3>
-                        AI &amp; Development
-                    </h3>
-
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <i class="bi bi-cpu fs-2 text-purple mb-0"></i>
+                        <span class="badge-pill">Data &amp; AI</span>
+                    </div>
+                    <h3>Data Science &amp; ML</h3>
                     <p>
-                        Artificial intelligence, web development,
-                        Flask, APIs and software projects.
+                        Exploratory data analysis, statistical modeling, machine learning workflows, automated ETL pipelines, and algorithmic optimization.
                     </p>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-Learn</span>
+                        <span>SQL DBMS</span>
+                    </div>
                 </div>
-
             </div>
 
         </div>
@@ -682,42 +602,40 @@ About Priyanshu Kumar | CodeHype Tech
 </section>
 
 
-
 <!-- =========================================================
-     COLLABORATION
+     COLLABORATION CTA
 ========================================================= -->
 
 <section class="home-cta">
 
     <div class="container text-center">
 
-        <div class="hero-label">
-            FOR BRANDS &amp; COLLABORATIONS
+        <div class="hero-badge-wrapper mb-3">
+            <span class="live-pill-badge">
+                <span class="live-ping-dot"></span>
+                Open for Collaborations
+            </span>
         </div>
 
-
-        <h2>
-            Let's work together.
+        <h2 class="section-title mb-3">
+            Let's build something remarkable.
         </h2>
 
-
-        <p>
-            Interested in product reviews, technology collaborations,
-            campaigns or other business opportunities?
+        <p class="section-subtitle mx-auto mb-4" style="max-width: 600px;">
+            Interested in product reviews, tech sponsorships, consulting, or software development collaborations?
         </p>
 
-
-        <a
-            href="mailto:contact@codehypetech.in"
-            class="btn btn-primary btn-lg mt-3"
-        >
-            <i class="bi bi-envelope me-2"></i>
-            contact@codehypetech.in
-        </a>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a href="mailto:contact@codehypetech.in" class="btn btn-primary btn-lg">
+                <i class="bi bi-envelope-fill me-2"></i> contact@codehypetech.in
+            </a>
+            <a href="https://www.linkedin.com/in/pk24india" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-linkedin me-2"></i> Connect on LinkedIn
+            </a>
+        </div>
 
     </div>
 
 </section>
-
 
 {% endblock %}

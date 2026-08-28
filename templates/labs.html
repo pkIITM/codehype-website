@@ -1,116 +1,105 @@
 {% extends "base.html" %}
 
 {% block title %}
-CodeHype Tech Labs | Learn Technology
+CodeHype Tech Labs | Practical Programming & Development
 {% endblock %}
 
 
 {% block content %}
 
-<!-- HERO -->
+<!-- =========================================================
+     LABS HERO — APPLE DEVELOPER AESTHETIC
+========================================================= -->
 
 <section class="page-hero">
 
     <div class="container">
 
-        <div class="hero-label">
-            CODEHYPE TECH LABS
-        </div>
+        <div class="row align-items-center g-5">
 
-        <h1>
-            Learn.<br>
-            Build.<br>
-            Understand.
-        </h1>
+            <div class="col-lg-7 col-xl-8">
 
-        <p>
-            Practical programming and technology tutorials
-            designed to help you learn by building real things.
-        </p>
-
-        <div class="mt-4">
-
-            <a
-                href="https://www.youtube.com/@CodeHypeLabs"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary btn-lg"
-            >
-                <i class="bi bi-youtube me-2"></i>
-                Visit CodeHype Tech Labs
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- INTRO -->
-
-<section class="about-section">
-
-    <div class="container">
-
-        <div class="row g-5 align-items-center">
-
-            <div class="col-lg-7">
-
-                <div class="hero-label">
-                    LEARN BY BUILDING
+                <div class="hero-badge-wrapper mb-3">
+                    <span class="live-pill-badge">
+                        <span class="live-ping-dot"></span>
+                        CodeHype Tech Labs · Developer Ecosystem
+                    </span>
                 </div>
 
-                <h2>
-                    Technology becomes easier
-                    when you build with it.
-                </h2>
+                <h1 class="page-title mb-2">
+                    Learn.<br>Build.<br>Deploy.
+                </h1>
 
-                <p>
-                    CodeHype Tech Labs is the educational side of
-                    CodeHype Tech, focused on programming, development,
-                    data and artificial intelligence.
+                <p class="text-gradient fs-3 fw-bold mb-4">
+                    Practical programming, full-stack development, and data systems built from first principles.
                 </p>
 
-                <p>
-                    The goal is simple: explain concepts clearly
-                    and turn them into practical projects that
-                    you can actually build and understand.
+                <p class="page-description mb-4">
+                    The software development and educational lab by <strong>Priyanshu Kumar</strong> (IIT Madras). Moving beyond basic theory into building production-ready web applications, scalable database architectures, and applied AI tools.
                 </p>
+
+                <div class="d-flex flex-wrap gap-3 pt-2">
+                    <a
+                        href="https://www.youtube.com/@CodeHypeLabs"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-lg"
+                    >
+                        <i class="bi bi-youtube me-2 text-danger"></i> Visit @CodeHypeLabs ↗
+                    </a>
+                    <a
+                        href="{{ url_for('projects') }}"
+                        class="btn btn-outline-light btn-lg"
+                    >
+                        Explore Production Projects →
+                    </a>
+                </div>
 
             </div>
 
+            <!-- LABS SPOTLIGHT TERMINAL CARD -->
+            <div class="col-lg-5 col-xl-4">
 
-            <div class="col-lg-5">
+                <div class="channel-card channel-card-spotlight">
 
-                <div class="channel-card">
-
-                    <div class="channel-icon">
-                        <i class="bi bi-code-slash"></i>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="channel-icon text-cyan">
+                            <i class="bi bi-terminal-fill"></i>
+                        </div>
+                        <span class="badge-tag-featured"><span class="badge-pulse"></span> LABS PLAYGROUND</span>
                     </div>
 
-                    <div class="hero-label">
-                        CODEHYPE TECH LABS
+                    <div class="hero-label text-cyan mb-1">
+                        HANDS-ON LEARNING
                     </div>
 
-                    <h3>
-                        Learn. Build. Grow.
+                    <h3 class="fs-2 mb-2 text-white">
+                        CodeHype Tech Labs
                     </h3>
 
-                    <p>
-                        Programming tutorials, development
-                        projects and technology education.
+                    <p class="text-secondary-sub mb-4 fs-sm">
+                        Turn raw programming concepts into fully functional applications you can run and showcase.
                     </p>
+
+                    <div class="code-window mb-4">
+                        <div class="dots">● ● ●</div>
+<pre><code><span class="text-secondary-sub"># CodeHype Tech Labs Sandbox</span>
+<span class="text-purple">from</span> flask <span class="text-purple">import</span> Flask, jsonify
+
+app = Flask(__name__)
+
+<span class="text-cyan">@app.route</span>(<span class="text-emerald">"/api/v1/build"</span>)
+<span class="text-purple">def</span> <span class="text-cyan">build</span>():
+    <span class="text-purple">return</span> jsonify(status=<span class="text-emerald">"active"</span>)</code></pre>
+                    </div>
 
                     <a
                         href="https://www.youtube.com/@CodeHypeLabs"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn btn-outline-light w-100 mt-3"
+                        class="btn btn-emerald w-100"
                     >
-                        <i class="bi bi-youtube me-2"></i>
-                        Open YouTube
+                        <i class="bi bi-play-circle-fill me-2"></i> Watch Free Labs Tutorials
                     </a>
 
                 </div>
@@ -124,183 +113,136 @@ CodeHype Tech Labs | Learn Technology
 </section>
 
 
+<!-- =========================================================
+     LEARNING TRACKS (BENTO GRID)
+========================================================= -->
 
-<!-- LEARNING PATHS -->
-
-<section class="skills-section">
+<section class="about-section">
 
     <div class="container">
 
-        <div class="hero-label">
-            AREAS OF LEARNING
+        <div class="section-label">
+            DEVELOPMENT CURRICULUM
         </div>
 
-        <h2>
-            What you can learn.
+        <h2 class="section-heading mb-4">
+            Structured Learning Tracks
         </h2>
 
-
-        <div class="row g-4 mt-3">
-
+        <div class="row g-4">
 
             <!-- PYTHON -->
-
             <div class="col-md-6 col-lg-4">
-
                 <div class="skill-card">
-
-                    <i class="bi bi-filetype-py"></i>
-
-                    <h3>
-                        Python
-                    </h3>
-
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-filetype-py fs-1 text-cyan mb-0"></i>
+                        <span class="badge-pill">Core Language</span>
+                    </div>
+                    <h3>Python Fundamentals</h3>
                     <p>
-                        Programming fundamentals,
-                        automation and application development.
+                        Master Python data structures, list comprehensions, OOP paradigms, decorators, file I/O, error handling, and clean code principles.
                     </p>
-
-                    <span class="coming-soon">
-                        Learning path
-                    </span>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>OOP</span>
+                        <span>Decorators</span>
+                        <span>Virtualenvs</span>
+                    </div>
                 </div>
-
             </div>
 
-
-
-            <!-- WEB DEVELOPMENT -->
-
+            <!-- FLASK & FULL-STACK -->
             <div class="col-md-6 col-lg-4">
-
                 <div class="skill-card">
-
-                    <i class="bi bi-globe2"></i>
-
-                    <h3>
-                        Web Development
-                    </h3>
-
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-server fs-1 text-emerald mb-0"></i>
+                        <span class="badge-pill">Web Framework</span>
+                    </div>
+                    <h3>Flask &amp; REST APIs</h3>
                     <p>
-                        HTML, CSS, Bootstrap, Flask
-                        and modern web applications.
+                        Build modern backend services with Flask 3, Jinja2 templating, modular Blueprints, session security, and RESTful API endpoints.
                     </p>
-
-                    <span class="coming-soon">
-                        Learning path
-                    </span>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>Flask 3</span>
+                        <span>Blueprints</span>
+                        <span>REST API</span>
+                    </div>
                 </div>
-
             </div>
 
-
-
-            <!-- FLASK -->
-
+            <!-- DATABASES & SQL -->
             <div class="col-md-6 col-lg-4">
-
                 <div class="skill-card">
-
-                    <i class="bi bi-server"></i>
-
-                    <h3>
-                        Flask
-                    </h3>
-
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-database fs-1 text-purple mb-0"></i>
+                        <span class="badge-pill">Persistence</span>
+                    </div>
+                    <h3>SQL &amp; Relational Databases</h3>
                     <p>
-                        Build practical Python web applications
-                        using Flask and databases.
+                        PostgreSQL and SQLite database design, SQLAlchemy ORM modeling, cascading foreign keys, indexing, and concurrency transaction locking.
                     </p>
-
-                    <span class="coming-soon">
-                        Learning path
-                    </span>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>PostgreSQL</span>
+                        <span>SQLAlchemy</span>
+                        <span>Migrations</span>
+                    </div>
                 </div>
-
             </div>
-
-
-
-            <!-- SQL -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="skill-card">
-
-                    <i class="bi bi-database"></i>
-
-                    <h3>
-                        SQL & DBMS
-                    </h3>
-
-                    <p>
-                        Databases, SQL queries,
-                        relationships and data management.
-                    </p>
-
-                    <span class="coming-soon">
-                        Learning path
-                    </span>
-
-                </div>
-
-            </div>
-
-
 
             <!-- DATA SCIENCE -->
-
             <div class="col-md-6 col-lg-4">
-
                 <div class="skill-card">
-
-                    <i class="bi bi-bar-chart"></i>
-
-                    <h3>
-                        Data Science
-                    </h3>
-
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-bar-chart-line fs-1 text-amber mb-0"></i>
+                        <span class="badge-pill">Analytics</span>
+                    </div>
+                    <h3>Data Science &amp; Analytics</h3>
                     <p>
-                        Data analysis, visualization
-                        and working with real datasets.
+                        Data wrangling and exploratory analysis with Pandas, NumPy, statistical testing, and visualization to extract actionable insights.
                     </p>
-
-                    <span class="coming-soon">
-                        Learning path
-                    </span>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Data Prep</span>
+                    </div>
                 </div>
-
             </div>
 
-
-
-            <!-- AI & ML -->
-
+            <!-- MACHINE LEARNING -->
             <div class="col-md-6 col-lg-4">
-
                 <div class="skill-card">
-
-                    <i class="bi bi-robot"></i>
-
-                    <h3>
-                        AI & Machine Learning
-                    </h3>
-
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-cpu fs-1 text-info mb-0"></i>
+                        <span class="badge-pill">Intelligence</span>
+                    </div>
+                    <h3>Machine Learning &amp; AI</h3>
                     <p>
-                        Machine learning concepts,
-                        artificial intelligence and practical projects.
+                        Supervised &amp; unsupervised learning, classification, regression, model validation, metrics tuning, and deploying ML models.
                     </p>
-
-                    <span class="coming-soon">
-                        Learning path
-                    </span>
-
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>Scikit-Learn</span>
+                        <span>Pipelines</span>
+                        <span>Validation</span>
+                    </div>
                 </div>
+            </div>
 
+            <!-- PRODUCTION SAAS -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-shield-check fs-1 text-emerald mb-0"></i>
+                        <span class="badge-pill">Production</span>
+                    </div>
+                    <h3>Production SaaS Architecture</h3>
+                    <p>
+                        Multi-tenancy models, automated testing with Pytest, role-based authorization, payment webhooks, and production cloud deployments.
+                    </p>
+                    <div class="tech-stack mt-auto pt-3">
+                        <span>Multi-Tenant</span>
+                        <span>Pytest</span>
+                        <span>Deployment</span>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -310,29 +252,25 @@ CodeHype Tech Labs | Learn Technology
 </section>
 
 
+<!-- =========================================================
+     TUTORIALS & LABS PROJECTS
+========================================================= -->
 
-<!-- LATEST TUTORIALS -->
-
-<section class="about-section">
+<section class="skills-section">
 
     <div class="container">
 
-        <div class="hero-label">
-            LEARN WITH ME
+        <div class="section-label">
+            LABS TUTORIALS
         </div>
 
-        <h2>
-            Latest tutorials.
+        <h2 class="section-heading mb-4">
+            Hands-On Tutorials &amp; Code Guides
         </h2>
-
-        <p class="text-secondary">
-            Practical tutorials and guides from CodeHype Tech Labs.
-        </p>
-
 
         {% if tutorials %}
 
-        <div class="row g-4 mt-3">
+        <div class="row g-4">
 
             {% for tutorial in tutorials %}
 
@@ -342,30 +280,27 @@ CodeHype Tech Labs | Learn Technology
 
                     <div class="project-top">
 
-                        <span class="project-tag">
+                        <span class="project-tag tag-flagship">
                             {{ tutorial.category }}
                         </span>
 
-                        <i class="bi bi-play-circle"></i>
+                        <i class="bi bi-journal-code text-cyan fs-4"></i>
 
                     </div>
-
 
                     <h2>
                         {{ tutorial.title }}
                     </h2>
 
-
                     <p>
                         {{ tutorial.description }}
                     </p>
-
 
                     <a
                         href="{{ url_for('tutorial', slug=tutorial.slug) }}"
                         class="text-link"
                     >
-                        Read Tutorial →
+                        Read Complete Tutorial →
                     </a>
 
                 </div>
@@ -378,28 +313,17 @@ CodeHype Tech Labs | Learn Technology
 
         {% else %}
 
-        <div class="project-card mt-4">
-
-            <div class="project-top">
-
-                <span class="project-tag">
-                    COMING SOON
-                </span>
-
+        <div class="labs-discovery-card text-center py-5">
+            <div class="labs-icon mx-auto text-cyan mb-3">
                 <i class="bi bi-journal-code"></i>
-
             </div>
-
-            <h2>
-                Tutorials are on the way.
-            </h2>
-
-            <p>
-                I'm working on practical programming and
-                technology tutorials that will be published
-                here as CodeHype Tech Labs grows.
+            <h3 class="fs-2 mb-2 text-white">Tutorials &amp; Deep-Dives in Development</h3>
+            <p class="section-subtitle mx-auto mb-4" style="max-width: 580px;">
+                I am preparing step-by-step written code guides and video companions for Flask 3, PostgreSQL multi-tenancy, and Data Science workflows.
             </p>
-
+            <a href="https://www.youtube.com/@CodeHypeLabs" target="_blank" rel="noopener noreferrer" class="btn btn-emerald">
+                <i class="bi bi-youtube me-2"></i> Subscribe on YouTube for Release Alerts
+            </a>
         </div>
 
         {% endif %}
@@ -409,100 +333,42 @@ CodeHype Tech Labs | Learn Technology
 </section>
 
 
-
-<!-- BUILD WITH ME -->
-
-<section class="labs-preview">
-
-    <div class="container">
-
-        <div class="row align-items-center g-5 py-5">
-
-            <div class="col-lg-7">
-
-                <div class="hero-label">
-                    BUILD WITH ME
-                </div>
-
-                <h2>
-                    Don't just learn it.
-                    Build it.
-                </h2>
-
-                <p>
-                    CodeHype Tech Labs focuses on practical learning.
-                    Instead of only explaining concepts, I want
-                    to use them to build real applications.
-                </p>
-
-                <p>
-                    From Flask applications and databases to
-                    data-driven projects and AI experiments,
-                    the focus is on understanding how everything
-                    works together.
-                </p>
-
-            </div>
-
-
-            <div class="col-lg-5">
-
-                <div class="code-window">
-
-                    <div class="dots">
-                        ● ● ●
-                    </div>
-
-<pre><code>from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/")
-def home():
-    return "Hello, CodeHype Tech!"
-
-app.run()</code></pre>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- YOUTUBE CTA -->
+<!-- =========================================================
+     YOUTUBE CTA
+========================================================= -->
 
 <section class="home-cta">
 
     <div class="container text-center">
 
-        <div class="hero-label">
-            CODEHYPE TECH LABS
+        <div class="hero-badge-wrapper mb-3">
+            <span class="live-pill-badge">
+                <span class="live-ping-dot"></span>
+                Official Developer Channel
+            </span>
         </div>
 
-        <h2>
-            Learn with CodeHype Tech.
+        <h2 class="section-title mb-3">
+            Subscribe to CodeHype Tech Labs
         </h2>
 
-        <p>
-            Follow CodeHype Tech Labs for programming,
-            development and technology tutorials.
+        <p class="section-subtitle mx-auto mb-4" style="max-width: 600px;">
+            Join developers, students, and creators learning programming, database architecture, and full-stack software development.
         </p>
 
-        <a
-            href="https://www.youtube.com/@CodeHypeLabs"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary btn-lg mt-3"
-        >
-            <i class="bi bi-youtube me-2"></i>
-            Visit CodeHype Tech Labs
-        </a>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a
+                href="https://www.youtube.com/@CodeHypeLabs"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-lg"
+            >
+                <i class="bi bi-youtube me-2 text-danger"></i> Visit @CodeHypeLabs
+            </a>
+            <a href="{{ url_for('projects') }}" class="btn btn-outline-light btn-lg">
+                View Live Projects
+            </a>
+        </div>
 
     </div>
 

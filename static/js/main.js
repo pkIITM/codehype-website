@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initQueueSimulator();
     initPytestRunner();
     initSchemaFilter();
+    initAppleScrollReveal();
 });
 
 /* -------------------------------------------------------------
@@ -66,7 +67,7 @@ function initISTClock() {
  * 3. SPOTLIGHT CARD GLOW EFFECT
  * ----------------------------------------------------------- */
 function initSpotlightGlow() {
-    const cards = document.querySelectorAll('.project-card, .showcase-card, .channel-card, .skill-card, .workspace-card, .engine-card, .pricing-card');
+    const cards = document.querySelectorAll('.project-card, .showcase-card, .channel-card, .skill-card, .workspace-card, .engine-card, .pricing-card, .bento-card');
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
@@ -250,5 +251,40 @@ function initSchemaFilter() {
                 }
             });
         });
+    });
+}
+
+/* -------------------------------------------------------------
+ * 8. APPLE-STYLE SCROLL REVEAL & MICRO-ANIMATIONS
+ * ----------------------------------------------------------- */
+function initAppleScrollReveal() {
+    const targets = document.querySelectorAll(
+        '.bento-card, .skill-card, .project-card, .pillar-card, .channel-card, .hero-stat-card, .role-preview-card, .engine-preview-item, .pricing-card, .testing-terminal-card, .profile-link-card, .architecture-visual-card, .interactive-simulator-container, .labs-discovery-card'
+    );
+
+    if (!targets.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+        targets.forEach(el => el.classList.add('revealed'));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -30px 0px'
+    });
+
+    targets.forEach((el, index) => {
+        el.classList.add('apple-reveal');
+        const delayMod = (index % 4) + 1;
+        el.classList.add(`apple-reveal-delay-${delayMod}`);
+        observer.observe(el);
     });
 }
