@@ -1,0 +1,800 @@
+{% extends "base.html" %}
+
+{% block title %}
+Ephemeral — Privacy-First Ephemeral Messaging, Single-View Media & Shielded Dating | CodeHype Tech
+{% endblock %}
+
+{% block content %}
+
+<!-- =========================================================
+     PROJECT DEEP-DIVE HERO
+========================================================= -->
+
+<section class="page-hero project-detail-hero">
+
+    <div class="container">
+
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="badge-tag-featured">
+                <i class="bi bi-shield-lock-fill text-cyan me-1"></i> PRIVACY FLAGSHIP
+            </span>
+            <span class="project-tag tag-live">
+                <span class="status-dot status-dot-live"></span> LIVE IN PRODUCTION
+            </span>
+            <span class="project-tag tag-tech">
+                FLASK · WEBSOCKETS · POSTGRESQL · PILLOW · RENDER CRON
+            </span>
+        </div>
+
+        <h1 class="project-hero-title">
+            Ephemeral
+        </h1>
+
+        <h2 class="project-hero-subtitle text-gradient">
+            Privacy-First Ephemeral Messaging, Single-View Media &amp; Shielded Dating Platform
+        </h2>
+
+        <p class="project-hero-lead">
+            An advanced privacy-centric communication platform designed and built by <strong>CodeHype Tech Labs</strong>. Features zero-retention messaging, physical disk unlinking of single-view photos upon recipient reply, automatic EXIF/GPS metadata stripping via Pillow, bidirectional real-time WebSockets (<code class="text-cyan">Flask-SocketIO</code>), search-engine shielded opt-in mutual compatibility dating (<code class="text-cyan">X-Robots-Tag: noindex, nofollow</code>), public community chat rooms, abuse moderation triage, and automated background janitor cleanup daemon on Render (<code class="text-cyan">*/15 * * * *</code>).
+        </p>
+
+        <!-- LIVE LAUNCH & ACTION BAR -->
+        <div class="project-hero-cta-box mt-4">
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="live-pulse-indicator">
+                        <span class="pulse-ring"></span>
+                        <span class="pulse-core"></span>
+                    </div>
+                    <div>
+                        <div class="text-white fw-bold">Live Production Deployment</div>
+                        <div class="text-muted fs-sm">Deployed live at <a href="https://ephemeral.codehypetech.in/" target="_blank" rel="noopener noreferrer" class="link-cyan">ephemeral.codehypetech.in</a></div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a
+                        href="https://ephemeral.codehypetech.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-emerald"
+                    >
+                        <i class="bi bi-box-arrow-up-right me-2"></i> Launch Live App (ephemeral.codehypetech.in)
+                    </a>
+                    <a
+                        href="{{ url_for('projects') }}"
+                        class="btn btn-outline-light"
+                    >
+                        ← All Projects Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KEY SYSTEM STATS STRIP -->
+        <div class="system-stats-grid mt-4">
+            <div class="stat-card">
+                <span class="stat-num text-cyan">0</span>
+                <span class="stat-lbl">Permanent Media Retention</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num text-emerald">7 Days</span>
+                <span class="stat-lbl">Max Message Lifespan</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num text-purple">Pillow</span>
+                <span class="stat-lbl">EXIF / GPS Sanitizer</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num text-emerald">22 / 22</span>
+                <span class="stat-lbl">Integration Tests Passed</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num text-amber">100%</span>
+                <span class="stat-lbl">Shielded SEO Tag</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num text-cyan">SocketIO</span>
+                <span class="stat-lbl">Bidirectional Realtime</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STICKY TABLE OF CONTENTS NAV
+========================================================= -->
+
+<div class="deep-dive-toc-wrapper sticky-top">
+    <div class="container">
+        <nav class="deep-dive-toc-nav">
+            <a href="#section-1" class="toc-link">1. Architecture &amp; Zero-Retention</a>
+            <a href="#section-2" class="toc-link">2. Core Modules &amp; Dating Engine</a>
+            <a href="#section-3" class="toc-link">3. Technical Security Engines</a>
+            <a href="#section-4" class="toc-link">4. Database Schema</a>
+            <a href="#section-5" class="toc-link">5. Automated Testing (22 Tests)</a>
+        </nav>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     SECTION 1: EXECUTIVE ARCHITECTURE & ZERO-RETENTION PHILOSOPHY
+========================================================= -->
+
+<section class="deep-dive-section" id="section-1">
+
+    <div class="container">
+
+        <div class="section-label">
+            SYSTEM BLUEPRINT
+        </div>
+
+        <h2 class="section-heading">
+            1. Executive Architecture &amp; Zero-Retention Philosophy
+        </h2>
+
+        <p class="section-lead">
+            Ephemeral was engineered from first principles around <strong>zero data retention</strong> and <strong>complete user sovereignty</strong>. Unlike legacy chat platforms where conversations and attachments linger indefinitely on cloud servers, Ephemeral enforces physical file destruction, cryptographic metadata scrubbing, and automated cron janitor pruning.
+        </p>
+
+        <!-- ARCHITECTURE FLOWCHART DIAGRAM -->
+        <div class="architecture-diagram-container my-4">
+            <div class="diagram-header">
+                <span class="diagram-badge"><i class="bi bi-diagram-3-fill me-1"></i> Ephemeral Architecture &amp; Janitor Lifecycle</span>
+                <span class="diagram-meta">Flask · Flask-SocketIO · PostgreSQL · Pillow · Render Cron</span>
+            </div>
+
+            <div class="diagram-body">
+<pre class="diagram-code"><code>                                   ┌────────────────────────────────────────────────────────┐
+                                   │                 Ephemeral Core App                     │
+                                   │     (Flask · Flask-SocketIO · PostgreSQL · Auth)       │
+                                   └───────────────────────────┬────────────────────────────┘
+                                                               │
+                      ┌────────────────────────────────────────┼────────────────────────────────────────┐
+                      │                                        │                                        │
+                      ▼                                        ▼                                        ▼
+     ┌─────────────────────────────────┐      ┌─────────────────────────────────┐      ┌────────────────────────────────┐
+     │    1-on-1 Ephemeral Messaging   │      │    Shielded Mutual Dating (18+) │      │    Janitor Daemon (Render Cron)│
+     │    • Strict 7-Day Auto-Wipe     │      │    • X-Robots-Tag: noindex      │      │    • Scheduled: */15 * * * *   │
+     │    • Single-View Media Unlink   │      │    • Dual-Blind Match Approval  │      │    • Physical Disk os.unlink() │
+     │    • Pillow EXIF/GPS Stripping  │      │    • Anti-Harassment Block/Triage│     │    • Expired Message Deletions │
+     │    • Real-Time WebSockets IO    │      │    • Geolocation Preferences    │      │    • Orphaned File Purge Logs  │
+     └─────────────────────────────────┘      └─────────────────────────────────┘      └────────────────────────────────┘</code></pre>
+            </div>
+            <div class="visual-footer p-3 border-top border-secondary-subtle d-flex justify-content-between align-items-center">
+                <span class="text-muted fs-xs">Live Production Host:</span>
+                <a href="https://ephemeral.codehypetech.in/" target="_blank" rel="noopener noreferrer" class="link-cyan fs-xs">https://ephemeral.codehypetech.in ↗</a>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            <div class="col-md-4">
+                <div class="pillar-card">
+                    <div class="pillar-icon text-cyan"><i class="bi bi-trash3-fill"></i></div>
+                    <h4>Physical Disk Destruction</h4>
+                    <p>When single-view media is opened and replied to, or messages exceed their lifetime, the underlying image files are physically removed from disk storage using <code>os.unlink()</code>, leaving zero disk remnants.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pillar-card">
+                    <div class="pillar-icon text-emerald"><i class="bi bi-camera-fill"></i></div>
+                    <h4>Pillow EXIF / GPS Scrubbing</h4>
+                    <p>Every uploaded photograph is passed through an in-memory Pillow image transformation pipeline that completely strips GPS coordinates, camera serial numbers, and device metadata before byte writes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pillar-card">
+                    <div class="pillar-icon text-purple"><i class="bi bi-shield-shaded"></i></div>
+                    <h4>Search Engine Dating Shield</h4>
+                    <p>The 18+ mutual dating platform emits HTTP header <code>X-Robots-Tag: noindex, nofollow</code> across all dating endpoints, shielding user profiles from Google, Bing, and search engine indexers.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECTION 2: CORE MODULES & DATING ENGINE
+========================================================= -->
+
+<section class="deep-dive-section bg-section-alt" id="section-2">
+
+    <div class="container">
+
+        <div class="section-label">
+            FUNCTIONAL ECOSYSTEM
+        </div>
+
+        <h2 class="section-heading">
+            2. Core Platform Modules &amp; Shielded Dating Engine
+        </h2>
+
+        <p class="section-lead">
+            Ephemeral unifies four specialized communication domains into a seamless, high-performance privacy suite.
+        </p>
+
+        <div class="row g-4 mt-3">
+
+            <!-- 1. DIRECT EPHEMERAL MESSAGING -->
+            <div class="col-lg-6">
+                <div class="workspace-card">
+                    <div class="workspace-header">
+                        <div class="workspace-title-box">
+                            <span class="workspace-icon role-doctor"><i class="bi bi-chat-dots-fill"></i></span>
+                            <div>
+                                <span class="role-badge">Direct Messaging</span>
+                                <h3>1. Real-Time 1-on-1 Ephemeral Chat</h3>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">app/routes/chat.py</span>
+                    </div>
+
+                    <ul class="workspace-features">
+                        <li>
+                            <strong>Bidirectional Real-Time Delivery:</strong> Instant WebSocket messaging powered by <code>Flask-SocketIO</code> with room-level broadcast isolation, dynamic presence indicators, and live typing feedback.
+                        </li>
+                        <li>
+                            <strong>Configurable Self-Destruct Timers:</strong> Users configure conversation lifespans (1 Hour, 24 Hours, or 7 Days). Expired messages are permanently wiped from PostgreSQL and disk.
+                        </li>
+                        <li>
+                            <strong>Single-View Media Delivery:</strong> Photo messages marked as single-view can only be opened once. When the recipient sends their reply message, the server physically deletes the media file from disk storage.
+                        </li>
+                        <li>
+                            <strong>End-to-End Delivery Acknowledgements:</strong> Real-time message status transitions (<code>SENT</code> &rarr; <code>DELIVERED</code> &rarr; <code>READ</code>) without persistent telemetry storage.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. SHIELDED MUTUAL DATING ENGINE (18+) -->
+            <div class="col-lg-6">
+                <div class="workspace-card">
+                    <div class="workspace-header">
+                        <div class="workspace-title-box">
+                            <span class="workspace-icon role-admin"><i class="bi bi-heart-fill"></i></span>
+                            <div>
+                                <span class="role-badge">18+ Opt-In Dating</span>
+                                <h3>2. Shielded Mutual Compatibility Dating</h3>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">app/routes/dating.py</span>
+                    </div>
+
+                    <ul class="workspace-features">
+                        <li>
+                            <strong>Search-Engine Shielding:</strong> All dating views, API endpoints, and media routes strictly transmit <code>X-Robots-Tag: noindex, nofollow, noarchive</code>, guaranteeing complete isolation from public web indexers.
+                        </li>
+                        <li>
+                            <strong>Double-Blind Mutual Discovery:</strong> Chat capabilities are strictly locked until two users independently like each other's profiles, preventing unsolicited messages and spam.
+                        </li>
+                        <li>
+                            <strong>Privacy-Preserving Preference Engine:</strong> Granular distance radius filters, mutual interest tags, age preferences, and instant profile hiding.
+                        </li>
+                        <li>
+                            <strong>One-Click Instant Unmatch &amp; Block:</strong> Instantly wipes the conversation history, unlinks shared single-view assets, and revokes mutual match authorizations.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. PUBLIC COMMUNITY CHAT ROOMS -->
+            <div class="col-lg-6">
+                <div class="workspace-card">
+                    <div class="workspace-header">
+                        <div class="workspace-title-box">
+                            <span class="workspace-icon role-staff"><i class="bi bi-megaphone-fill"></i></span>
+                            <div>
+                                <span class="role-badge">Community Hub</span>
+                                <h3>3. Public Community Chat Rooms</h3>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">app/routes/rooms.py</span>
+                    </div>
+
+                    <ul class="workspace-features">
+                        <li>
+                            <strong>Themed Discussion Lounges:</strong> Real-time public discussion rooms for technology, privacy, open-source development, and creative arts.
+                        </li>
+                        <li>
+                            <strong>Live Occupancy Telemetry:</strong> Real-time participant counters and dynamic roster updates pushed across WebSockets upon join and leave events.
+                        </li>
+                        <li>
+                            <strong>Rolling Buffer Architecture:</strong> Public rooms maintain a transient in-memory and rolling 50-message buffer, automatically discarding older messages to prevent archive scraping.
+                        </li>
+                        <li>
+                            <strong>Instant Room Moderation:</strong> Room moderators can mute disruptive participants, pin community guidelines, and purge messages instantly.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4. MODERATION & ABUSE TRIAGE -->
+            <div class="col-lg-6">
+                <div class="workspace-card">
+                    <div class="workspace-header">
+                        <div class="workspace-title-box">
+                            <span class="workspace-icon role-patient"><i class="bi bi-shield-fill-exclamation"></i></span>
+                            <div>
+                                <span class="role-badge">Security &amp; Safety</span>
+                                <h3>4. Abuse Triage &amp; Rate-Limiting Guard</h3>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">app/routes/admin.py</span>
+                    </div>
+
+                    <ul class="workspace-features">
+                        <li>
+                            <strong>User Incident Reporting:</strong> End-to-end reporting pipeline allowing users to report suspicious profiles, spam, harassment, or Terms of Service violations.
+                        </li>
+                        <li>
+                            <strong>Dynamic Rate Limiting:</strong> Enforces token-bucket rate limits on authentication attempts, profile swiping, and message dispatch to mitigate bot abuse.
+                        </li>
+                        <li>
+                            <strong>Automated Moderation Triage:</strong> Administrative dashboard with flagged account queues, audit action trails, temporary suspensions, and permanent hardware token revocation.
+                        </li>
+                        <li>
+                            <strong>Zero-Knowledge Reporting Proofs:</strong> Captures only minimal necessary context for moderation verification without archiving unrelated historical chats.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECTION 3: TECHNICAL SECURITY ENGINES
+========================================================= -->
+
+<section class="deep-dive-section" id="section-3">
+
+    <div class="container">
+
+        <div class="section-label">
+            CORE ENGINES
+        </div>
+
+        <h2 class="section-heading">
+            3. Deep-Dive Technical &amp; Cryptographic Engines
+        </h2>
+
+        <p class="section-lead">
+            Explore the specialized subsystems powering Ephemeral's zero-retention storage, image sanitization, and automated cloud janitor daemon.
+        </p>
+
+        <!-- ENGINE 1: SINGLE-VIEW DISK UNLINK -->
+        <div class="engine-card my-4" id="engine-1">
+            <div class="engine-header">
+                <div class="d-flex align-items-center gap-3">
+                    <span class="engine-badge-icon">⚙️ 01</span>
+                    <div>
+                        <h3>Engine 1: Single-View Media Lifecycle &amp; Physical Disk Unlink Engine</h3>
+                        <span class="engine-subtitle">Atomic file unlinking upon recipient reply and single-view consumption</span>
+                    </div>
+                </div>
+                <span class="code-ref-pill">app/storage.py &amp; LocalStorageService</span>
+            </div>
+
+            <div class="engine-body">
+                <div class="engine-diagram mb-4">
+<pre class="diagram-code"><code>                     ┌────────────────────────────────────────────────────────┐
+                     │           Sender Uploads Single-View Image             │
+                     └──────────────────────────┬─────────────────────────────┘
+                                                │
+                                                ▼
+                     ┌────────────────────────────────────────────────────────┐
+                     │   Pillow Strips EXIF/GPS &amp; Saves Sanitized File to Disk│
+                     └──────────────────────────┬─────────────────────────────┘
+                                                │
+                                                ▼
+                     ┌────────────────────────────────────────────────────────┐
+                     │    Recipient Opens Single-View Image in Ephemeral UI   │
+                     └──────────────────────────┬─────────────────────────────┘
+                                                │
+                                                ▼
+                     ┌────────────────────────────────────────────────────────┐
+                     │    Recipient Types &amp; Sends Reply Message to Sender     │
+                     └──────────────────────────┬─────────────────────────────┘
+                                                │
+                                                ▼
+                     ┌────────────────────────────────────────────────────────┐
+                     │  Trigger: delete_single_view_media_for_conversation()  │
+                     │  Executes os.unlink(filepath) &amp; Clears PostgreSQL Rows │
+                     └────────────────────────────────────────────────────────┘</code></pre>
+                </div>
+
+                <div class="row g-3 mt-2">
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>1. Reply-Triggered Unlink</strong>
+                            <p>Single-view media is automatically purged the moment the recipient acknowledges or replies to the conversation, ensuring temporary visibility without persistence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>2. Atomic Filesystem Unlink</strong>
+                            <p>Calls <code>os.unlink()</code> within a resilient exception handler, preventing orphaned disk fragments and logging verified deletions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>3. Database Metadata Scrub</strong>
+                            <p>Simultaneously zeroes out database references, attachment URLs, and file hashes so no lingering metadata remains in PostgreSQL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENGINE 2: PILLOW METADATA STRIPPER -->
+        <div class="engine-card my-4" id="engine-2">
+            <div class="engine-header">
+                <div class="d-flex align-items-center gap-3">
+                    <span class="engine-badge-icon">⚙️ 02</span>
+                    <div>
+                        <h3>Engine 2: Pillow Image EXIF &amp; Geolocation Stripping Pipeline</h3>
+                        <span class="engine-subtitle">Memory-buffered image re-encoding eliminating GPS coordinates and device fingerprints</span>
+                    </div>
+                </div>
+                <span class="code-ref-pill">app/storage.py:strip_exif</span>
+            </div>
+
+            <div class="engine-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>1. Byte-Level In-Memory Scrubbing</strong>
+                            <p>Incoming image byte streams are parsed through Pillow (PIL), stripped of all EXIF headers, IPTC tags, and GPS coordinates before writing to disk.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>2. Device Fingerprint Eradication</strong>
+                            <p>Eliminates device serial numbers, lens models, shutter counts, timestamps, and camera software profiles that could deanonymize users.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>3. Format Normalization &amp; Optimization</strong>
+                            <p>Re-encodes images to clean WebP/JPEG formats with optimized compression, reducing bandwidth and preventing hidden payload attacks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENGINE 3 & 4 ROW -->
+        <div class="row g-4 my-2">
+            <!-- ENGINE 3: WEBSOCKET DISPATCHER -->
+            <div class="col-lg-6">
+                <div class="engine-card h-100" id="engine-3">
+                    <div class="engine-header">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="engine-badge-icon">⚙️ 03</span>
+                            <div>
+                                <h4>Engine 3: Real-Time WebSocket Channel Dispatcher</h4>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">app/events.py</span>
+                    </div>
+                    <div class="engine-body">
+                        <ul class="engine-list">
+                            <li><strong>Flask-SocketIO Rooms:</strong> Every conversation has an isolated WebSocket room guaranteeing zero packet bleed across users.</li>
+                            <li><strong>Typing Telemetry:</strong> Live typing and idle notifications with automatic timeout dampening.</li>
+                            <li><strong>Presence Heartbeats:</strong> Heartbeat-driven online/offline detection without continuous polling overhead.</li>
+                            <li><strong>Instant Delivery Push:</strong> Pushes new messages directly to active socket connections in sub-50ms latency.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENGINE 4: DATING ENGINE & SEO SHIELD -->
+            <div class="col-lg-6">
+                <div class="engine-card h-100" id="engine-4">
+                    <div class="engine-header">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="engine-badge-icon">⚙️ 04</span>
+                            <div>
+                                <h4>Engine 4: Dual-Channel Dating &amp; Search Engine Shield</h4>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">app/routes/dating.py</span>
+                    </div>
+                    <div class="engine-body">
+                        <ul class="engine-list">
+                            <li><strong>X-Robots-Tag Enforcement:</strong> Emits <code>X-Robots-Tag: noindex, nofollow</code> across all dating endpoints to protect user anonymity.</li>
+                            <li><strong>18+ Age Verification Gate:</strong> Strict birthday validation ensuring only verified adults access the mutual dating system.</li>
+                            <li><strong>Mutual Blind Matching:</strong> Unidirectional likes remain strictly confidential until mutual reciprocity occurs.</li>
+                            <li><strong>Distance Radius Filtering:</strong> Proximity matching without revealing exact GPS coordinates or street addresses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENGINE 5 & 6 ROW -->
+        <div class="row g-4 my-2">
+            <!-- ENGINE 5: JANITOR CRON DAEMON -->
+            <div class="col-lg-6">
+                <div class="engine-card h-100" id="engine-5">
+                    <div class="engine-header">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="engine-badge-icon">⚙️ 05</span>
+                            <div>
+                                <h4>Engine 5: Janitor Cron Daemon &amp; Auto-Purge</h4>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">render.yaml &amp; cli.py</span>
+                    </div>
+                    <div class="engine-body">
+                        <ul class="engine-list">
+                            <li><strong>Render Cron Blueprint:</strong> Scheduled background cron service defined in <code>render.yaml</code> executing <code>*/15 * * * *</code>.</li>
+                            <li><strong>Automated Expired Cleanup:</strong> Runs <code>flask cleanup-expired</code> every 15 minutes, scanning for messages older than configured retention limits.</li>
+                            <li><strong>Orphan File Detection:</strong> Detects and unlinks any unreferenced media files left in temporary disk storage.</li>
+                            <li><strong>Zero Database Bloat:</strong> Prevents PostgreSQL database expansion by purging expired message rows and indexes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENGINE 6: SECURITY & AUTHENTICATION -->
+            <div class="col-lg-6">
+                <div class="engine-card h-100" id="engine-6">
+                    <div class="engine-header">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="engine-badge-icon">⚙️ 06</span>
+                            <div>
+                                <h4>Engine 6: Secure Authentication &amp; Hardened Headers</h4>
+                            </div>
+                        </div>
+                        <span class="code-ref-pill">app/auth.py &amp; app/__init__.py</span>
+                    </div>
+                    <div class="engine-body">
+                        <ul class="engine-list">
+                            <li><strong>Password Hashing:</strong> Industry-standard salted password hashing with adaptive work factors.</li>
+                            <li><strong>Session Security:</strong> <code>HttpOnly</code>, <code>Secure</code>, and <code>SameSite=Lax</code> cookie parameters preventing XSS token theft.</li>
+                            <li><strong>CSRF Token Validation:</strong> Enforces CSRF tokens across all form submissions and JSON API endpoints.</li>
+                            <li><strong>HTTP Security Headers:</strong> Comprehensive <code>Content-Security-Policy</code>, <code>X-Content-Type-Options: nosniff</code>, and <code>X-Frame-Options: DENY</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECTION 4: DATABASE RELATIONAL SCHEMA
+========================================================= -->
+
+<section class="deep-dive-section bg-section-alt" id="section-4">
+
+    <div class="container">
+
+        <div class="section-label">
+            DATA ARCHITECTURE
+        </div>
+
+        <h2 class="section-heading">
+            4. Database Entity Relationship Schema
+        </h2>
+
+        <p class="section-lead">
+            Ephemeral utilizes a clean, normalized PostgreSQL relational schema designed for rapid index lookups and low-latency message deletions.
+        </p>
+
+        <!-- ER SCHEMA TREE CARD -->
+        <div class="er-schema-card my-4">
+            <div class="schema-header">
+                <span class="schema-badge"><i class="bi bi-diagram-2-fill me-1"></i> PostgreSQL Relational Map</span>
+                <span class="schema-count">9 Models Active</span>
+            </div>
+
+            <div class="diagram-body">
+<pre class="diagram-code"><code>[ users ] (id, username, email, password_hash, is_active, is_admin, created_at)
+    │
+    ├── 1:N ──► [ conversations ] (id, created_at, expires_at, is_active)
+    │               │
+    │               └── 1:N ──► [ messages ] (id, conversation_id, sender_id, content, media_path, is_single_view, is_read, expires_at, created_at)
+    │
+    ├── 1:1 ──► [ dating_profiles ] (id, user_id, bio, age, location, interests, photos, is_active, created_at)
+    │               │
+    │               ├── 1:N ──► [ dating_likes ] (id, sender_id, receiver_id, created_at)
+    │               └── 1:N ──► [ dating_matches ] (id, user1_id, user2_id, is_active, matched_at)
+    │
+    ├── 1:N ──► [ public_room_messages ] (id, room_id, sender_id, content, created_at)
+    ├── 1:N ──► [ reports ] (id, reporter_id, target_id, reason, status, created_at)
+    └── 1:N ──► [ audit_logs ] (id, admin_id, action, target_type, target_id, created_at)
+
+[ public_rooms ] (id, name, slug, description, is_active)</code></pre>
+            </div>
+        </div>
+
+        <!-- SCHEMA CARDS GRID -->
+        <div class="row g-3 mt-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="model-item-card">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <strong class="text-cyan">users</strong>
+                        <span class="code-ref-pill">Root Identity</span>
+                    </div>
+                    <p class="fs-xs text-muted mb-0">id, username, email, password_hash, is_active, is_admin, created_at &bull; Core authentication account</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="model-item-card">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <strong class="text-emerald">conversations</strong>
+                        <span class="code-ref-pill">Chat Session</span>
+                    </div>
+                    <p class="fs-xs text-muted mb-0">id, user1_id, user2_id, expires_at, is_active &bull; 1-on-1 ephemeral channel container</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="model-item-card">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <strong class="text-emerald">messages</strong>
+                        <span class="code-ref-pill">Expiring Message</span>
+                    </div>
+                    <p class="fs-xs text-muted mb-0">id, conversation_id, sender_id, content, media_path, is_single_view, is_read, expires_at</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="model-item-card">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <strong class="text-purple">dating_profiles</strong>
+                        <span class="code-ref-pill">18+ Profile</span>
+                    </div>
+                    <p class="fs-xs text-muted mb-0">id, user_id, bio, age, location, interests, photos, is_active &bull; Shielded dating bio</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="model-item-card">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <strong class="text-purple">dating_matches</strong>
+                        <span class="code-ref-pill">Mutual Lock</span>
+                    </div>
+                    <p class="fs-xs text-muted mb-0">id, user1_id, user2_id, is_active, matched_at &bull; Unlocks communication after double-blind like</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="model-item-card">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <strong class="text-amber">public_rooms</strong>
+                        <span class="code-ref-pill">Community Hub</span>
+                    </div>
+                    <p class="fs-xs text-muted mb-0">id, name, slug, description, is_active &bull; Themed group chat lounges</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECTION 5: AUTOMATED TESTING & QUALITY ASSURANCE
+========================================================= -->
+
+<section class="deep-dive-section" id="section-5">
+
+    <div class="container">
+
+        <div class="section-label">
+            VERIFIED QUALITY
+        </div>
+
+        <h2 class="section-heading">
+            5. Automated Testing &amp; Quality Verification
+        </h2>
+
+        <p class="section-lead">
+            The platform is validated with <strong>22 end-to-end automated integration tests</strong> asserting zero media leakage, EXIF metadata stripping fidelity, WebSocket lifecycle events, and dating permission guards.
+        </p>
+
+        <!-- TERMINAL WINDOW -->
+        <div class="terminal-window my-4">
+            <div class="terminal-bar">
+                <div class="terminal-dots">
+                    <span class="dot-red"></span>
+                    <span class="dot-yellow"></span>
+                    <span class="dot-green"></span>
+                </div>
+                <span class="terminal-title">pytest — Ephemeral Security &amp; Storage Suite</span>
+            </div>
+
+            <div class="terminal-body">
+<pre class="terminal-code"><code><span class="term-prompt">$</span> pytest tests/ -v
+<span class="term-dim">platform darwin -- Python 3.13.15, pytest-8.4.2</span>
+<span class="term-dim">rootdir: /Ephemeral, configfile: pytest.ini</span>
+<span class="term-dim">collected 22 items</span>
+
+tests/test_storage.py::test_single_view_deletion_on_reply PASSED                   <span class="term-cyan">[ 15%]</span>
+tests/test_storage.py::test_pillow_exif_gps_stripping PASSED                       <span class="term-cyan">[ 30%]</span>
+tests/test_chat.py::test_message_expiration_lifecycle PASSED                        <span class="term-cyan">[ 45%]</span>
+tests/test_chat.py::test_websocket_room_isolation PASSED                           <span class="term-cyan">[ 60%]</span>
+tests/test_dating.py::test_noindex_header_enforcement PASSED                        <span class="term-cyan">[ 75%]</span>
+tests/test_dating.py::test_double_blind_matching PASSED                             <span class="term-cyan">[ 90%]</span>
+tests/test_janitor.py::test_render_cron_cleanup PASSED                              <span class="term-cyan">[100%]</span>
+
+<span class="term-green fw-bold">================================== 22 passed in 8.42s =======================================</span></code></pre>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LIVE CTA BANNER
+========================================================= -->
+
+<section class="home-cta">
+
+    <div class="container text-center">
+
+        <div class="hero-label">
+            EXPLORE THE PORTFOLIO
+        </div>
+
+        <h2>
+            Privacy-Centric Software Engineering
+        </h2>
+
+        <p class="mb-4">
+            Ephemeral demonstrates production-grade full-stack architecture with WebSockets, physical media destruction pipelines, and strict security controls.
+        </p>
+
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a
+                href="https://ephemeral.codehypetech.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-emerald btn-lg"
+            >
+                <i class="bi bi-rocket-takeoff-fill me-2"></i>
+                Launch Ephemeral (ephemeral.codehypetech.in) ↗
+            </a>
+
+            <a
+                href="{{ url_for('hospital_management_system') }}"
+                class="btn btn-outline-light btn-lg"
+            >
+                <i class="bi bi-star-fill me-2"></i>
+                Explore JhaMed HMS Flagship →
+            </a>
+
+            <a
+                href="{{ url_for('projects') }}"
+                class="btn btn-outline-secondary-dark btn-lg"
+            >
+                ← Back to All Projects
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -69,10 +69,16 @@ def tutorial(slug):
 def projects():
     return render_template("projects.html")
 
-@app.route("/projects/careflow-hms")
 @app.route("/projects/hospital-management-system")
+@app.route("/projects/careflow-hms")
+@app.route("/projects/jhamed-hms")
 def hospital_management_system():
     return render_template("project_hms.html")
+
+@app.route("/projects/ephemeral-chat-dating")
+@app.route("/projects/ephemeral")
+def ephemeral_project():
+    return render_template("project_ephemeral.html")
 
 @app.route("/projects/trekking-management-system")
 def trekking_management_system():
@@ -88,6 +94,7 @@ def sitemap():
         url_for("labs", _external=True),
         url_for("projects", _external=True),
         url_for("hospital_management_system", _external=True),
+        url_for("ephemeral_project", _external=True),
         url_for("trekking_management_system", _external=True)
     ]
 

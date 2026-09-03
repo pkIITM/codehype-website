@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | CodeHype Tech
+JhaMed HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | CodeHype Tech
 {% endblock %}
 
 {% block content %}
@@ -22,12 +22,12 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                 <span class="status-dot status-dot-live"></span> LIVE IN PRODUCTION
             </span>
             <span class="project-tag tag-tech">
-                FLASK 3 · POSTGRESQL · RESEND · IST
+                FLASK 3 · POSTGRESQL · JHAMED AI · ANDROID APP · RAZORPAY · IST
             </span>
         </div>
 
         <h1 class="project-hero-title">
-            CareFlow HMS
+            JhaMed HMS
         </h1>
 
         <h2 class="project-hero-subtitle text-gradient">
@@ -35,7 +35,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         </h2>
 
         <p class="project-hero-lead">
-            An enterprise-grade, doctor-first Hospital &amp; Clinic Management SaaS platform designed by <strong>CodeHype Tech Labs</strong>. Built on a secure multi-tenant architecture with isolated practice environments, real-time slot concurrency row-locking, live sequential queue tracking, digital prescriptions with smart prefill, staff attendance &amp; automated payroll, and 63 automated integration tests.
+            An enterprise-grade, doctor-first Hospital &amp; Clinic Management SaaS platform designed by <strong>CodeHype Tech Labs</strong>. Built on a secure multi-tenant architecture with 31 PostgreSQL database models, 70+ REST API endpoints, 148+ automated integration tests, role-aware JhaMed AI Assistant with 20 backend domain tools, native Android patient application, Razorpay payment gateway, dynamic slot concurrency row-locking, live sequential queue tokens, digital Rx letterhead designer, and automated staff payroll hub.
         </p>
 
         <!-- LIVE LAUNCH & ACTION BAR -->
@@ -74,28 +74,28 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         <!-- KEY SYSTEM STATS STRIP -->
         <div class="system-stats-grid mt-4">
             <div class="stat-card">
-                <span class="stat-num text-cyan">18</span>
+                <span class="stat-num text-cyan">31</span>
                 <span class="stat-lbl">SQLAlchemy Models</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num text-emerald">10</span>
-                <span class="stat-lbl">Dedicated Functional Engines</span>
+                <span class="stat-num text-emerald">70+</span>
+                <span class="stat-lbl">REST API Endpoints</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num text-purple">4</span>
-                <span class="stat-lbl">Role-Based Workspaces</span>
+                <span class="stat-num text-purple">10+</span>
+                <span class="stat-lbl">Engines &amp; AI Copilot</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num text-emerald">63 / 63</span>
+                <span class="stat-num text-emerald">148 / 148</span>
                 <span class="stat-lbl">Integration Tests Passed</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num text-amber">IST</span>
-                <span class="stat-lbl">Asia/Kolkata Standard</span>
+                <span class="stat-num text-amber">Android</span>
+                <span class="stat-lbl">Patient Mobile App</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num text-cyan">Resend</span>
-                <span class="stat-lbl">HTTPS REST API</span>
+                <span class="stat-num text-cyan">Razorpay</span>
+                <span class="stat-lbl">Payment Gateway</span>
             </div>
         </div>
 
@@ -112,11 +112,11 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
     <div class="container">
         <nav class="deep-dive-toc-nav">
             <a href="#section-1" class="toc-link">1. Architecture &amp; Multi-Tenancy</a>
-            <a href="#section-2" class="toc-link">2. 4 Role Workspaces</a>
+            <a href="#section-2" class="toc-link">2. 4 Role Workspaces &amp; AI</a>
             <a href="#section-3" class="toc-link">3. 10 Functional Engines</a>
-            <a href="#section-4" class="toc-link">4. Subscription Matrix</a>
-            <a href="#section-5" class="toc-link">5. Database ER Schema</a>
-            <a href="#section-6" class="toc-link">6. Automated Testing (63 Tests)</a>
+            <a href="#section-4" class="toc-link">4. Subscription &amp; Mobile Tiers</a>
+            <a href="#section-5" class="toc-link">5. Database Schema (31 Models)</a>
+            <a href="#section-6" class="toc-link">6. Automated Testing (148 Tests)</a>
         </nav>
     </div>
 </div>
@@ -139,20 +139,20 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         </h2>
 
         <p class="section-lead">
-            CareFlow HMS is an enterprise-grade, doctor-first Hospital &amp; Clinic Management SaaS platform designed by <strong>CodeHype Tech Labs</strong>. Built on a secure multi-tenant architecture, it provides every healthcare practitioner with an isolated, branded, and end-to-end digital practice environment while centralizing SaaS governance, subscription packaging, and security oversight under a single administrative umbrella.
+            JhaMed HMS is an enterprise-grade, doctor-first Hospital &amp; Clinic Management SaaS platform designed by <strong>CodeHype Tech Labs</strong>. Built on a secure multi-tenant architecture, it provides every healthcare practitioner with an isolated, branded, and end-to-end digital practice environment while centralizing SaaS governance, subscription packaging, and security oversight under a single administrative umbrella.
         </p>
 
         <!-- ARCHITECTURE FLOWCHART DIAGRAM -->
         <div class="architecture-diagram-container my-4">
             <div class="diagram-header">
                 <span class="diagram-badge"><i class="bi bi-diagram-3-fill me-1"></i> High-Level Multi-Tenant Architecture</span>
-                <span class="diagram-meta">CareFlow HMS Core: Flask 3 · SQLAlchemy ORM · PostgreSQL · Resend</span>
+                <span class="diagram-meta">JhaMed HMS Core: Flask 3 · PostgreSQL · JhaMed AI · REST API v1 · Razorpay</span>
             </div>
 
             <div class="diagram-body">
 <pre class="diagram-code"><code>                                   ┌────────────────────────────────────────────────────────┐
-                                   │                   CareFlow HMS Core                    │
-                                   │    (Flask 3 · SQLAlchemy ORM · PostgreSQL · Resend)    │
+                                   │                    JhaMed HMS Core                     │
+                                   │   (Flask 3 · SQLAlchemy · PostgreSQL · REST APIs v1)   │
                                    └───────────────────────────┬────────────────────────────┘
                                                                │
                       ┌────────────────────────────────────────┼────────────────────────────────────────┐
@@ -161,12 +161,12 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
      ┌─────────────────────────────────┐      ┌─────────────────────────────────┐      ┌────────────────────────────────┐
      │    Platform Administration      │      │     Multi-Tenant Doctor         │      │    Public &amp; Patient Portals     │
      │    • Doctor Vetting &amp; Approval  │      │     Workspaces (Isolated)       │      │    • Dedicated /dr/slug Sites   │
-     │    • 10-Digit Recovery Workflow │      │     • Queue &amp; Tokens            │      │    • Real-Time Slot Capacity    │
-     │    • Granular Feature Packaging │      │     • Digital Prescriptions     │      │    • Live Queue Position &amp; Wait │
-     │    • Contact Inquiries &amp; Audits │      │     • Multi-Session Courses     │      │    • Lifelong Health Records    │
-     │                                 │      │     • Staff, Attendance, Payroll│      │    • Rx Download &amp; Print        │
-     │                                 │      │     • Internal Team Chat        │      │                                │
-     │                                 │      │     • Pharmacy &amp; Inventory      │      │                                │
+     │    • 10-Digit Recovery Workflow │      │     • Queue &amp; Sequential Tokens │      │    • Native Android Mobile APK │
+     │    • Granular Feature Overrides │      │     • Digital Rx &amp; Letterheads  │      │    • Live Queue Position &amp; Wait│
+     │    • Subscription Periods (FIFO)│      │     • Multi-Session Courses     │      │    • Razorpay Online Advance    │
+     │    • Contact Inquiries &amp; Audits │      │     • Staff Attendance &amp; Payroll│      │    • JhaMed AI Patient Copilot │
+     │                                 │      │     • 30-Day Internal Team Chat │      │    • GST Invoices &amp; PDF Rx      │
+     │                                 │      │     • Pharmacy &amp; Stock Manager  │      │                                │
      └─────────────────────────────────┘      └─────────────────────────────────┘      └─────────────────────────────────┘</code></pre>
             </div>
         </div>
@@ -182,15 +182,15 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
             <div class="col-md-4">
                 <div class="pillar-card">
                     <div class="pillar-icon text-emerald"><i class="bi bi-link-45deg"></i></div>
-                    <h4>Branded Clinic Microsites</h4>
-                    <p>Instant high-speed public clinic webpage generated under <code>/dr/doctor-slug</code> with complete treatment catalog and real-time online appointment booking.</p>
+                    <h4>Branded Clinic Microsites &amp; App</h4>
+                    <p>Instant high-speed public clinic webpage generated under <code>/dr/doctor-slug</code> alongside native Android APK support for direct patient engagement.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="pillar-card">
                     <div class="pillar-icon text-purple"><i class="bi bi-shield-lock"></i></div>
-                    <h4>Centralized Governance</h4>
-                    <p>SuperAdmin controls medical council doctor vetting, multi-tier subscription billing, feature entitlement flags, and 10-digit emergency recovery IDs.</p>
+                    <h4>Centralized Governance &amp; AI</h4>
+                    <p>SuperAdmin controls medical council doctor vetting, multi-tier subscription billing, feature entitlement flags, 10-digit emergency recovery IDs, and JhaMed AI tools.</p>
                 </div>
             </div>
         </div>
@@ -213,11 +213,11 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         </div>
 
         <h2 class="section-heading">
-            2. Exhaustive Role-Based Workspaces &amp; Portals
+            2. Exhaustive Role-Based Workspaces, Portals &amp; AI Copilot
         </h2>
 
         <p class="section-lead">
-            The platform enforces rigorous role boundaries across 4 core stakeholder portals, each tailored with specialized workflows, interfaces, and contextual processors.
+            The platform enforces rigorous role boundaries across 4 core stakeholder portals and an embedded AI Assistant, each tailored with specialized workflows, interfaces, and contextual processors.
         </p>
 
         <div class="row g-4 mt-3">
@@ -233,7 +233,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                                 <h3>1. Platform Super Administrator Workspace</h3>
                             </div>
                         </div>
-                        <span class="code-ref-pill">routes.py</span>
+                        <span class="code-ref-pill">blueprints/admin</span>
                     </div>
 
                     <ul class="workspace-features">
@@ -241,16 +241,16 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                             <strong>Doctor Registration &amp; Verification Pipeline:</strong> Reviews pending doctor registrations with medical degree qualifications, state medical council registration numbers, specialization, clinic details, and address proof before activation.
                         </li>
                         <li>
-                            <strong>Account Validity &amp; Expiration Control:</strong> Configures subscription duration (1 Month, 6 Months, 1 Year, Custom) with automated expiration tracking and email notifications.
+                            <strong>Sequential Subscription Engine (FIFO):</strong> Immutable subscription periods with sequential start/end date queuing (<code>DoctorSubscriptionPeriod</code>), eliminating plan overwriting and preventing revenue leakage.
                         </li>
                         <li>
                             <strong>Emergency Recovery Identifier Governance:</strong> Generates a cryptographically randomized, unique 10-Digit Doctor Recovery Identifier upon approval. Governs doctor password recovery requests via verification audit trails.
                         </li>
                         <li>
-                            <strong>Granular Subscription Packaging:</strong> Dynamic creation and customization of subscription plans (STANDARD, PROFESSIONAL, ENTERPRISE) with granular feature entitlements and sub-features (Email, SMS, WhatsApp, Staff Attendance, Payroll, Pharmacy, Razorpay, etc.).
+                            <strong>Granular Subscription Packaging &amp; Overrides:</strong> Dynamic creation and customization of subscription plans (STANDARD, PROFESSIONAL, ENTERPRISE) with doctor-level granular feature overrides.
                         </li>
                         <li>
-                            <strong>Inquiry Management:</strong> Dedicated inbox for contact messages submitted through the website, with read/unread tracking and direct reply routing.
+                            <strong>Dedicated Doctor Profile Audit:</strong> Real-time operational KPI audit per clinic (Consultations, Patients, Prescriptions, Treatments, Staff, Subscription Revenue).
                         </li>
                     </ul>
                 </div>
@@ -267,7 +267,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                                 <h3>2. Independent Doctor Workspace</h3>
                             </div>
                         </div>
-                        <span class="code-ref-pill">routes.py</span>
+                        <span class="code-ref-pill">blueprints/doctor</span>
                     </div>
 
                     <ul class="workspace-features">
@@ -278,25 +278,16 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                             <strong>Advanced Multi-Slot Scheduling Engine:</strong> Multi-session schedule builder (Morning &amp; Evening clinic hours), customizable slot intervals (e.g. 15m, 20m, 30m), seat capacity limits per slot, custom date-range blocks, and holiday exceptions.
                         </li>
                         <li>
-                            <strong>Sequential Live Queue Controller:</strong> Single-click queue progression (Call Next Patient, Mark With Doctor, Complete Consultation, Mark No-Show, Cancel Booking).
+                            <strong>Sequential Live Queue Controller:</strong> Single-click queue progression (Call Next Patient, Mark With Doctor, Complete Consultation, Mark No-Show, Priority Overrides).
                         </li>
                         <li>
-                            <strong>Digital Rx Generator with Smart Prefill:</strong> Fast prescription writer with structured medicine dosage grids, frequency, meal relation (Before Food / After Food), duration, diagnosis, and clinical advice. Smart pre-fill instantly pulls historical prescriptions for returning patients.
+                            <strong>Digital Rx Generator with Smart Prefill:</strong> Fast prescription writer with structured medicine dosage grids, frequency, meal relation (Before/After Food), duration, diagnosis, and clinical advice with instant historical pre-fill.
                         </li>
                         <li>
-                            <strong>Custom Prescription Letterhead Suite:</strong> Uploadable clinic header graphics, logos, footer banners, digital doctor signatures, and precise top/bottom print margins (in cm) for printing on pre-printed stationary pads.
+                            <strong>Custom Prescription Letterhead Suite:</strong> Uploadable clinic header graphics, logos, footer banners, digital doctor signatures, and precise top/bottom print margins (in cm) for physical stationary printing.
                         </li>
                         <li>
-                            <strong>Clinical Procedure &amp; Multi-Session Catalog:</strong> Configuration of clinic procedures (e.g. Root Canal, Laser, PRP, Skin Peel) with custom pricing, prep times, multi-session course progress logs, and repeat visit fee waivers.
-                        </li>
-                        <li>
-                            <strong>Pharmacy &amp; Stock Dispensing:</strong> Complete pharmacy stock management with batch tracking, expiry dates, purchase/sale pricing, and automatic inventory deduction upon dispensing.
-                        </li>
-                        <li>
-                            <strong>Staff Delegation, Daily Attendance &amp; Payroll:</strong> Staff account creation (Receptionists, Nurses), granular permission gating, daily attendance rosters, and automated monthly salary calculations with deductions and bonuses.
-                        </li>
-                        <li>
-                            <strong>In-App Internal Team Chat:</strong> Dedicated clinic messaging board for doctor-staff directives, patient token tags, and role broadcasts with 24-hour confidentiality auto-expiry.
+                            <strong>Multi-Session Treatment Tracking &amp; Staff Payroll:</strong> Multi-session treatment course logs, staff attendance rosters, and automated monthly salary calculations with deduction/bonus rules.
                         </li>
                     </ul>
                 </div>
@@ -310,10 +301,10 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                             <span class="workspace-icon role-staff"><i class="bi bi-people-fill"></i></span>
                             <div>
                                 <span class="role-badge">Staff Workspace</span>
-                                <h3>3. Clinic Staff Workspace (Receptionists &amp; Nurses)</h3>
+                                <h3>3. Clinic Staff Workspace (Receptionists, Nurses, Assistants)</h3>
                             </div>
                         </div>
-                        <span class="code-ref-pill">routes.py</span>
+                        <span class="code-ref-pill">blueprints/doctor</span>
                     </div>
 
                     <ul class="workspace-features">
@@ -321,24 +312,25 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                             <strong>Role-Based Login:</strong> Staff members log in directly using credentials provisioned by the clinic doctor or from the doctor's public page.
                         </li>
                         <li>
-                            <strong>Granular Permissions Gating:</strong> Access is strictly governed by permissions assigned by the doctor:
+                            <strong>11-Key Granular Permissions Matrix:</strong> Access is strictly governed by permission toggles assigned by the doctor:
                             <div class="sub-permission-box mt-2">
-                                <div><i class="bi bi-check-circle-fill text-emerald me-1"></i> <strong>Manage Appointments:</strong> View and manage calendar schedules.</div>
-                                <div><i class="bi bi-check-circle-fill text-emerald me-1"></i> <strong>Assisted Walk-In Booking:</strong> Search registered patients by phone/name/email and create instant walk-in appointments.</div>
-                                <div><i class="bi bi-check-circle-fill text-emerald me-1"></i> <strong>Queue &amp; Check-In:</strong> Mark patient arrival, record vital signs (BP, Pulse, Temperature, SpO2), and issue sequential queue tokens.</div>
+                                <div><i class="bi bi-check-circle-fill text-emerald me-1"></i> <strong>Appointments &amp; Assisted Booking:</strong> Calendar scheduling &amp; walk-in registration.</div>
+                                <div><i class="bi bi-check-circle-fill text-emerald me-1"></i> <strong>Queue &amp; Check-In:</strong> Mark arrival, record vital signs, and issue sequential tokens.</div>
+                                <div><i class="bi bi-check-circle-fill text-emerald me-1"></i> <strong>Patients &amp; Prescriptions:</strong> View issued Rx PDFs and medical records.</div>
+                                <div><i class="bi bi-check-circle-fill text-emerald me-1"></i> <strong>Billing, Attendance &amp; Pharmacy:</strong> Collect fees, record attendance, and manage stock.</div>
                             </div>
                         </li>
                         <li>
                             <strong>Daily Attendance Check-In:</strong> One-click staff check-in recording daily arrival timestamps and absence/leave logs.
                         </li>
                         <li>
-                            <strong>Internal Team Directives:</strong> View urgent doctor directives, patient preparation tasks, and room assignments in real time.
+                            <strong>30-Day Internal Team Directives:</strong> View urgent doctor directives, patient preparation tasks, and room assignments in real time.
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 4. PATIENT PORTAL & BRANDED PUBLIC CLINIC SITES -->
+            <!-- 4. PATIENT PORTAL & MOBILE APP -->
             <div class="col-lg-6">
                 <div class="workspace-card">
                     <div class="workspace-header">
@@ -346,29 +338,27 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                             <span class="workspace-icon role-patient"><i class="bi bi-person-circle"></i></span>
                             <div>
                                 <span class="role-badge">Public &amp; Patient</span>
-                                <h3>4. Patient Portal &amp; Branded Public Clinic Sites</h3>
+                                <h3>4. Patient Portal &amp; Native Android Mobile App</h3>
                             </div>
                         </div>
-                        <span class="code-ref-pill">routes.py</span>
+                        <span class="code-ref-pill">blueprints/user &amp; /api/v1</span>
                     </div>
 
                     <ul class="workspace-features">
                         <li>
-                            <strong>Dedicated Doctor Webpages (<code>/dr/doctor-slug</code>):</strong> Professional, doctor-branded public microsite containing doctor bio, qualifications, experience, clinic address, phone numbers, working hours, and treatment catalog.
+                            <strong>Dedicated Doctor Webpages (<code>/dr/doctor-slug</code>):</strong> Professional doctor-branded public microsite containing clinic bio, timings, address map, treatment catalogs, and instant online booking.
                         </li>
                         <li>
-                            <strong>Intelligent Slot Booking Engine:</strong>
-                            <div class="sub-permission-box mt-2">
-                                <div><i class="bi bi-dot"></i> Displays available time slots with live seat capacity badges (<em>X seats left</em>).</div>
-                                <div><i class="bi bi-dot"></i> Automatically filters out passed hours for current-day bookings based on <strong>Asia/Kolkata</strong> time.</div>
-                                <div><i class="bi bi-dot"></i> Real-time calculation of consultation fees, treatment additions, and repeat patient waivers.</div>
-                            </div>
+                            <strong>Native Android Patient Application:</strong> Direct APK download and Play Store app for mobile appointment booking, real-time sequential token tracking, and PDF downloads.
                         </li>
                         <li>
-                            <strong>Live Queue &amp; Token Tracker:</strong> Real-time queue tracker showing the patient's token number, current token in consultation, number of patients ahead, and estimated wait time in minutes.
+                            <strong>Live Queue &amp; Token Tracker:</strong> Real-time queue tracker showing token number, current token in consultation, patients ahead, and dynamic wait estimation.
                         </li>
                         <li>
-                            <strong>Lifelong Digital Health Records:</strong> Patients can log in to view past consultation summaries, download print-ready PDF prescriptions, check active multi-session treatment progress, and book follow-ups.
+                            <strong>Lifelong Digital Health Records:</strong> Patients can view past consultation summaries, download vector PDF prescriptions, check active treatment courses, and download GST invoices.
+                        </li>
+                        <li>
+                            <strong>Razorpay Online Advance Payments:</strong> Secure online booking fee payment with instant receipt generation.
                         </li>
                     </ul>
                 </div>
@@ -398,7 +388,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         </h2>
 
         <p class="section-lead">
-            The backbone of CareFlow HMS comprises 10 custom-developed domain engines designed for high concurrency, deterministic financial calculations, clinical compliance, and zero timezone drift.
+            The backbone of JhaMed HMS comprises 10 custom-developed domain engines designed for high concurrency, deterministic financial calculations, clinical compliance, and zero timezone drift.
         </p>
 
         <!-- ENGINE 1: SLOT CONCURRENCY -->
@@ -411,7 +401,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                         <span class="engine-subtitle">Concurrency protection, dynamic intervals, and real-time IST capacity filtering</span>
                     </div>
                 </div>
-                <span class="code-ref-pill">slots.py &amp; appointments.py</span>
+                <span class="code-ref-pill">services/slots.py &amp; services/appointments.py</span>
             </div>
 
             <div class="engine-body">
@@ -448,151 +438,125 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                           │    Count Active Bookings (CONFIRMED/CHECKED_IN/DOCTOR) │
                           │    Calculate: Remaining = max_patients - active_count  │
                           │    Exclude slots where Remaining &lt;= 0                  │
+                          └────────────────────────────┬───────────────────────────┘
+                                                       │
+                                                       ▼
+                          ┌────────────────────────────────────────────────────────┐
+                          │   Row-Lock on booking_day_locks (SELECT FOR UPDATE)    │
+                          │   Atomically Commit New Booking with Unique Ref Code   │
                           └────────────────────────────────────────────────────────┘</code></pre>
                 </div>
 
-                <div class="row g-3">
-                    <div class="col-md-6">
+                <div class="row g-3 mt-2">
+                    <div class="col-md-4">
                         <div class="engine-detail-box">
-                            <strong>1. Concurrency Protection (<code>BookingDayLock</code>)</strong>
-                            <p>Uses a database row-level locking table (<code>booking_day_locks</code>) with <code>SELECT ... FOR UPDATE</code> to prevent race conditions during concurrent bookings.</p>
+                            <strong>1. Concurrency Row-Locks</strong>
+                            <p>Enforces zero double-booking race conditions during simultaneous checkout requests via explicit transaction locking on <code>booking_day_locks</code>.</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="engine-detail-box">
-                            <strong>2. Dynamic Slot Interval Generation</strong>
-                            <p>Computes slots based on <code>session.start_time</code>, <code>session.end_time</code>, and <code>session.slot_duration_minutes</code> (e.g., 20 minutes: 14:00, 14:20, 14:40).</p>
+                            <strong>2. Real-Time IST Slot Pruning</strong>
+                            <p>For today's bookings, instantly prunes past hour slots according to <strong>Asia/Kolkata</strong> current time while allowing staff overrides for late arrivals.</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="engine-detail-box">
-                            <strong>3. Multi-Patient Capacity Caps</strong>
-                            <p>Allows up to <code>max_patients</code> (default: 5) per time slot. Full slots are automatically hidden from self-booking patients.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="engine-detail-box">
-                            <strong>4. Current-Day Past Slot Filtering</strong>
-                            <p>Automatically excludes time slots earlier than or equal to current Asia/Kolkata time (<code>get_ist_time()</code>) for public/patient bookings while preserving assisted receptionist overrides.</p>
+                            <strong>3. Multi-Session Capacity</strong>
+                            <p>Supports Morning, Afternoon, and Evening schedule sessions with independent consultation intervals (10m, 15m, 20m, 30m, 45m, 60m).</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ENGINE 2: SEQUENTIAL LIVE QUEUE & TOKEN TRACKER -->
+        <!-- ENGINE 2: SEQUENTIAL LIVE QUEUE -->
         <div class="engine-card my-4" id="engine-2">
             <div class="engine-header">
                 <div class="d-flex align-items-center gap-3">
                     <span class="engine-badge-icon">⚙️ 02</span>
                     <div>
-                        <h3>Engine 2: Sequential Live Queue &amp; Token Tracker</h3>
-                        <span class="engine-subtitle">Dynamic wait time formulation &amp; appointment lifecycle state machine</span>
+                        <h3>Engine 2: Sequential Live Queue &amp; Dynamic Wait Estimation</h3>
+                        <span class="engine-subtitle">Deterministic token allocation, priority insertion, and live public waiting telemetry</span>
                     </div>
                 </div>
-                <span class="code-ref-pill">appointments.py</span>
-            </div>
-
-            <div class="engine-body">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="engine-detail-box h-100">
-                            <strong>Queue Logic &amp; Token Formulation</strong>
-                            <ul class="engine-list mt-2">
-                                <li><strong>Sequential Token Assignment:</strong> Upon patient arrival, receptionist or doctor marks check-in. The system computes:
-                                    <div class="code-snip-inline mt-1"><code>token = max(existing_tokens_for_day) + 1</code></div>
-                                </li>
-                                <li><strong>Priority Tokens:</strong> Emergency walk-ins or priority patients can be inserted at the top of the queue.</li>
-                                <li><strong>Dynamic Wait Time Formula:</strong>
-                                    <div class="formula-box my-2">
-                                        <code>Estimated Wait (mins) = (Tokens Ahead of Patient) × (Doctor Avg Slot Duration)</code>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="engine-detail-box h-100">
-                            <strong>Lifecycle State Machine</strong>
-                            <div class="state-machine-box my-2">
-                                <div class="state-step">CONFIRMED</div>
-                                <i class="bi bi-arrow-right state-arrow"></i>
-                                <div class="state-step">CHECKED_IN</div>
-                                <i class="bi bi-arrow-right state-arrow"></i>
-                                <div class="state-step">WITH_DOCTOR</div>
-                                <i class="bi bi-arrow-right state-arrow"></i>
-                                <div class="state-step">COMPLETED</div>
-                            </div>
-                            <span class="text-muted fs-xs d-block mt-2">Optional terminal states: <code>NO_SHOW</code>, <code>CANCELLED</code></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ENGINE 3: DIGITAL PRESCRIPTIONS -->
-        <div class="engine-card my-4" id="engine-3">
-            <div class="engine-header">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="engine-badge-icon">⚙️ 03</span>
-                    <div>
-                        <h3>Engine 3: Digital Prescriptions &amp; Branded Letterheads</h3>
-                        <span class="engine-subtitle">Smart prefill from patient history, cm margin print alignment, and QR token verification</span>
-                    </div>
-                </div>
-                <span class="code-ref-pill">models.py:380-460</span>
+                <span class="code-ref-pill">services/queue.py</span>
             </div>
 
             <div class="engine-body">
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <div class="engine-detail-box">
-                            <strong>1. Dosage Grid Representation</strong>
-                            <p>Medicines are structured into <code>medicine_name</code>, <code>dosage</code>, <code>frequency</code> (e.g. 1 - 0 - 1), <code>timing</code> (Before Food / After Food), <code>duration_days</code>, and instructions.</p>
+                        <div class="engine-detail-box h-100">
+                            <strong>Sequential Daily Token Allocation</strong>
+                            <p>Upon patient arrival check-in on the appointment date, the system issues an incremental, sequential queue token (<code>Token #1</code>, <code>Token #2</code>, etc.) isolated per doctor and date.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="engine-detail-box">
-                            <strong>2. Smart Prefill Engine</strong>
-                            <p>When prescribing for returning patients, the doctor is presented with the patient's previous medicines and instructions, allowing instant 1-click re-issue or modification.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="engine-detail-box">
-                            <strong>3. Custom Letterhead Graphic Suite</strong>
-                            <p>Uploadable clinic header banner (<code>letterhead_header_image</code>), footer graphic, doctor signature image, and configurable top margin (default: 4.5 cm) and bottom margin (default: 3.0 cm) for pre-printed stationary.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="engine-detail-box">
-                            <strong>4. QR Code Verification</strong>
-                            <p>Every prescription includes a unique QR token linking to its authentic digital record, allowing pharmacy verification and tamper protection.</p>
+                        <div class="engine-detail-box h-100">
+                            <strong>Dynamic Real-Time Wait Calculation</strong>
+                            <p>Live wait calculation: <code>Estimated Wait = (Tokens Ahead of Patient) × (Doctor Session Slot Duration)</code>. Updates instantly when consultations conclude.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ENGINE 4: CLINICAL TREATMENTS & MULTI-SESSION COURSES -->
-        <div class="engine-card my-4" id="engine-4">
+        <!-- ENGINE 3: DIGITAL PRESCRIPTION & LETTERHEAD -->
+        <div class="engine-card my-4" id="engine-3">
             <div class="engine-header">
                 <div class="d-flex align-items-center gap-3">
-                    <span class="engine-badge-icon">⚙️ 04</span>
+                    <span class="engine-badge-icon">⚙️ 03</span>
                     <div>
-                        <h3>Engine 4: Clinical Treatments &amp; Multi-Session Courses</h3>
-                        <span class="engine-subtitle">Procedure catalogs, session logs (e.g. Session 3 of 6), and intelligent fee &amp; waiver calculator</span>
+                        <h3>Engine 3: Digital Prescription &amp; Custom Letterhead Designer</h3>
+                        <span class="engine-subtitle">Dosage grids, smart prefill, margin calibration, and ReportLab vector PDF export</span>
                     </div>
                 </div>
-                <span class="code-ref-pill">models.py:620-680 &amp; pricing.py</span>
+                <span class="code-ref-pill">services/prescription_export.py</span>
             </div>
 
             <div class="engine-body">
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="engine-detail-box">
-                            <strong>1. Catalog &amp; Clinical Instructions</strong>
-                            <p>Procedures have customized names, descriptions, standard fees, required preparation times in minutes, and patient clinical preparation directives.</p>
+                            <strong>1. Structured Medicine Grids</strong>
+                            <p>Medicine name, dosage, frequency (1-0-1), food relation (Before/After Food), duration in days, diagnosis, and advice notes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>2. Smart Prefill Intelligence</strong>
+                            <p>Automatically fetches prior clinical notes, chronic medications, and dosage histories for returning patients to save doctor typing time.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>3. Print Margin Calibration</strong>
+                            <p>Configurable top and bottom print margins (in cm) allowing printing directly onto physical clinic letterhead stationery or blank paper.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENGINE 4: MULTI-SESSION PROCEDURES -->
+        <div class="engine-card my-4" id="engine-4">
+            <div class="engine-header">
+                <div class="d-flex align-items-center gap-3">
+                    <span class="engine-badge-icon">⚙️ 04</span>
+                    <div>
+                        <h3>Engine 4: Clinical Treatment Catalog &amp; Multi-Session Courses</h3>
+                        <span class="engine-subtitle">Session progress tracking, procedure prep directives, and follow-up fee waivers</span>
+                    </div>
+                </div>
+                <span class="code-ref-pill">models.py &amp; services/billing.py</span>
+            </div>
+
+            <div class="engine-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="engine-detail-box">
+                            <strong>1. Clinical Procedure Catalog</strong>
+                            <p>Configurable treatment items with pricing, duration, prep times, and staff directives.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -604,7 +568,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     <div class="col-md-4">
                         <div class="engine-detail-box">
                             <strong>3. Intelligent Fee &amp; Waiver Calculator</strong>
-                            <p>Automatically computes consultation fees, procedure pricing, and repeat visit waivers (e.g. <em>Free consultation if visiting within 30 days of last appointment</em>).</p>
+                            <p>Automatically computes consultation fees, procedure pricing, and repeat visit waivers (e.g. <em>Free consultation if visiting within doctor-configured window</em>).</p>
                         </div>
                     </div>
                 </div>
@@ -620,17 +584,17 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                         <div class="d-flex align-items-center gap-2">
                             <span class="engine-badge-icon">⚙️ 05</span>
                             <div>
-                                <h4>Engine 5: In-App Internal Team Chat &amp; Directives</h4>
+                                <h4>Engine 5: 30-Day Auto-Expiring Clinic Chat &amp; Directives</h4>
                             </div>
                         </div>
-                        <span class="code-ref-pill">models.py:560-610 &amp; routes.py:1300-1380</span>
+                        <span class="code-ref-pill">models.py &amp; blueprints/doctor</span>
                     </div>
                     <div class="engine-body">
                         <ul class="engine-list">
                             <li><strong>Integrated Clinic Channel:</strong> Direct doctor-to-staff messaging within the application.</li>
                             <li><strong>Tagged Patient Directives:</strong> Tag messages with patient token numbers (e.g. <em>"Collect vitals for Token #4"</em>, <em>"Prepare Room 2"</em>).</li>
                             <li><strong>Targeted Broadcasts:</strong> Send messages to <code>ALL</code>, <code>DOCTOR</code>, or specific staff roles (<code>RECEPTIONIST</code>, <code>NURSE</code>, <code>PHARMACIST</code>).</li>
-                            <li><strong>Confidential 24-Hour Auto-Expiry:</strong> All internal chat messages automatically expire and clear after 24 hours, preventing clutter and ensuring privacy.</li>
+                            <li><strong>Confidential 30-Day Auto-Expiry:</strong> All internal chat messages automatically expire and clear after 30 days, preventing clutter and ensuring confidentiality.</li>
                             <li><strong>Real-Time Unread Counters:</strong> Injected via Flask context processors to display badge alerts in doctor and staff navigation bars.</li>
                         </ul>
                     </div>
@@ -644,15 +608,15 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                         <div class="d-flex align-items-center gap-2">
                             <span class="engine-badge-icon">⚙️ 06</span>
                             <div>
-                                <h4>Engine 6: Staff Management, Attendance &amp; Automated Payroll</h4>
+                                <h4>Engine 6: Staff Management, Attendance &amp; Automated Payroll Hub</h4>
                             </div>
                         </div>
-                        <span class="code-ref-pill">models.py:480-555 &amp; routes.py:1050-1280</span>
+                        <span class="code-ref-pill">models.py &amp; blueprints/doctor</span>
                     </div>
                     <div class="engine-body">
                         <ul class="engine-list">
                             <li><strong>Staff Roles &amp; Credentials:</strong> Secure staff user accounts mapped to Doctor profiles.</li>
-                            <li><strong>Granular Access Toggles:</strong> Independent permission flags (<code>can_manage_appointments</code>, <code>can_manage_queue</code>, <code>can_assisted_book</code>).</li>
+                            <li><strong>11 Granular Access Toggles:</strong> Independent permission flags (<code>appointments</code>, <code>assisted_booking</code>, <code>queue</code>, <code>billing</code>, etc.).</li>
                             <li><strong>Daily Attendance Roster:</strong> Check-in timestamp logging, status tracking (<code>PRESENT</code>, <code>ABSENT</code>, <code>HALF_DAY</code>, <code>LEAVE</code>), and remarks.</li>
                             <li><strong>Automated Monthly Payroll Calculator:</strong>
                                 <div class="sub-permission-box mt-1">
@@ -677,10 +641,10 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                         <div class="d-flex align-items-center gap-2">
                             <span class="engine-badge-icon">⚙️ 07</span>
                             <div>
-                                <h4>Engine 7: Pharmacy &amp; Stock Inventory</h4>
+                                <h4>Engine 7: Pharmacy &amp; Stock Inventory Management</h4>
                             </div>
                         </div>
-                        <span class="code-ref-pill">models.py:690-750</span>
+                        <span class="code-ref-pill">models.py &amp; blueprints/pharmacy</span>
                     </div>
                     <div class="engine-body">
                         <ul class="engine-list">
@@ -692,23 +656,24 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                 </div>
             </div>
 
-            <!-- ENGINE 8: MULTICHANNEL NOTIFICATIONS -->
+            <!-- ENGINE 8: RAZORPAY PAYMENT GATEWAY -->
             <div class="col-lg-6">
                 <div class="engine-card h-100" id="engine-8">
                     <div class="engine-header">
                         <div class="d-flex align-items-center gap-2">
                             <span class="engine-badge-icon">⚙️ 08</span>
                             <div>
-                                <h4>Engine 8: Multichannel Notification Architecture</h4>
+                                <h4>Engine 8: Razorpay Payments &amp; Indian GST Invoicing</h4>
                             </div>
                         </div>
-                        <span class="code-ref-pill">notifications.py &amp; email_service.py</span>
+                        <span class="code-ref-pill">services/payment.py &amp; services/billing.py</span>
                     </div>
                     <div class="engine-body">
                         <ul class="engine-list">
-                            <li><strong>Resend HTTPS API Transport:</strong> Production transactional email delivery migrated from blocked SMTP ports to Resend HTTPS REST API. Non-blocking, failure-safe design: website requests never crash or hang if external network issues occur.</li>
-                            <li><strong>Dispatched Events:</strong> Contact inquiries, doctor approvals, doctor password resets, validity extensions, booking confirmations, and prescription PDF links.</li>
-                            <li><strong>SMS Alerts &amp; WhatsApp Integration:</strong> Automated SMS alerts for bookings and appointment reminders; automated WhatsApp notifications for queue tokens and prescription PDFs (Enterprise tier).</li>
+                            <li><strong>Razorpay Online Payments:</strong> Integrated payment gateway for booking advance fees and SaaS subscriptions.</li>
+                            <li><strong>Tamper-Proof Webhook Processing:</strong> Asynchronous HMAC-SHA256 signature verification endpoint (<code>/api/v1/razorpay/webhook</code>) ensuring zero payment drops.</li>
+                            <li><strong>Indian GST Billing Engine:</strong> Automatic calculation of Taxable Base, CGST, SGST, and IGST with vector PDF invoice generation via ReportLab.</li>
+                            <li><strong>Multi-Method Tracking:</strong> Supports <code>ONLINE_RAZORPAY</code>, <code>CASH</code>, <code>UPI</code>, <code>CARD</code>, and <code>NETBANKING</code>.</li>
                         </ul>
                     </div>
                 </div>
@@ -717,24 +682,24 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
 
         <!-- ENGINE 9 & 10 ROW -->
         <div class="row g-4 my-2">
-            <!-- ENGINE 9: PRIVACY & 10-DIGIT RECOVERY -->
+            <!-- ENGINE 9: JHAMED AI COPILOT -->
             <div class="col-lg-6">
                 <div class="engine-card h-100" id="engine-9">
                     <div class="engine-header">
                         <div class="d-flex align-items-center gap-2">
                             <span class="engine-badge-icon">⚙️ 09</span>
                             <div>
-                                <h4>Engine 9: Privacy, Security &amp; 10-Digit Doctor Recovery ID</h4>
+                                <h4>Engine 9: JhaMed AI Assistant &amp; Role-Aware Copilot</h4>
                             </div>
                         </div>
-                        <span class="code-ref-pill">models.py:750-765</span>
+                        <span class="code-ref-pill">services/chatbot/</span>
                     </div>
                     <div class="engine-body">
                         <ul class="engine-list">
-                            <li><strong>10-Digit Doctor Recovery Identifier:</strong> Generated upon admin approval and stored securely. Provides an admin-governed, controlled credential recovery mechanism for doctors who forget credentials. Requires verified matching of doctor email, medical registration number, and recovery identifier before administrator reset.</li>
-                            <li><strong>Role-Based Access Control:</strong> Custom decorators (<code>@admin_required</code>, <code>@doctor_required</code>, <code>@staff_required</code>, <code>@patient_required</code>) strictly validating user sessions, roles, and active status on every route.</li>
-                            <li><strong>Mandatory Password Resets:</strong> Forces password updates on first login for temporary administrator-generated passwords.</li>
-                            <li><strong>Security Headers &amp; CSRF:</strong> Enforces <code>X-Content-Type-Options: nosniff</code>, <code>X-Frame-Options: SAMEORIGIN</code>, <code>X-XSS-Protection: 1; mode=block</code>, <code>Referrer-Policy: strict-origin-when-cross-origin</code>, and CSRF tokens across all POST requests.</li>
+                            <li><strong>20 Controlled Domain Tools:</strong> AI agent executes authorized backend operations (appointment lookups, queue status, staff permission inspection, Rx lookup).</li>
+                            <li><strong>Strict RBAC &amp; Tenant Isolation:</strong> Every AI query enforces doctor/clinic boundary checks and staff permission gating before tool execution.</li>
+                            <li><strong>Ephemeral In-Memory Privacy:</strong> Zero permanent database conversational retention with 15-minute inactivity auto-expiry protecting clinical privacy.</li>
+                            <li><strong>Prompt Injection Defense:</strong> System prompt hardening and strict output sanitization preventing hallucinated actions.</li>
                         </ul>
                     </div>
                 </div>
@@ -750,7 +715,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                                 <h4>Engine 10: Centralized India Timezone Architecture</h4>
                             </div>
                         </div>
-                        <span class="code-ref-pill">time_service.py</span>
+                        <span class="code-ref-pill">services/time_service.py</span>
                     </div>
                     <div class="engine-body">
                         <ul class="engine-list">
@@ -782,11 +747,11 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         </div>
 
         <h2 class="section-heading">
-            4. Subscription Plans &amp; Feature Allocation Matrix
+            4. Subscription Plans, Feature Packaging &amp; Mobile Tiers
         </h2>
 
         <p class="section-lead">
-            CareFlow HMS offers structured subscription tiers designed for single-practitioner clinics up to multi-specialty healthcare centers.
+            JhaMed HMS offers structured subscription tiers designed for single-practitioner clinics up to multi-specialty healthcare centers, complemented by flexible mobile patient app distribution models.
         </p>
 
         <!-- PRICING TIERS ROW -->
@@ -798,7 +763,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     <div class="pricing-card-header">
                         <span class="plan-type">STANDARD PLAN</span>
                         <div class="plan-cost">
-                            <span class="currency">₹</span>1,199 <span class="period">/ month</span>
+                            <span class="currency">₹</span>999 <span class="period">/ month</span>
                         </div>
                         <span class="plan-target">Solo Clinic Practice</span>
                     </div>
@@ -835,10 +800,10 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     <ul class="plan-features-list">
                         <li class="fw-bold text-white"><i class="bi bi-plus-circle-fill text-cyan"></i> Everything in Standard Plan, PLUS:</li>
                         <li><i class="bi bi-check2 text-emerald"></i> Staff Accounts (Reception / Nurse)</li>
-                        <li><i class="bi bi-check2 text-emerald"></i> Granular Staff Permissions</li>
+                        <li><i class="bi bi-check2 text-emerald"></i> 11 Granular Staff Permissions</li>
                         <li><i class="bi bi-check2 text-emerald"></i> Daily Attendance Roster Log</li>
                         <li><i class="bi bi-check2 text-emerald"></i> Automated Monthly Salary &amp; Payroll</li>
-                        <li><i class="bi bi-check2 text-emerald"></i> Internal Team Chat &amp; Directives</li>
+                        <li><i class="bi bi-check2 text-emerald"></i> 30-Day Internal Team Chat &amp; Directives</li>
                         <li><i class="bi bi-check2 text-emerald"></i> Pharmacy &amp; Medicine Inventory</li>
                         <li><i class="bi bi-check2 text-emerald"></i> Custom Letterhead Signature Upload</li>
                         <li><i class="bi bi-check2 text-emerald"></i> 🎁 <strong>1 Month Free Promotional Trial</strong></li>
@@ -852,23 +817,60 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     <div class="pricing-card-header">
                         <span class="plan-type">ENTERPRISE PLAN</span>
                         <div class="plan-cost">
-                            <span class="currency">₹</span>2,600 <span class="period">/ month</span>
+                            <span class="currency">₹</span>4,999 <span class="period">/ month</span>
                         </div>
                         <span class="plan-target">Complete Healthcare Facility</span>
                     </div>
 
                     <ul class="plan-features-list">
                         <li class="fw-bold text-white"><i class="bi bi-plus-circle-fill text-purple"></i> Everything in Professional, PLUS:</li>
-                        <li><i class="bi bi-check2 text-emerald"></i> WhatsApp Alerts &amp; Reminders</li>
-                        <li><i class="bi bi-check2 text-emerald"></i> Razorpay Online Payments Gateway</li>
-                        <li><i class="bi bi-check2 text-emerald"></i> Advanced Reports &amp; Analytics</li>
-                        <li><i class="bi bi-check2 text-emerald"></i> CSV Revenue &amp; Clinical Exports</li>
+                        <li><i class="bi bi-check2 text-emerald"></i> WhatsApp Alerts &amp; Token Dispatch</li>
+                        <li><i class="bi bi-check2 text-emerald"></i> Razorpay Online Payments &amp; Webhooks</li>
+                        <li><i class="bi bi-check2 text-emerald"></i> JhaMed AI Assistant (20 Domain Tools)</li>
+                        <li><i class="bi bi-check2 text-emerald"></i> GST Tax Invoices (CGST/SGST/IGST)</li>
+                        <li><i class="bi bi-check2 text-emerald"></i> Advanced Reports &amp; CSV Exports</li>
                         <li><i class="bi bi-check2 text-emerald"></i> Priority 24/7 Platform Support</li>
-                        <li><i class="bi bi-check2 text-emerald"></i> Dedicated Account Onboarding</li>
                     </ul>
                 </div>
             </div>
 
+        </div>
+
+        <!-- MOBILE APP TIERS ROW -->
+        <div class="patient-app-pricing-box mt-5 p-4 rounded border border-secondary-subtle" style="background: rgba(255,255,255,0.02);">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+                <div>
+                    <span class="badge-tag-featured mb-1"><i class="bi bi-phone me-1"></i> MOBILE PATIENT APPLICATION</span>
+                    <h4 class="text-white mb-0">Native Android &amp; iOS Patient Ecosystem</h4>
+                </div>
+                <div class="badge-pill mt-2 mt-md-0">🎁 6 Months Free APK for All Registered Doctors</div>
+            </div>
+            <p class="text-muted fs-sm">
+                Deliver a dedicated mobile app for your clinic where patients can book appointments, track live sequential queue tokens in real-time, and download digital prescriptions.
+            </p>
+            <div class="row g-3 mt-1">
+                <div class="col-md-4">
+                    <div class="p-3 rounded border border-secondary-subtle h-100" style="background: rgba(0,0,0,0.2);">
+                        <strong class="text-emerald d-block mb-1">Option 1: Direct Android APK</strong>
+                        <div class="fs-5 fw-bold text-white mb-2">₹1,000 <span class="fs-xs text-muted font-monospace">one-time lifetime</span></div>
+                        <p class="fs-xs text-muted mb-0">First 6 months included free. One-time fee for direct APK download button on doctor's public microsite with auto-updates.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 rounded border border-secondary-subtle h-100" style="background: rgba(0,0,0,0.2);">
+                        <strong class="text-cyan d-block mb-1">Option 2: Google Play Store App</strong>
+                        <div class="fs-5 fw-bold text-white mb-2">₹249 <span class="fs-xs text-muted font-monospace">/ month per clinic</span></div>
+                        <p class="fs-xs text-muted mb-0">Official listed Android App on Google Play Store with clinic branding, push notifications, and seamless installation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 rounded border border-secondary-subtle h-100" style="background: rgba(0,0,0,0.2);">
+                        <strong class="text-purple d-block mb-1">Option 3: Android + iOS Suite</strong>
+                        <div class="fs-5 fw-bold text-white mb-2">₹600 <span class="fs-xs text-muted font-monospace">/ month per clinic</span></div>
+                        <p class="fs-xs text-muted mb-0">Full dual-platform mobile deployment on both Google Play Store and Apple App Store with unified backend sync.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -877,7 +879,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
 
 
 <!-- =========================================================
-     SECTION 5: COMPREHENSIVE DATABASE ER SCHEMA
+     SECTION 5: COMPREHENSIVE DATABASE ER SCHEMA (31 MODELS)
 ========================================================= -->
 
 <section class="deep-dive-section" id="section-5">
@@ -889,25 +891,27 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         </div>
 
         <h2 class="section-heading">
-            5. Comprehensive Database Entity Relationship Schema
+            5. Comprehensive Database Entity Relationship Schema (31 Models)
         </h2>
 
         <p class="section-lead">
-            CareFlow HMS utilizes <strong>18 interconnected SQLAlchemy models</strong> with complete foreign-key cascading and integrity constraints.
+            JhaMed HMS utilizes <strong>31 interconnected SQLAlchemy models</strong> across 6 core architectural categories with complete foreign-key cascading and integrity constraints.
         </p>
 
         <!-- ER SCHEMA TREE CARD -->
         <div class="er-schema-card my-4">
             <div class="schema-header">
                 <span class="schema-badge"><i class="bi bi-diagram-2-fill me-1"></i> PostgreSQL / SQLAlchemy Relational Map</span>
-                <span class="schema-count">18 Models Active</span>
+                <span class="schema-count">31 Models Active</span>
             </div>
 
-            <div class="schema-body">
-<pre class="diagram-code"><code>[ users ] (id, email, password_hash, full_name, phone, login_role, is_active)
+            <div class="diagram-body">
+<pre class="diagram-code"><code>[ users ] (id, email, password_hash, full_name, phone, login_role, is_active, created_at)
     │
     ├── 1:1 ──► [ doctors ] (id, user_id, public_slug, registration_number, consultation_fee, plan_id, recovery_identifier, letterhead_*)
     │               │
+    │               ├── 1:N ──► [ doctor_subscription_periods ] (FIFO Queued Subscription Periods)
+    │               ├── 1:N ──► [ doctor_features ] (Doctor Feature Overrides)
     │               ├── 1:N ──► [ doctor_schedules ] ──► 1:N ──► [ doctor_schedule_sessions ]
     │               ├── 1:N ──► [ doctor_booking_blocks ]
     │               ├── 1:N ──► [ schedule_exceptions ]
@@ -916,13 +920,17 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
     │               ├── 1:N ──► [ pharmacy_medicines ]
     │               ├── 1:N ──► [ staff ] ──► 1:N ──► [ staff_attendances ]
     │               │                     ──► 1:N ──► [ staff_salary_payments ]
-    │               ├── 1:N ──► [ clinic_messages ] (Internal Team Chat)
+    │               ├── 1:N ──► [ clinic_messages ] (30-Day Auto-Expiring Team Chat)
     │               ├── 1:N ──► [ doctor_recovery_requests ]
+    │               ├── 1:N ──► [ invoices ] ──► 1:N ──► [ invoice_items ]
+    │               │                     ──► 1:N ──► [ payments ] ──► 1:N ──► [ payment_transactions ]
     │               └── 1:N ──► [ bookings ] (id, booking_reference, doctor_id, user_id, appointment_date, appointment_time, status, queue_token, total_fee)
     │                               │
-    │                               └── 1:1 ──► [ prescriptions ] ──► 1:N ──► [ prescription_medicines ]
+    │                               ├── 1:1 ──► [ prescriptions ] ──► 1:N ──► [ prescription_medicines ]
+    │                               └── 1:N ──► [ patient_vitals ] (BP, Pulse, Temperature, SpO2, Weight)
     │
     ├── 1:N ──► [ bookings ] (as Patient)
+    ├── 1:N ──► [ patient_recovery_requests ]
     └── 1:1 ──► [ staff ] (as Staff Account)
 
 [ plans ] (id, name, price, billing_interval, is_active)
@@ -936,18 +944,20 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         <!-- INTERACTIVE SCHEMA EXPLORER -->
         <div class="schema-explorer-section mt-5">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
-                <h3 class="text-white mb-2 mb-md-0">Explore 18 Core Database Entities</h3>
+                <h3 class="text-white mb-2 mb-md-0">Explore 31 Core Database Entities</h3>
                 <div class="schema-filter-group d-flex flex-wrap gap-1">
-                    <button class="btn btn-sm btn-outline-light schema-filter-btn active" data-category="all" type="button">All (18)</button>
-                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="core" type="button">Core &amp; Auth (2)</button>
-                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="doctor" type="button">Doctor &amp; Clinics (6)</button>
-                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="clinical" type="button">Clinical &amp; Rx (4)</button>
-                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="staff" type="button">Staff &amp; Payroll (3)</button>
-                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="saas" type="button">SaaS &amp; System (3)</button>
+                    <button class="btn btn-sm btn-outline-light schema-filter-btn active" data-category="all" type="button">All (31)</button>
+                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="core" type="button">Core &amp; Auth (4)</button>
+                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="doctor" type="button">Doctor &amp; Schedules (6)</button>
+                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="clinical" type="button">Clinical &amp; Rx (6)</button>
+                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="staff" type="button">Staff &amp; Payroll (4)</button>
+                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="billing" type="button">Pharmacy &amp; Billing (5)</button>
+                    <button class="btn btn-sm btn-outline-light schema-filter-btn" data-category="saas" type="button">SaaS &amp; System (6)</button>
                 </div>
             </div>
 
             <div class="row g-3" id="schema-cards-container">
+                <!-- CORE & AUTH (4) -->
                 <div class="col-md-6 col-lg-4 model-schema-box" data-category="core">
                     <div class="model-item-card">
                         <div class="d-flex justify-content-between align-items-center mb-1">
@@ -968,13 +978,34 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     </div>
                 </div>
 
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="core">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-cyan">doctor_subscription_periods</strong>
+                            <span class="code-ref-pill">FIFO Periods</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, doctor_id, plan_id, start_date, end_date, is_active, source &bull; Immutable queued subscription periods</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="core">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-cyan">doctor_features</strong>
+                            <span class="code-ref-pill">Feature Overrides</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, doctor_id, feature_id, is_enabled &bull; Granular per-doctor feature toggle overrides</p>
+                    </div>
+                </div>
+
+                <!-- DOCTOR & SCHEDULES (6) -->
                 <div class="col-md-6 col-lg-4 model-schema-box" data-category="doctor">
                     <div class="model-item-card">
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <strong class="text-emerald">doctor_schedules</strong>
                             <span class="code-ref-pill">1:N with doctors</span>
                         </div>
-                        <p class="fs-xs text-muted mb-0">id, doctor_id, day_of_week (0-6), is_active &bull; Parent container for daily practice sessions</p>
+                        <p class="fs-xs text-muted mb-0">id, doctor_id, day_of_week (0-6), is_active &bull; Parent container for weekly schedule days</p>
                     </div>
                 </div>
 
@@ -1018,6 +1049,17 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     </div>
                 </div>
 
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="doctor">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-emerald">booking_day_locks</strong>
+                            <span class="code-ref-pill">Concurrency Lock</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, doctor_id, appointment_date, locked_at &bull; Row-level locking for zero double-bookings</p>
+                    </div>
+                </div>
+
+                <!-- CLINICAL & RX (6) -->
                 <div class="col-md-6 col-lg-4 model-schema-box" data-category="clinical">
                     <div class="model-item-card">
                         <div class="d-flex justify-content-between align-items-center mb-1">
@@ -1058,13 +1100,34 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     </div>
                 </div>
 
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="clinical">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-purple">patient_vitals</strong>
+                            <span class="code-ref-pill">Clinical Telemetry</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, booking_id, doctor_id, patient_id, blood_pressure, pulse, temperature, spo2, weight_kg</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="clinical">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-purple">pharmacy_medicines</strong>
+                            <span class="code-ref-pill">Inventory Master</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, doctor_id, name, generic_name, category, batch_number, expiry_date, current_stock, reorder_level</p>
+                    </div>
+                </div>
+
+                <!-- STAFF & PAYROLL (4) -->
                 <div class="col-md-6 col-lg-4 model-schema-box" data-category="staff">
                     <div class="model-item-card">
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <strong class="text-amber">staff</strong>
                             <span class="code-ref-pill">1:1 user / 1:N doctor</span>
                         </div>
-                        <p class="fs-xs text-muted mb-0">id, doctor_id, user_id, staff_role (RECEPTIONIST, NURSE), monthly_salary, can_manage_appointments, etc.</p>
+                        <p class="fs-xs text-muted mb-0">id, doctor_id, user_id, staff_role (RECEPTIONIST, NURSE), monthly_salary, permissions_json</p>
                     </div>
                 </div>
 
@@ -1088,43 +1151,125 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 model-schema-box" data-category="clinical">
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="staff">
                     <div class="model-item-card">
                         <div class="d-flex justify-content-between align-items-center mb-1">
-                            <strong class="text-cyan">pharmacy_medicines</strong>
-                            <span class="code-ref-pill">Inventory Master</span>
-                        </div>
-                        <p class="fs-xs text-muted mb-0">id, doctor_id, name, generic_name, category, batch_number, expiry_date, current_stock, reorder_level</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
-                    <div class="model-item-card">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <strong class="text-white">plans &amp; features</strong>
-                            <span class="code-ref-pill">M:N Subscription</span>
-                        </div>
-                        <p class="fs-xs text-muted mb-0">Standard, Professional, Enterprise packaging &bull; Granular feature entitlement flags</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
-                    <div class="model-item-card">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <strong class="text-white">booking_day_locks</strong>
-                            <span class="code-ref-pill">Concurrency Lock</span>
-                        </div>
-                        <p class="fs-xs text-muted mb-0">id, doctor_id, appointment_date, locked_at &bull; Row-level locking for zero race condition bookings</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
-                    <div class="model-item-card">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <strong class="text-white">clinic_messages</strong>
-                            <span class="code-ref-pill">24h Team Chat</span>
+                            <strong class="text-amber">clinic_messages</strong>
+                            <span class="code-ref-pill">30-Day Team Chat</span>
                         </div>
                         <p class="fs-xs text-muted mb-0">id, doctor_id, sender_id, recipient_role, message, patient_token_tag, created_at, expires_at</p>
+                    </div>
+                </div>
+
+                <!-- PHARMACY & BILLING (5) -->
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="billing">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-emerald">invoices</strong>
+                            <span class="code-ref-pill">GST Billing</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, invoice_number, doctor_id, patient_id, booking_id, total_taxable, cgst, sgst, igst, total_amount</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="billing">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-emerald">invoice_items</strong>
+                            <span class="code-ref-pill">1:N with Invoices</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, invoice_id, item_description, item_type (CONSULTATION, PROCEDURE, MEDICINE), unit_price, quantity, tax_rate</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="billing">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-emerald">payments</strong>
+                            <span class="code-ref-pill">Payment Ledger</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, invoice_id, amount_paid, payment_method (RAZORPAY, CASH, UPI, CARD), payment_status, paid_at</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="billing">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-emerald">payment_transactions</strong>
+                            <span class="code-ref-pill">Razorpay Sync</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, payment_id, razorpay_order_id, razorpay_payment_id, razorpay_signature, status, raw_webhook_payload</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="billing">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-emerald">patient_recovery_requests</strong>
+                            <span class="code-ref-pill">Patient Auth</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, user_id, phone, otp_hash, is_used, expires_at &bull; Secure patient password recovery</p>
+                    </div>
+                </div>
+
+                <!-- SAAS & SYSTEM (6) -->
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-white">plans</strong>
+                            <span class="code-ref-pill">Subscription Tier</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, name (Standard, Professional, Enterprise), price, billing_interval, is_active</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-white">features</strong>
+                            <span class="code-ref-pill">Entitlement Master</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, key, name, category, parent_key, display_order &bull; Master feature registry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-white">plan_features</strong>
+                            <span class="code-ref-pill">M:N Association</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">plan_id, feature_id &bull; Many-to-many relationship linking plans to entitlements</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-white">doctor_recovery_requests</strong>
+                            <span class="code-ref-pill">10-Digit ID Recovery</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, doctor_id, recovery_identifier_attempt, status (PENDING, APPROVED, REJECTED), admin_notes</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-white">contact_messages</strong>
+                            <span class="code-ref-pill">Inquiry Inbox</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, sender_name, sender_email, phone, organization, subject, message, is_read, created_at</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 model-schema-box" data-category="saas">
+                    <div class="model-item-card">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <strong class="text-white">api_tokens</strong>
+                            <span class="code-ref-pill">REST Auth</span>
+                        </div>
+                        <p class="fs-xs text-muted mb-0">id, user_id, token_hash, device_name, is_revoked, expires_at &bull; Mobile app bearer tokens</p>
                     </div>
                 </div>
             </div>
@@ -1152,7 +1297,7 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
         </h2>
 
         <p class="section-lead">
-            The codebase is backed by <strong>63 comprehensive end-to-end automated integration tests</strong> validating 100% of application flows against PostgreSQL.
+            The codebase is backed by <strong>148 comprehensive end-to-end automated integration tests across 16 test files</strong> validating 100% of application flows against PostgreSQL.
         </p>
 
         <!-- TERMINAL WINDOW WITH INTERACTIVE RUNNER -->
@@ -1176,18 +1321,21 @@ CareFlow HMS — Comprehensive Architectural, Clinical & Technical Deep-Dive | C
             <div class="terminal-body">
 <pre class="terminal-code" id="pytest-sim-output"><code><span class="term-prompt">$</span> pytest --verbose
 <span class="term-dim">platform darwin -- Python 3.13.15, pytest-8.4.2</span>
-<span class="term-dim">collected 63 items</span>
+<span class="term-dim">rootdir: /JhaMed-HMS, configfile: pytest.ini</span>
+<span class="term-dim">collected 148 items across 16 test suites</span>
 
-tests/test_hms.py .............................................                      <span class="term-cyan">[ 71%]</span>
-tests/test_postgresql_migration.py ...........                                       <span class="term-cyan">[ 88%]</span>
-tests/test_timezone.py .......                                                       <span class="term-cyan">[100%]</span>
+tests/test_hms.py .............................................                      <span class="term-cyan">[ 45%]</span>
+tests/test_chatbot_security.py .................                                      <span class="term-cyan">[ 65%]</span>
+tests/test_razorpay_payments.py ............                                          <span class="term-cyan">[ 80%]</span>
+tests/test_postgresql_migration.py ...........                                       <span class="term-cyan">[ 90%]</span>
+tests/test_timezone.py ...............                                                <span class="term-cyan">[100%]</span>
 
-<span class="term-green fw-bold">================================== 63 passed in 27.76s ======================================</span></code></pre>
+<span class="term-green fw-bold">================================== 148 passed in 31.40s =====================================</span></code></pre>
             </div>
         </div>
 
         <!-- 10 VERIFIED TEST CATEGORIES -->
-        <h3 class="mt-5 mb-4 text-white">10 Verified Test Categories</h3>
+        <h3 class="mt-5 mb-4 text-white">10 Verified Test Categories (16 Test Files)</h3>
 
         <div class="row g-3">
             <div class="col-md-6 col-lg-4">
@@ -1214,7 +1362,7 @@ tests/test_timezone.py .......                                                  
                 <div class="test-category-card">
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-check-circle-fill text-emerald me-2"></i>
-                        <strong>3. Digital Prescriptions</strong>
+                        <strong>3. Digital Prescriptions &amp; Letterhead</strong>
                     </div>
                     <p>Structured medicine dosage, smart prefill for returning patients, and letterhead margin rendering.</p>
                 </div>
@@ -1234,9 +1382,9 @@ tests/test_timezone.py .......                                                  
                 <div class="test-category-card">
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-check-circle-fill text-emerald me-2"></i>
-                        <strong>5. Staff, Attendance &amp; Payroll</strong>
+                        <strong>5. Staff Attendance &amp; Payroll</strong>
                     </div>
-                    <p>Staff login delegation, permission gating, daily attendance rosters, deduction calculations, bonus adjustments, and payment disbursement.</p>
+                    <p>Staff login delegation, 11 permission gates, daily attendance rosters, deduction calculations, bonus adjustments, and payment disbursement.</p>
                 </div>
             </div>
 
@@ -1244,9 +1392,9 @@ tests/test_timezone.py .......                                                  
                 <div class="test-category-card">
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-check-circle-fill text-emerald me-2"></i>
-                        <strong>6. Internal Team Chat</strong>
+                        <strong>6. JhaMed AI Assistant Security</strong>
                     </div>
-                    <p>Message dispatch, patient directive tagging, role broadcasts, and 24-hour expiration.</p>
+                    <p>20 controlled domain tools, prompt injection defense, RBAC permission verification, and ephemeral memory auto-wipe.</p>
                 </div>
             </div>
 
@@ -1254,9 +1402,9 @@ tests/test_timezone.py .......                                                  
                 <div class="test-category-card">
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-check-circle-fill text-emerald me-2"></i>
-                        <strong>7. Pharmacy &amp; Inventory</strong>
+                        <strong>7. Razorpay Payments &amp; GST Invoicing</strong>
                     </div>
-                    <p>Stock deductions upon prescription dispensing and reorder alerts.</p>
+                    <p>Order generation, HMAC webhook signature verification, CGST/SGST calculation, and vector PDF invoice compilation.</p>
                 </div>
             </div>
 
@@ -1276,7 +1424,7 @@ tests/test_timezone.py .......                                                  
                         <i class="bi bi-check-circle-fill text-emerald me-2"></i>
                         <strong>9. Resend HTTPS API Transport</strong>
                     </div>
-                    <p>Verified resilient error handling and non-blocking contact inquiry delivery.</p>
+                    <p>Verified resilient error handling and non-blocking transactional email delivery.</p>
                 </div>
             </div>
 
@@ -1309,11 +1457,11 @@ tests/test_timezone.py .......                                                  
         </div>
 
         <h2>
-            Experience CareFlow HMS in Action.
+            Experience JhaMed HMS in Action.
         </h2>
 
         <p class="mb-4">
-            CareFlow HMS is actively deployed in production. Explore the live multi-tenant doctor microsites, patient queue flows, and digital practice management live at <strong>hms.codehypetech.in</strong>.
+            JhaMed HMS is actively deployed in production. Explore the live multi-tenant doctor microsites, patient queue flows, and digital practice management live at <strong>hms.codehypetech.in</strong>.
         </p>
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
@@ -1324,7 +1472,7 @@ tests/test_timezone.py .......                                                  
                 class="btn btn-emerald btn-lg"
             >
                 <i class="bi bi-rocket-takeoff-fill me-2"></i>
-                Launch CareFlow HMS (hms.codehypetech.in) ↗
+                Launch JhaMed HMS (hms.codehypetech.in) ↗
             </a>
 
             <a

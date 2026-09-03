@@ -229,7 +229,7 @@
                 <li class="nav-item">
 
                     <a
-                        class="nav-link {% if request.endpoint in ['projects', 'hospital_management_system', 'trekking_management_system'] %}active{% endif %}"
+                        class="nav-link {% if request.endpoint in ['projects', 'hospital_management_system', 'ephemeral_project', 'trekking_management_system'] %}active{% endif %}"
                         href="{{ url_for('projects') }}"
                     >
                         Projects
@@ -238,7 +238,7 @@
                 </li>
 
                 <!-- =================================================
-                     CAREFLOW HMS LIVE LAUNCH BUTTON & IST CLOCK
+                     JHAMED HMS LIVE LAUNCH BUTTON & IST CLOCK
                 ================================================== -->
 
                 <li class="nav-item d-none d-lg-inline-flex align-items-center ms-lg-3">
@@ -256,7 +256,7 @@
                         rel="noopener noreferrer"
                     >
                         <span class="nav-live-dot"></span>
-                        CareFlow HMS <i class="bi bi-box-arrow-up-right ms-1"></i>
+                        JhaMed HMS <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
 
                 </li>
@@ -307,10 +307,16 @@
                 </p>
 
                 <div class="footer-live-card mt-3">
-                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-                        <span class="badge-live"><span class="status-dot"></span> CareFlow HMS Live</span>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                        <span class="badge-live"><span class="status-dot"></span> JhaMed HMS Live</span>
                         <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="footer-live-link">
                             hms.codehypetech.in <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 pt-2 border-top border-secondary-subtle">
+                        <span class="badge-live"><span class="status-dot"></span> Ephemeral Live</span>
+                        <a href="https://ephemeral.codehypetech.in/" target="_blank" rel="noopener noreferrer" class="footer-live-link">
+                            ephemeral.codehypetech.in <i class="bi bi-arrow-up-right"></i>
                         </a>
                     </div>
                 </div>
@@ -336,8 +342,10 @@
                 <h6 class="footer-heading">Projects</h6>
 
                 <ul class="footer-links">
-                    <li><a href="{{ url_for('hospital_management_system') }}">CareFlow HMS</a></li>
-                    <li><a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer">CareFlow Live App <i class="bi bi-box-arrow-up-right fs-xs"></i></a></li>
+                    <li><a href="{{ url_for('hospital_management_system') }}">JhaMed HMS</a></li>
+                    <li><a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer">JhaMed Live App <i class="bi bi-box-arrow-up-right fs-xs"></i></a></li>
+                    <li><a href="{{ url_for('ephemeral_project') }}">Ephemeral Platform</a></li>
+                    <li><a href="https://ephemeral.codehypetech.in/" target="_blank" rel="noopener noreferrer">Ephemeral Live App <i class="bi bi-box-arrow-up-right fs-xs"></i></a></li>
                     <li><a href="{{ url_for('trekking_management_system') }}">Trekking Platform</a></li>
                     <li><a href="{{ url_for('labs') }}">Labs Tutorials</a></li>
                     <li><a href="{{ url_for('sitemap') }}">Sitemap XML</a></li>
@@ -383,7 +391,7 @@
             </span>
 
             <span class="mt-2 mt-md-0 text-muted">
-                Production SaaS: <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="text-white-50 hover-text-white">CareFlow HMS</a>
+                Production SaaS: <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="text-white-50 hover-text-white">JhaMed HMS</a>
             </span>
 
         </div>

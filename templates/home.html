@@ -122,11 +122,16 @@ CodeHype Tech | Priyanshu Kumar
 
             <div class="col-lg-9">
 
-                <!-- LIVE DEPLOYMENT BADGE -->
-                <div class="hero-badge-wrapper mb-4">
+                <!-- LIVE DEPLOYMENT BADGES -->
+                <div class="hero-badge-wrapper mb-4 d-flex flex-wrap gap-2">
                     <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="live-pill-badge">
                         <span class="live-ping-dot"></span>
-                        <span class="badge-text"><strong>LIVE DEPLOYMENT:</strong> CareFlow HMS is now live at <u>hms.codehypetech.in</u></span>
+                        <span class="badge-text"><strong>LIVE SAAS:</strong> JhaMed HMS at <u>hms.codehypetech.in</u></span>
+                        <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                    <a href="https://ephemeral.codehypetech.in/" target="_blank" rel="noopener noreferrer" class="live-pill-badge">
+                        <span class="live-ping-dot" style="background-color: var(--color-cyan);"></span>
+                        <span class="badge-text"><strong>LIVE APP:</strong> Ephemeral at <u>ephemeral.codehypetech.in</u></span>
                         <i class="bi bi-arrow-right ms-1"></i>
                     </a>
                 </div>
@@ -147,36 +152,48 @@ CodeHype Tech | Priyanshu Kumar
                 </p>
 
                 <p class="hero-description text-muted-sub">
-                    From architecting multi-tenant SaaS platforms like <strong>CareFlow HMS</strong> to in-depth analysis of Apple Silicon, mobile platforms, and distributed systems.
+                    From architecting multi-tenant SaaS platforms like <strong>JhaMed HMS</strong> and privacy-first real-time systems like <strong>Ephemeral</strong> to in-depth analysis of distributed systems and consumer tech.
                 </p>
 
 
                 <div class="hero-buttons">
 
                     <a
-                        href="https://hms.codehypetech.in"
+                        href="https://www.youtube.com/@CodeHypeTech"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn btn-primary btn-lg"
                     >
+                        <i class="bi bi-youtube me-2"></i>
+                        CodeHype Tech
+                    </a>
+
+                    <a
+                        href="https://hms.codehypetech.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-emerald btn-lg"
+                    >
                         <i class="bi bi-rocket-takeoff-fill me-2"></i>
-                        Launch CareFlow HMS
+                        Launch JhaMed HMS
+                    </a>
+
+                    <a
+                        href="https://ephemeral.codehypetech.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-light btn-lg"
+                    >
+                        <i class="bi bi-shield-lock-fill me-2"></i>
+                        Launch Ephemeral
                     </a>
 
                     <a
                         href="{{ url_for('projects') }}"
-                        class="btn btn-outline-light btn-lg"
+                        class="btn btn-outline-secondary-dark btn-lg"
                     >
                         <i class="bi bi-grid-fill me-2"></i>
                         Explore Projects
-                    </a>
-
-                    <a
-                        href="{{ url_for('codehype') }}"
-                        class="btn btn-outline-secondary-dark btn-lg"
-                    >
-                        <i class="bi bi-youtube me-2"></i>
-                        YouTube
                     </a>
 
                 </div>
@@ -197,13 +214,13 @@ CodeHype Tech | Priyanshu Kumar
                     </div>
 
                     <div class="hero-stat-card">
-                        <strong>IIT Madras</strong>
-                        <span>BS Data Science</span>
+                        <strong class="text-cyan">Live App</strong>
+                        <span>Ephemeral Privacy</span>
                     </div>
 
                     <div class="hero-stat-card">
                         <strong class="text-emerald">Live SaaS</strong>
-                        <span>CareFlow HMS Platform</span>
+                        <span>JhaMed HMS Platform</span>
                     </div>
 
                 </div>
@@ -219,10 +236,10 @@ CodeHype Tech | Priyanshu Kumar
 
 
 <!-- =========================================================
-     FEATURED PROJECT SHOWCASE (CAREFLOW HMS TABS)
+     FEATURED PROJECT SHOWCASE (JHAMED HMS TABS)
 ========================================================= -->
 
-<section class="featured-project-section" id="featured-careflow">
+<section class="featured-project-section" id="featured-hms">
 
     <div class="container">
 
@@ -233,10 +250,10 @@ CodeHype Tech | Priyanshu Kumar
                     <span class="badge-pulse"></span> FEATURED FLAGSHIP SAAS
                 </div>
                 <h2 class="section-title">
-                    CareFlow HMS <span class="text-muted-gradient">— Enterprise Healthcare SaaS</span>
+                    JhaMed HMS <span class="text-muted-gradient">— Enterprise Healthcare SaaS</span>
                 </h2>
                 <p class="section-subtitle">
-                    A doctor-first, multi-tenant Hospital &amp; Clinic Management SaaS platform developed with Flask 3, SQLAlchemy ORM, PostgreSQL, Resend REST API, and ZoneInfo IST.
+                    A doctor-first, multi-tenant Hospital &amp; Clinic Management SaaS platform developed with Flask 3, PostgreSQL, SQLAlchemy (31 Models), JhaMed AI Assistant, Android Mobile App, and Razorpay Payments.
                 </p>
             </div>
 
@@ -258,11 +275,11 @@ CodeHype Tech | Priyanshu Kumar
             </div>
         </div>
 
-        <!-- CAREFLOW SHOWCASE CONTAINER -->
+        <!-- JHAMED SHOWCASE CONTAINER -->
         <div class="showcase-card">
 
             <!-- TAB NAV -->
-            <ul class="nav nav-pills showcase-nav mb-4" id="careflowTabs" role="tablist">
+            <ul class="nav nav-pills showcase-nav mb-4" id="hmsTabs" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="tab-overview-btn" data-bs-toggle="pill" data-bs-target="#tab-overview" type="button" role="tab" aria-controls="tab-overview" aria-selected="true">
                         <i class="bi bi-building me-2"></i>1. Architecture &amp; Multi-Tenant
@@ -270,23 +287,23 @@ CodeHype Tech | Priyanshu Kumar
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="tab-roles-btn" data-bs-toggle="pill" data-bs-target="#tab-roles" type="button" role="tab" aria-controls="tab-roles" aria-selected="false">
-                        <i class="bi bi-people-fill me-2"></i>2. 4 Role Workspaces
+                        <i class="bi bi-people-fill me-2"></i>2. 4 Role Workspaces &amp; AI
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="tab-engines-btn" data-bs-toggle="pill" data-bs-target="#tab-engines" type="button" role="tab" aria-controls="tab-engines" aria-selected="false">
-                        <i class="bi bi-cpu-fill me-2"></i>3. 10 Clinical Engines
+                        <i class="bi bi-cpu-fill me-2"></i>3. 10 Clinical &amp; Financial Engines
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="tab-pricing-btn" data-bs-toggle="pill" data-bs-target="#tab-pricing" type="button" role="tab" aria-controls="tab-pricing" aria-selected="false">
-                        <i class="bi bi-cash-stack me-2"></i>4. Plans &amp; Testing (63 Tests)
+                        <i class="bi bi-cash-stack me-2"></i>4. Plans &amp; Testing (148+ Tests)
                     </button>
                 </li>
             </ul>
 
             <!-- TAB CONTENTS -->
-            <div class="tab-content" id="careflowTabsContent">
+            <div class="tab-content" id="hmsTabsContent">
 
                 <!-- TAB 1: ARCHITECTURE & MULTI-TENANT -->
                 <div class="tab-pane fade show active" id="tab-overview" role="tabpanel" aria-labelledby="tab-overview-btn">
@@ -296,7 +313,7 @@ CodeHype Tech | Priyanshu Kumar
                                 <span class="badge-pill mb-2">Multi-Tenant Isolation</span>
                                 <h3 class="showcase-title">Doctor-First Isolated Practice Environments</h3>
                                 <p>
-                                    CareFlow HMS delivers an end-to-end digital practice ecosystem for independent healthcare practitioners and clinics. Every doctor receives a dedicated, high-speed public clinic webpage (<code>/dr/doctor-slug</code>) with customized branding, treatment catalogs, and real-time appointment booking.
+                                    JhaMed HMS delivers an end-to-end digital practice ecosystem for independent healthcare practitioners and clinics. Every doctor receives a dedicated, high-speed public clinic webpage (<code>/dr/doctor-slug</code>) with customized branding, treatment catalogs, and real-time appointment booking.
                                 </p>
 
                                 <div class="row g-3 mt-2">
@@ -311,28 +328,28 @@ CodeHype Tech | Priyanshu Kumar
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="mini-feature-box">
-                                            <i class="bi bi-globe2 text-emerald"></i>
+                                            <i class="bi bi-phone text-emerald"></i>
                                             <div>
-                                                <strong>Dedicated Public Microsite</strong>
-                                                <p>Instant <code>/dr/slug</code> portals with booking filters and live seat availability.</p>
+                                                <strong>Android Patient App &amp; Web</strong>
+                                                <p>Native mobile APK and web portals with live queue tokens and PDF Rx downloads.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="mini-feature-box">
-                                            <i class="bi bi-clock-history text-purple"></i>
+                                            <i class="bi bi-robot text-purple"></i>
                                             <div>
-                                                <strong>ZoneInfo IST Standard</strong>
-                                                <p>Asia/Kolkata timezone standard with naive UTC PostgreSQL storage.</p>
+                                                <strong>JhaMed AI Copilot (20 Tools)</strong>
+                                                <p>Ephemeral in-memory privacy, role partitioning, and backend HMS execution.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="mini-feature-box">
-                                            <i class="bi bi-envelope-check text-amber"></i>
+                                            <i class="bi bi-credit-card text-amber"></i>
                                             <div>
-                                                <strong>Resend REST API Transport</strong>
-                                                <p>Non-blocking HTTPS transactional email for receipts, invites, and notifications.</p>
+                                                <strong>Razorpay &amp; GST Invoicing</strong>
+                                                <p>Online booking advance fees, subscription billing, and Indian GST compliant PDFs.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -346,23 +363,23 @@ CodeHype Tech | Priyanshu Kumar
                                     <div class="terminal-dots">
                                         <span></span><span></span><span></span>
                                     </div>
-                                    <span class="visual-title">careflow_architecture.diag</span>
+                                    <span class="visual-title">jhamed_architecture.diag</span>
                                 </div>
                                 <div class="visual-body">
 <pre class="ascii-art"><code>┌──────────────────────────────────────┐
-│          CareFlow HMS Core           │
+│            JhaMed HMS Core           │
 │ (Flask 3 · SQLAlchemy · PostgreSQL)  │
 └──────────────────┬───────────────────┘
                    │
-  ┌────────────────┼────────────────┐
-  ▼                ▼                ▼
+   ┌───────────────┼───────────────┐
+   ▼               ▼               ▼
 ┌────────────┐  ┌────────────┐  ┌────────────┐
 │ SuperAdmin │  │   Doctor   │  │  Patient   │
 │ Governance │  │ Workspaces │  │  Portals   │
 └────────────┘  └────────────┘  └────────────┘
-  • Vetting       • Rx Writer     • /dr/slug
+  • Vetting       • Rx Writer     • Android App
   • 10-Dig ID     • Live Queue    • Live Token
-  • Plans         • Staff/Payroll • PDF EHR</code></pre>
+  • Plans / Tiers • Staff/Payroll • Razorpay / Rx</code></pre>
                                 </div>
                                 <div class="visual-footer">
                                     <span class="text-muted fs-xs">Production Host:</span>
@@ -387,7 +404,7 @@ CodeHype Tech | Priyanshu Kumar
                                     <li><i class="bi bi-check2"></i> Doctor Medical Council verification pipeline</li>
                                     <li><i class="bi bi-check2"></i> Subscription duration &amp; validity controls</li>
                                     <li><i class="bi bi-check2"></i> 10-Digit Recovery ID governance</li>
-                                    <li><i class="bi bi-check2"></i> Granular feature packaging &amp; inquiries</li>
+                                    <li><i class="bi bi-check2"></i> Granular feature packaging &amp; overrides</li>
                                 </ul>
                             </div>
                         </div>
@@ -403,7 +420,7 @@ CodeHype Tech | Priyanshu Kumar
                                     <li><i class="bi bi-check2"></i> Sequential live queue token controller</li>
                                     <li><i class="bi bi-check2"></i> Digital Rx writer with smart prefill</li>
                                     <li><i class="bi bi-check2"></i> Multi-session procedure course tracking</li>
-                                    <li><i class="bi bi-check2"></i> Staff attendance, payroll &amp; 24h clinic chat</li>
+                                    <li><i class="bi bi-check2"></i> Staff attendance, payroll &amp; 30d clinic chat</li>
                                 </ul>
                             </div>
                         </div>
@@ -416,7 +433,7 @@ CodeHype Tech | Priyanshu Kumar
                                 <span class="role-badge">Clinic Staff</span>
                                 <h4>Receptionists &amp; Nurses</h4>
                                 <ul class="role-list">
-                                    <li><i class="bi bi-check2"></i> Role-based login with permission gates</li>
+                                    <li><i class="bi bi-check2"></i> 11-key granular permission matrix</li>
                                     <li><i class="bi bi-check2"></i> Assisted walk-in patient registration</li>
                                     <li><i class="bi bi-check2"></i> Patient arrival check-in &amp; vitals capture</li>
                                     <li><i class="bi bi-check2"></i> Real-time doctor directives &amp; room prep</li>
@@ -430,12 +447,12 @@ CodeHype Tech | Priyanshu Kumar
                                     <i class="bi bi-person-check-fill"></i>
                                 </div>
                                 <span class="role-badge">Public &amp; Patient</span>
-                                <h4>Patient Portal &amp; Site</h4>
+                                <h4>Patient App &amp; Site</h4>
                                 <ul class="role-list">
                                     <li><i class="bi bi-check2"></i> Doctor public webpage (<code>/dr/slug</code>)</li>
-                                    <li><i class="bi bi-check2"></i> Live slot capacity &amp; current-day filters</li>
+                                    <li><i class="bi bi-check2"></i> Native Android App with APK distribution</li>
                                     <li><i class="bi bi-check2"></i> Real-time queue tracker &amp; wait estimation</li>
-                                    <li><i class="bi bi-check2"></i> Lifelong EHR history &amp; Rx PDF print</li>
+                                    <li><i class="bi bi-check2"></i> Lifelong EHR history &amp; Rx PDF download</li>
                                 </ul>
                             </div>
                         </div>
@@ -460,7 +477,7 @@ CodeHype Tech | Priyanshu Kumar
                                     <span class="engine-num">02</span>
                                     <h5 class="mb-0 ms-2">Sequential Live Queue</h5>
                                 </div>
-                                <p>Calculates dynamic token wait: <code>Wait = (Tokens Ahead) × (Avg Slot Duration)</code>.</p>
+                                <p>Calculates dynamic token wait: <code>Wait = (Tokens Ahead) × (Avg Slot Duration)</code> with self check-in.</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
@@ -469,7 +486,7 @@ CodeHype Tech | Priyanshu Kumar
                                     <span class="engine-num">03</span>
                                     <h5 class="mb-0 ms-2">Digital Rx &amp; Letterhead</h5>
                                 </div>
-                                <p>Dosage grid, smart prefill from patient history, cm margin print alignment, and QR token verification.</p>
+                                <p>Dosage grid, smart prefill from patient history, cm margin print alignment, and ReportLab PDF export.</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
@@ -494,9 +511,9 @@ CodeHype Tech | Priyanshu Kumar
                             <div class="engine-preview-item">
                                 <div class="d-flex align-items-center mb-2">
                                     <span class="engine-num">06</span>
-                                    <h5 class="mb-0 ms-2">24h Auto-Expiry Chat</h5>
+                                    <h5 class="mb-0 ms-2">30-Day Auto-Expiry Chat</h5>
                                 </div>
-                                <p>Direct clinic channel with patient token tagging, urgent directives, role broadcasts, and 24h auto-wipe.</p>
+                                <p>Direct clinic channel with patient record tagging, urgent directives, role broadcasts, and 30-day auto-wipe.</p>
                             </div>
                         </div>
                     </div>
@@ -506,7 +523,7 @@ CodeHype Tech | Priyanshu Kumar
                         <div class="sim-header d-flex justify-content-between align-items-center">
                             <div class="d-flex align-items-center gap-2">
                                 <span class="status-dot status-dot-live"></span>
-                                <strong class="text-white">Live Queue &amp; Dynamic Wait Simulator</strong>
+                                <strong class="text-white">JhaMed HMS Live Queue &amp; Dynamic Wait Simulator</strong>
                             </div>
                             <span class="badge-pill">Interactive Demo</span>
                         </div>
@@ -573,7 +590,7 @@ CodeHype Tech | Priyanshu Kumar
                                         <strong>Standard Plan</strong>
                                         <span class="text-muted d-block fs-xs">Solo Practice Clinic</span>
                                     </div>
-                                    <div class="plan-mini-price">₹1,199 / mo</div>
+                                    <div class="plan-mini-price">₹999 / mo</div>
                                 </div>
                                 <div class="plan-mini-row active-plan">
                                     <div>
@@ -585,9 +602,9 @@ CodeHype Tech | Priyanshu Kumar
                                 <div class="plan-mini-row">
                                     <div>
                                         <strong>Enterprise Plan</strong>
-                                        <span class="text-muted d-block fs-xs">WhatsApp Alerts, Razorpay, Custom Exports</span>
+                                        <span class="text-muted d-block fs-xs">WhatsApp Alerts, Razorpay, JhaMed AI Copilot</span>
                                     </div>
-                                    <div class="plan-mini-price">₹2,600 / mo</div>
+                                    <div class="plan-mini-price">₹4,999 / mo</div>
                                 </div>
                             </div>
                         </div>
@@ -609,13 +626,16 @@ CodeHype Tech | Priyanshu Kumar
                                 <div class="terminal-content">
                                     <pre class="terminal-code mb-0" id="pytest-sim-output"><code><span class="term-prompt">$</span> pytest --verbose
 <span class="term-dim">platform darwin -- Python 3.13.15, pytest-8.4.2</span>
-<span class="term-dim">collected 63 items</span>
+<span class="term-dim">rootdir: /JhaMed-HMS, configfile: pytest.ini</span>
+<span class="term-dim">collected 148 items across 16 test suites</span>
 
-tests/test_hms.py .............................................                      <span class="text-cyan">[ 71%]</span>
-tests/test_postgresql_migration.py ...........                                       <span class="text-cyan">[ 88%]</span>
-tests/test_timezone.py .......                                                       <span class="text-cyan">[100%]</span>
+tests/test_hms.py .............................................                      <span class="text-cyan">[ 45%]</span>
+tests/test_chatbot_security.py .................                                      <span class="text-cyan">[ 65%]</span>
+tests/test_razorpay_payments.py ............                                          <span class="text-cyan">[ 80%]</span>
+tests/test_postgresql_migration.py ...........                                       <span class="text-cyan">[ 90%]</span>
+tests/test_timezone.py ...............                                                <span class="text-cyan">[100%]</span>
 
-<span class="term-green fw-bold">================================== 63 passed in 27.76s ======================================</span></code></pre>
+<span class="term-green fw-bold">================================== 148 passed in 31.40s =====================================</span></code></pre>
                                 </div>
                             </div>
                         </div>
@@ -629,8 +649,9 @@ tests/test_timezone.py .......                                                  
                 <div class="d-flex align-items-center mb-3 mb-md-0">
                     <span class="tech-chip">Flask 3</span>
                     <span class="tech-chip">PostgreSQL</span>
-                    <span class="tech-chip">SQLAlchemy</span>
-                    <span class="tech-chip">Resend REST</span>
+                    <span class="tech-chip">SQLAlchemy (31 Models)</span>
+                    <span class="tech-chip">JhaMed AI</span>
+                    <span class="tech-chip">Razorpay</span>
                     <span class="tech-chip">Asia/Kolkata IST</span>
                 </div>
 
@@ -639,6 +660,160 @@ tests/test_timezone.py .......                                                  
                         <i class="bi bi-box-arrow-up-right me-1"></i> Visit hms.codehypetech.in
                     </a>
                     <a href="{{ url_for('hospital_management_system') }}" class="btn btn-outline-light btn-sm">
+                        Read Deep-Dive Documentation →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FEATURED PROJECT SHOWCASE (EPHEMERAL PRIVACY PLATFORM)
+========================================================= -->
+
+<section class="featured-project-section pt-0" id="featured-ephemeral">
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+            <div>
+                <div class="badge-tag-featured mb-2">
+                    <span class="badge-pulse" style="background: var(--color-cyan); box-shadow: 0 0 12px var(--color-cyan);"></span> FEATURED PRIVACY PLATFORM
+                </div>
+                <h2 class="section-title">
+                    Ephemeral <span class="text-muted-gradient">— Ephemeral Messaging &amp; Shielded Dating</span>
+                </h2>
+                <p class="section-subtitle">
+                    A privacy-first communication platform built with Flask, PostgreSQL, Flask-SocketIO WebSockets, Pillow EXIF sanitization, physical single-view disk destruction, shielded 18+ mutual dating, and Render automated janitor cron.
+                </p>
+            </div>
+
+            <div class="mt-3 mt-md-0 d-flex gap-2">
+                <a
+                    href="https://ephemeral.codehypetech.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-emerald"
+                >
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Visit Live App (ephemeral.codehypetech.in)
+                </a>
+                <a
+                    href="{{ url_for('ephemeral_project') }}"
+                    class="btn btn-outline-light"
+                >
+                    Technical Deep-Dive →
+                </a>
+            </div>
+        </div>
+
+        <!-- EPHEMERAL SHOWCASE CARD -->
+        <div class="showcase-card">
+
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <div class="showcase-content">
+                        <span class="badge-pill mb-2">Zero-Retention Architecture</span>
+                        <h3 class="showcase-title">Physical Media Destruction &amp; Shielded Discovery</h3>
+                        <p>
+                            Ephemeral is engineered around uncompromising privacy. Photo messages marked as single-view are physically unlinked from disk upon recipient reply. EXIF and geolocation data are automatically stripped via Pillow before storage, and mutual dating discovery is completely shielded from search engine indexers with <code>X-Robots-Tag: noindex, nofollow</code>.
+                        </p>
+
+                        <div class="row g-3 mt-2">
+                            <div class="col-sm-6">
+                                <div class="mini-feature-box">
+                                    <i class="bi bi-trash3-fill text-cyan"></i>
+                                    <div>
+                                        <strong>Reply-Triggered Unlink</strong>
+                                        <p>Atomic <code>os.unlink()</code> purges single-view photos from disk storage the moment a reply is sent.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mini-feature-box">
+                                    <i class="bi bi-camera-fill text-emerald"></i>
+                                    <div>
+                                        <strong>Pillow EXIF Stripping</strong>
+                                        <p>Strips GPS coordinates, camera serials, timestamps, and device fingerprints in-memory.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mini-feature-box">
+                                    <i class="bi bi-broadcast text-purple"></i>
+                                    <div>
+                                        <strong>Bidirectional WebSockets</strong>
+                                        <p>Sub-50ms real-time delivery with room isolation, typing telemetry, and presence heartbeats.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mini-feature-box">
+                                    <i class="bi bi-heart-fill text-amber"></i>
+                                    <div>
+                                        <strong>Shielded 18+ Mutual Dating</strong>
+                                        <p>Double-blind matching, distance privacy, and search engine shielding with <code>noindex, nofollow</code>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="architecture-visual-card">
+                        <div class="visual-header">
+                            <div class="terminal-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="visual-title">ephemeral_architecture.diag</span>
+                        </div>
+                        <div class="visual-body">
+<pre class="ascii-art"><code>┌──────────────────────────────────────┐
+│            Ephemeral Core            │
+│   (Flask · SocketIO · PostgreSQL)    │
+└──────────────────┬───────────────────┘
+                   │
+   ┌───────────────┼───────────────┐
+   ▼               ▼               ▼
+┌────────────┐  ┌────────────┐  ┌────────────┐
+│ 1-on-1 Chat│  │ 18+ Dating │  │   Render   │
+│ Zero-Trace │  │  Shielded  │  │Janitor Cron│
+└────────────┘  └────────────┘  └────────────┘
+ • Disk Unlink   • noindex SEO   • */15 Cron
+ • Pillow EXIF   • Blind Matches • Auto-Purge
+ • WebSockets    • Distance Dist • 22 Tests</code></pre>
+                        </div>
+                        <div class="visual-footer">
+                            <span class="text-muted fs-xs">Production Host:</span>
+                            <a href="https://ephemeral.codehypetech.in/" target="_blank" rel="noopener noreferrer" class="link-cyan fs-xs">https://ephemeral.codehypetech.in ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SHOWCASE FOOTER BAR -->
+            <div class="showcase-bottom-bar mt-4 pt-4 border-top border-secondary-subtle d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex align-items-center mb-3 mb-md-0">
+                    <span class="tech-chip">Flask</span>
+                    <span class="tech-chip">PostgreSQL</span>
+                    <span class="tech-chip">Flask-SocketIO</span>
+                    <span class="tech-chip">Pillow (EXIF Scrub)</span>
+                    <span class="tech-chip">X-Robots-Tag Shield</span>
+                    <span class="tech-chip">Render Cron (*/15)</span>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <a href="https://ephemeral.codehypetech.in/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald btn-sm">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> Launch Ephemeral Live
+                    </a>
+                    <a href="{{ url_for('ephemeral_project') }}" class="btn btn-outline-light btn-sm">
                         Read Deep-Dive Documentation →
                     </a>
                 </div>
@@ -968,7 +1143,7 @@ tests/test_timezone.py .......                                                  
                 class="btn btn-primary btn-lg me-2 mb-2"
             >
                 <i class="bi bi-youtube me-2"></i>
-                YouTube
+                CodeHype Tech YouTube
             </a>
 
 
@@ -986,16 +1161,29 @@ tests/test_timezone.py .......                                                  
             </a>
 
 
-            <!-- CAREFLOW LIVE -->
+            <!-- JHAMED HMS LIVE -->
 
             <a
                 href="https://hms.codehypetech.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-emerald btn-lg mb-2"
+                class="btn btn-emerald btn-lg me-2 mb-2"
             >
                 <i class="bi bi-box-arrow-up-right me-2"></i>
-                CareFlow HMS Live
+                JhaMed HMS Live
+            </a>
+
+
+            <!-- EPHEMERAL LIVE -->
+
+            <a
+                href="https://ephemeral.codehypetech.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-light btn-lg mb-2"
+            >
+                <i class="bi bi-box-arrow-up-right me-2"></i>
+                Ephemeral Live
             </a>
 
         </div>

@@ -31,7 +31,7 @@ Projects &amp; Production Systems | CodeHype Tech
             <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
                 <div class="d-flex align-items-center">
                     <span class="status-dot me-2"></span>
-                    <span><strong>Featured Deployment:</strong> CareFlow HMS is running in production with live multi-tenant doctor workspaces.</span>
+                    <span><strong>Featured Deployment:</strong> JhaMed HMS is running in production with live multi-tenant doctor workspaces.</span>
                 </div>
                 <a href="https://hms.codehypetech.in" target="_blank" rel="noopener noreferrer" class="btn btn-emerald btn-sm">
                     Open Live Platform (hms.codehypetech.in) <i class="bi bi-arrow-up-right ms-1"></i>
@@ -53,9 +53,9 @@ Projects &amp; Production Systems | CodeHype Tech
         <div class="row g-4">
 
 
-            <!-- CAREFLOW HMS (FLAGSHIP) -->
+            <!-- JHAMED HMS (FLAGSHIP) -->
 
-            <div class="col-lg-6">
+            <div class="col-12">
 
                 <div class="project-card project-card-featured">
 
@@ -66,7 +66,7 @@ Projects &amp; Production Systems | CodeHype Tech
                                 <i class="bi bi-star-fill text-amber me-1"></i> FLAGSHIP SAAS
                             </span>
                             <span class="project-tag tag-tech">
-                                FLASK 3 · POSTGRESQL
+                                FLASK 3 · POSTGRESQL · AI COPILOT · MOBILE APP
                             </span>
                         </div>
 
@@ -78,24 +78,27 @@ Projects &amp; Production Systems | CodeHype Tech
 
 
                     <h2>
-                        CareFlow HMS
+                        JhaMed HMS
                     </h2>
 
 
                     <p>
-                        An enterprise-grade, doctor-first Hospital &amp; Clinic Management SaaS platform designed by <strong>CodeHype Tech Labs</strong>. Built on a secure multi-tenant architecture with isolated doctor workspaces, dynamic slot concurrency row-locking, live sequential queue tracking, digital Rx smart prefill, staff attendance &amp; payroll, and 63 automated integration tests.
+                        An enterprise-grade, doctor-first Hospital &amp; Clinic Management SaaS platform designed by <strong>CodeHype Tech Labs</strong>. Built on a secure multi-tenant architecture with 31 PostgreSQL models, 70+ REST APIs, 148+ automated integration tests, role-aware JhaMed AI Assistant with 20 domain tools, native Android patient application, Razorpay payment gateway, dynamic slot concurrency row-locking, live sequential queue tokens, digital Rx letterhead designer, and automated staff payroll hub.
                     </p>
 
 
                     <div class="tech-stack">
 
                         <span>Flask 3</span>
-                        <span>SQLAlchemy</span>
                         <span>PostgreSQL</span>
+                        <span>SQLAlchemy (31 Models)</span>
+                        <span>JhaMed AI (20 Tools)</span>
+                        <span>Android Patient App</span>
+                        <span>Razorpay SDK</span>
+                        <span>ReportLab PDF</span>
                         <span>Resend REST API</span>
                         <span>ZoneInfo IST</span>
-                        <span>Pytest (63 Passed)</span>
-                        <span>Bootstrap 5</span>
+                        <span>Pytest (148+ Tests)</span>
 
                     </div>
 
@@ -122,6 +125,91 @@ Projects &amp; Production Systems | CodeHype Tech
 
                             <a
                                 href="{{ url_for('hospital_management_system') }}"
+                                class="btn btn-sm btn-outline-light"
+                            >
+                                Deep-Dive &amp; Architecture →
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EPHEMERAL CHAT & DATING PLATFORM -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-top">
+
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="project-tag tag-live">
+                                <span class="status-dot status-dot-live"></span> LIVE IN PRODUCTION
+                            </span>
+                            <span class="project-tag tag-tech">
+                                WEBSOCKETS · POSTGRESQL · PRIVACY SAAS
+                            </span>
+                        </div>
+
+                        <div class="project-icon-badge">
+                            <i class="bi bi-shield-lock-fill text-purple"></i>
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+                        Ephemeral
+                    </h2>
+
+
+                    <p>
+                        A privacy-first, real-time web application featuring single-view self-destructing media, physical disk unlinking on recipient reply, strict 7-day message lifecycle, automated image EXIF/metadata stripping via Pillow, bidirectional WebSockets via Flask-SocketIO, opt-in 18+ mutual compatibility dating engine with search engine shielding (<code>noindex, nofollow</code>), public community chat rooms, abuse moderation triage, and Render automated cron cleanup jobs.
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>Python 3.11+</span>
+                        <span>Flask</span>
+                        <span>PostgreSQL</span>
+                        <span>Flask-SocketIO</span>
+                        <span>WebSockets</span>
+                        <span>Pillow (EXIF Scrub)</span>
+                        <span>SQLAlchemy</span>
+                        <span>Flask-Limiter</span>
+                        <span>Render Blueprint</span>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="project-status project-status-live">
+                                <span class="status-dot status-dot-live"></span>
+                                LIVE IN PRODUCTION
+                            </span>
+                        </div>
+
+
+                        <div class="d-flex align-items-center gap-3">
+                            <a
+                                href="https://ephemeral.codehypetech.in/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-link text-emerald"
+                            >
+                                Live App ↗
+                            </a>
+
+                            <a
+                                href="{{ url_for('ephemeral_project') }}"
                                 class="btn btn-sm btn-outline-light"
                             >
                                 Deep-Dive &amp; Architecture →

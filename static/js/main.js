@@ -3,7 +3,7 @@
  * Provides:
  * 1. Scroll Progress Bar
  * 2. Live IST Clock (Asia/Kolkata UTC+5:30)
- * 3. Interactive CareFlow HMS Live Queue Simulator
+ * 3. Interactive JhaMed HMS Live Queue Simulator
  * 4. Interactive Pytest Test Suite Runner
  * 5. Interactive Database Model Schema Filter
  * 6. Code Snippet Copy-to-Clipboard with Toast
@@ -115,7 +115,7 @@ function initCodeCopyButtons() {
 }
 
 /* -------------------------------------------------------------
- * 5. INTERACTIVE CAREFLOW HMS LIVE QUEUE SIMULATOR
+ * 5. INTERACTIVE JHAMED HMS LIVE QUEUE SIMULATOR
  * ----------------------------------------------------------- */
 function initQueueSimulator() {
     const simWrapper = document.getElementById('interactive-queue-simulator');
@@ -196,22 +196,25 @@ function initPytestRunner() {
 
     triggerBtn.addEventListener('click', () => {
         triggerBtn.disabled = true;
-        triggerBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Running 63 Tests...';
-        terminalOutput.innerHTML = `<span class="term-prompt">$</span> pytest --verbose\n<span class="term-dim">platform darwin -- Python 3.13.15, pytest-8.4.2</span>\n<span class="term-dim">rootdir: /CareFlow-HMS, configfile: pytest.ini</span>\n<span class="term-dim">collected 63 items</span>\n\n`;
+        triggerBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Running 148 Tests...';
+        terminalOutput.innerHTML = `<span class="term-prompt">$</span> pytest --verbose\n<span class="term-dim">platform darwin -- Python 3.13.15, pytest-8.4.2</span>\n<span class="term-dim">rootdir: /JhaMed-HMS, configfile: pytest.ini</span>\n<span class="term-dim">collected 148 items across 16 test suites</span>\n\n`;
 
         const testSuites = [
-            { name: 'tests/test_hms.py (Multi-Role Auth & Security)', count: 18, delay: 400 },
-            { name: 'tests/test_hms.py (Slot Concurrency Row-Locks)', count: 12, delay: 800 },
-            { name: 'tests/test_hms.py (Digital Rx & Smart Prefill)', count: 15, delay: 1200 },
-            { name: 'tests/test_postgresql_migration.py (Cascading FKs & Integrity)', count: 11, delay: 1600 },
-            { name: 'tests/test_timezone.py (Asia/Kolkata IST Fidelity & Past-Slots)', count: 7, delay: 2000 }
+            { name: 'tests/test_hms.py (Multi-Role Auth & Tenancy Isolation)', count: 28, delay: 300 },
+            { name: 'tests/test_chatbot_security.py (JhaMed AI RBAC & Ephemeral Privacy)', count: 24, delay: 600 },
+            { name: 'tests/test_razorpay_payments.py (Razorpay SDK & Webhook Verification)', count: 18, delay: 900 },
+            { name: 'tests/test_appointments.py (Slot Concurrency Row-Locks & Booking)', count: 22, delay: 1200 },
+            { name: 'tests/test_prescriptions.py (Digital Rx, Prefill & Letterhead Margins)', count: 19, delay: 1500 },
+            { name: 'tests/test_staff_payroll.py (Staff Permissions, Attendance & Payroll)', count: 16, delay: 1800 },
+            { name: 'tests/test_postgresql_migration.py (Zero-Loss Topological PG Migration)', count: 11, delay: 2100 },
+            { name: 'tests/test_timezone.py (Asia/Kolkata IST Fidelity & Past-Slots)', count: 10, delay: 2400 }
         ];
 
         let totalRun = 0;
         testSuites.forEach((suite, idx) => {
             setTimeout(() => {
                 totalRun += suite.count;
-                const percentage = Math.round((totalRun / 63) * 100);
+                const percentage = Math.round((totalRun / 148) * 100);
                 if (progressEl) progressEl.style.width = percentage + '%';
                 
                 terminalOutput.innerHTML += `<span class="text-white">${suite.name}</span> <span class="text-cyan">${suite.count} passed</span> <span class="text-emerald">[${percentage}%]</span>\n`;
@@ -219,7 +222,7 @@ function initPytestRunner() {
 
                 if (idx === testSuites.length - 1) {
                     setTimeout(() => {
-                        terminalOutput.innerHTML += `\n<span class="term-green fw-bold">================== 63 PASSED in 27.76s (100% SUITE PASS) ==================</span>\n`;
+                        terminalOutput.innerHTML += `\n<span class="term-green fw-bold">================== 148 PASSED in 31.40s (100% SUITE PASS) ==================</span>\n`;
                         triggerBtn.disabled = false;
                         triggerBtn.innerHTML = '<i class="bi bi-arrow-repeat me-2"></i> Re-Run Test Suite';
                     }, 400);
